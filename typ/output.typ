@@ -5687,12 +5687,15 @@ kin. ona li pini pona li pini ali. o lon.]
 <ch028.xhtml.id.sitelen-kiwen>
 jan Popo
 
-jan anpa li wile e pona li toki tawa sewi kepeken sitelen pona. taso,
-ona li ken ala ken sitelen pona kepeken sitelen pona?
+
 
 <ch029.xhtml>
 
-#box(width: 598.4321608040201pt, image("images/file9.png"))
+
+#box(image("images/file9_a.png"))
+#box(image("images/file9.png"))
+#box(image("images/file9_d.png"))
+
 
 #block[
 ]
