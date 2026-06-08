@@ -1723,17 +1723,29 @@ lon poka mi
   ])
 ]
 
-#let NIMILIPU = ""
-#let JANPALI = ""
+#let lipu = state("LIPU", "ijo")
+#let jan = state("JAN", "ee")
+
+#let compute(lipuInp, janInp) = {
+  lipu.update(lipuInp)
+  jan.update(janInp)
+ 
+}
+
+#compute("akesi li moku e suno", "jan Peli") 
 
 #set page(
-  header: [#NIMILIPU #h(1fr) - #JANPALI]
+  margin:(top: 4em, right: 2.75em, bottom: 2.75em, left: 2.75em),
+  header: place(dy: 2em,text(size: 0.8em, style: "italic")[ #context lipu.get() #h(1fr) #context jan.get()])
 )
+
+
+#let openLsitelenLasina(loc) = [
+   #place(top + left,dy:-1em, text(size: 0.8em, style: "italic")[sitelen Lasina: lipu \##context [#locate(loc).page()]])
+]
 
 #block[
 
-{ NIMILIPU = "akesi li moku e suno" }
-{ JANPALI = "jan Peli" }
 
 = akesi li moku e suno
 <ch002.xhtml.id.akesi-li-moku-e-suno>
@@ -1741,8 +1753,13 @@ lon poka mi
 #njan[jan Peli]
 
 #show heading.where(level: 2): it => [
-  #set text(weight: 400, size: 0.7em)
-  #pad(top: 1.8em, bottom: 0.5em, text(weight: 400,it))
+  #show line: it=>{
+  pad(top: -1em, bottom: -1.5em, it)
+}
+
+  #line(length: 100%)
+  #set text(weight: 400, size: 1em)
+  #pad(top: 1.8em, bottom: 0.75em, text(weight: 400,it))
 ]
 
 
@@ -1903,7 +1920,7 @@ jan Kepen li lukin e poki ona.
 \- mi tawa. sina jan pali pona. o pali. ilo ona li wawa.
 
 jan Wanto li jo e poki kin.
-
+tenpo
 \- mi wile pali ala. mi tawa. mi tawa lon poka sina. sina utala e akesi
 la, mi wile lukin.
 
@@ -2041,6 +2058,9 @@ pini
 ] 
 ]
 
+#compute("jan sama tu tu en soweli monsuta", "jan Kepeliju") 
+
+
 
 = jan sama tu tu en soweli monsuta <ch004.xhtml>
 
@@ -2049,11 +2069,7 @@ pini
 
 
 
-#let openLsitelenLasina(loc) = [
-   #place(top + left, text(size: 0.9em, style: "italic")[lipu \##context [#locate(loc).page()] la o lukin kepeken sitelen Lasina])
 
-
-]
 #openLsitelenLasina(<ch005.xhtml.sitelen-Lasina>)
 
 
@@ -2070,7 +2086,7 @@ pini
 
 
 #columns(2, gutter: 1em)[
-
+tenpo
 
 ```
 tenpopinisulila
@@ -2433,8 +2449,11 @@ soweli+monsuta li lon poka lawa pi(jansamananpa tu tu
 ]
 ]
 ] <ch005.xhtml.ona-pi-sitelen-pona>
+
+#colbreak()
+
 #block[
-] <ch005.xhtml.sitelen-Lasina>
+] 
 #block[
 tenpo pini suli la, jan tu tu pi mama sama li lon. ona mute li pilin
 ike. jan sama nanpa wan li wile e ni: jan olin ona li kama sin tawa ona.
@@ -2595,22 +2614,27 @@ soweli monsuta li lon poka lawa pi jan sama nanpa tu tu, li toki e ni:
 “lon li pona, li suli tawa sina…”
 
 ] <ch005.xhtml.sitelen-Lasina>
+
+
+
+#compute("kon en jan (lipu nanpa wan)", "kon Okisen") 
+
+
+
+= kon en jan \ (lipu nanpa wan) 
 <ch006.xhtml>
 
-= kon en jan \(lipu nanpa wan)
-<ch006.xhtml.id.kon-en-jan-lipu-nanpa-wan>
-kon Okisen
+#njan("kon Okisen") 
+#openLsitelenLasina(<ch007.xhtml.Lasina>)
 
-mi kon. mi o lon ala. taso mi lon. jan li kama e mi tan ala. mi sona ala
-e ni: jan pi kama mi li wile e seme.
 
-#link(<ch007.xhtml.sitelen-pona-a>)[o lukin kepeken sitelen pona]
-
-#link(<ch007.xhtml.Lasina>)[o lukin kepeken sitelen Lasina]
 
 <ch007.xhtml>
 
 #block[
+
+  #set text(font: "Fairfax Pona HD")
+
 kon en jan　lipu nanpa wan
 
 mi o lon ala　ni li pakala　mi lon tan seme
@@ -2966,18 +2990,31 @@ li kama lili, pimeja li kama wawa, ale li kama weka.
 
 mi lape sijelo ala lon tenpo suli. ni li pilin pona.
 
-<ch008.xhtml>
 
-= kon tu li toki
+
+
+#block[
+
+
+#compute("kon tu li toki", "jan Ana en jan Lapate") 
+
+
+= kon tu li toki <ch008.xhtml>
+
+#njan("jan Ana tan jan Lapate") 
+
+
+
 <ch008.xhtml.id.kon-tu-li-toki>
-jan Ana tan jan Lapate
 
-meli olin li tawa weka tawa tomo pi nasin sewi. taso mije en meli li
-awen toki kepeken lipu kasi. mije li pana e sona pi toki pona tawa meli.
-ona tu li pali e kulupu ni pi toki musi li toki e olin e nasin e lon e
-ma.
+#set block(breakable: false)
+#set par(spacing: 2em, leading: 0.7em)
+#show heading.where(level: 2): it =>[
+  #pad(bottom: 0.5em, top: 0.3em, text(size: 0.7em, it))
+]
 
-<ch009.xhtml>
+
+
 
 #block[
 jan tu li pali e toki mute ni. ona wan li meli, ona ante li mije. tenpo
@@ -2995,7 +3032,8 @@ li toki pona lili lon lipu, li pana e toki musi pi toki pona.
 toki musi ni anpa li pali kulupu pi ona tu, li toki e ijo suli pi ona
 tu, li toki e sike suno suli ni.
 
-]
+] <ch009.xhtml>
+
 #block[
 == ma sewi Aten
 <ch009.xhtml.toc_1>
@@ -3214,8 +3252,13 @@ la, ni a li ken musi tawa sona: \
 musi ma ni la, mi seme? sina seme?
 
 #block[
+
+  
 == kiwen
 <ch009.xhtml.toc_13>
+
+#set text(size: 0.9em)
+
 kiwen majuna ni pi ma Elena la, \
 jan li kama lon li weka sin \
 tan ma suwi. taso ale ala la \
@@ -3236,7 +3279,10 @@ sewi li awen e kiwen ni, e mi tu kin.
 
 ~ ☙☙☙
 
-lon poka pi telo suli la, \
+#set block(breakable: true)
+
+
+#grid(columns: (1fr, 1fr), block[lon poka pi telo suli la, \
 kiwen pimeja suli en kasi telo \
 en ijo pakala pi ilo tawa \
 telo la, mi lukin e kiwen \
@@ -3252,15 +3298,14 @@ meli suwi pi awen sewi o. \
 tenpo ni la, mi lon ma \
 weka la, kiwen sike kule li \
 lon luka sina, lon pilin mi, \
-li ken wan e mi tu—
-
+li ken wan e mi tu—], block[
 kiwen en lipu en sona majuna \
 en toki sewi en toki musi \
 li sama linja wawa mute tan \
 mi tawa sina tawa mi sin, \
 li pali e len suwi pi \
 kule pona mute, li ken awen \
-lon tenpo ale tawa mi tu.
+lon tenpo ale tawa mi tu.])
 
 ] <ch009.xhtml.kiwen>
 #block[
@@ -3286,14 +3331,17 @@ ma li musi la, mi sona ala. \
 taso, weka ni pi mi tu la, \
 toki sina la, sina lon—tawa mi.
 
-] <ch009.xhtml.kon-li-lon-anpa-ale>
-<ch010.xhtml>
+] <ch009.xhtml.kon-li-lon-anpa-ale>]
 
-= lipu pi kulupu Winx
-<ch010.xhtml.id.lipu-pi-kulupu-Winx>
-soweli Niko
 
-kulupu Winsu Ku li jo e jan pona mute!
+#compute("lipu pi kulupu Winsu Ku", "soweli Niko") 
+
+
+= lipu pi kulupu Winsu Ku <ch010.xhtml>
+
+#njan("soweli Niko")  <ch010.xhtml.id.lipu-pi-kulupu-Winx>
+
+
 
 <ch011.xhtml>
 
@@ -3339,7 +3387,7 @@ jan Pu li pona mute.”
 
 <ch012.xhtml>
 
-= toki 10,000,000,000,000,000,000,000,000,000 pi nasin Soneto
+= toki 10,000,000,000,\ 000,000,000,000, \ 000,000 pi nasin Soneto
 kapesi Pake
 
 toki wan pi nasin Soneto li jo e linja toki luka luka tu tu. ken wan ale
