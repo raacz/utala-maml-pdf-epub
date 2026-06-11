@@ -2277,8 +2277,7 @@ jan-sama nanpa-tu li tokie niv<
   soweli+suli o
 
   mi wile e ni: kasi pan mi li kama+suli,
-
-                li kama+mutela
+  li kama+mutela
 
     mi wile pana e seme tawa ona?
 
@@ -7779,10 +7778,31 @@ telo. mi lukin e tomo tawa. mi sewi e luka tu. mi toki:
 
 #openLsitelenLasina(<ch033.xhtml.lasinaLtokini>)
 
+
+//  #let wrap-right(body) = context {
+//  layout(size => {
+//    let avail = size.width
+//    let children = if body.has("children") { body.children } else { (body,) }
+
+//    let result = ()
+//    for child in children {
+//      let f = child.func()
+//      if f == parbreak or repr(f) == "space" {
+//        result.push(child)
+//      } else if f == text and measure(child).width > avail {
+//        result.push(box(width: avail, align(right, child)))     } else {
+//        result.push(child)
+//      }
+//    }
+//    result.join()
+//  })
+//}
+
+
 #block[ 
 
 #let storyUnit(t) = [
-  #set par(spacing: 0.5em)
+  #set par(spacing: 0.5em, hanging-indent: 1em)
 
   #pad(y: 0.75em, t)
 ]
@@ -7797,7 +7817,7 @@ telo. mi lukin e tomo tawa. mi sewi e luka tu. mi toki:
 
 #set text(font: "linja lipamanka", size: 0.9em)
 
-#columns(2, gutter: 3em)[
+#columns(2, gutter: 1.5em)[
  #storyUnit[
 mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
@@ -7828,8 +7848,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         mi kama lon ona /
 
-        ona
-               li tomo pona li ken e jan mute lon insa e jan mute lon poka kin/
+        ona li tomo pona li ken e jan mute lon insa e jan mute lon poka kin/
 
         taso mi lon open tenpo taso la jan li mute ala /
 
@@ -7971,8 +7990,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[awen la esun o pona
-               ]/
+        #te[awen la esun o pona ]/
 
         #te[tenpo o pona ]/
 
@@ -8024,22 +8042,19 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[esun o pana e mani
-               ]/
+        #te[esun o pana e mani ]/
 
       ]
 
       #storyUnit[
 
-        ona
-               li jo e len lon sinpin e ilo ike lon luka /
+        ona li jo e len lon sinpin e ilo ike lon luka /
 
       ]
 
       #storyUnit[
 
-        #te[sina pana ala
-               e mani la mi pakala e sina ]/
+        #te[sina pana ala e mani la mi pakala e sina ]/
 
         #te[ mi lon open tenpo taso / 
 
@@ -8053,15 +8068,13 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        jan esun
-               li tawa poki mani li kama e mani tan poki /
+        jan esun li tawa poki mani li kama e mani tan poki /
 
       ]
 
       #storyUnit[
 
-        #te[sina ike ni tan seme
-               ]/
+        #te[sina ike ni tan seme ]/
 
       ]
 
@@ -8073,8 +8086,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[ni
-               la mi sona ala kama e pona ]/
+        #te[ni la mi sona ala kama e pona ]/
 
       ]
 
@@ -8090,15 +8102,13 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[onali anpa tan ijo seme li moku e seme li anpa lon tenpo pi(suli seme) li mu ala mu lon anpa li tawa ala tawa nasa lon tenpo pi(anpa ala) li kepeken ala kepeken ilo sijelo li toki ala toki e ijo
-                pi(pilin ike)]/
+        #te[onali anpa tan ijo seme li moku e seme li anpa lon tenpo pi(suli seme) li mu ala mu lon anpa li tawa ala tawa nasa lon tenpo pi(anpa ala) li kepeken ala kepeken ilo sijelo li toki ala toki e ijo  pi(pilin ike)]/
 
         #te[ a/
 
         mi sona ala]/
 
-        #te[ona
-               li kama ala sewi li moku nasa e kon/
+        #te[ona li kama ala sewi li moku nasa e kon/
 
         mi en ona o tawa tomo mi ]/
 
@@ -8106,15 +8116,13 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        mi
-               en jan nasin li jo pona e jan anpa li tawa e ona tawa ilo pi(nasin tawa)/
+        mi en jan nasin li jo pona e jan anpa li tawa e ona tawa ilo pi(nasin tawa)/
 
       ]
 
       #storyUnit[
 
-        #te[mi o kepeken tenpo lili a
-               ]/
+        #te[mi o kepeken tenpo lili a ]/
 
       ]
 
@@ -8136,13 +8144,11 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         ni li ike ]/
 
-        #te[jan ante
-               li kama li esun la mani li kama/
+        #te[jan ante li kama li esun la mani li kama/
 
         ona li kama ala la ni taso li ike ]/
 
-        #te[a suno pona
-               en seli pona li lon/
+        #te[a suno pona en seli pona li lon/
 
         ona li kama ]/
 
@@ -8168,8 +8174,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         ijo li pakala ala pakala/
 
-        taso kalama
-               li weka la ijo li pakala la ijo pakala li suli a /
+        taso kalama li weka la ijo li pakala la ijo pakala li suli a /
 
         mi ken ala sona /
 
@@ -8249,8 +8254,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         nasa seme li lon a /
 
-        jan tomo
-               li kama lon poka mi la mi en ona li supa pona e jan anpa /
+        jan tomo li kama lon poka mi la mi en ona li supa pona e jan anpa /
 
         mi kama kute e toki lon monsi mi /
 
@@ -8258,8 +8262,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[esun o pana e mani
-               ]/
+        #te[esun o pana e mani ]/
 
       ]
 
@@ -8271,8 +8274,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[sina pana ala
-               e mani la mi pakala e sina ]/
+        #te[sina pana ala e mani la mi pakala e sina ]/
 
         #te[ mi lon open tenpo taso / 
 
@@ -8286,15 +8288,13 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        jan esun
-               li tawa poki mani li kama e mani tan poki /
+        jan esun li tawa poki mani li kama e mani tan poki /
 
       ]
 
       #storyUnit[
 
-        #te[sina ike ni tan seme
-               ]/
+        #te[sina ike ni tan seme ]/
 
       ]
 
@@ -8306,8 +8306,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[ ni li sama tenpo ante a
-               ]/
+        #te[ ni li sama tenpo ante a ]/
 
       ]
 
@@ -8323,8 +8322,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         ni li sin a tawa mi/
 
-        tenpo ala la jan li kama weka ni e mani mi
-               ]/
+        tenpo ala la jan li kama weka ni e mani mi ]/
 
       ]
 
@@ -8342,15 +8340,13 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         mi sona ala/
 
-        jan ante
-               li tawa insa li jan pi(nasin sijelo) li kama lukin e jan anpa /
+        jan ante li tawa insa li jan pi(nasin sijelo) li kama lukin e jan anpa /
 
       ]
 
       #storyUnit[
 
-        #te[onali anpa tan ijo seme li moku e seme li anpa lon tenpo pi(suli seme) li mu ala mu lon anpa li tawa ala tawa nasa lon tenpo pi(anpa ala) li kepeken ala kepeken ilo sijelo li toki ala toki e ijo
-                pi(pilin ike) ]/
+        #te[onali anpa tan ijo seme li moku e seme li anpa lon tenpo pi(suli seme) li mu ala mu lon anpa li tawa ala tawa nasa lon tenpo pi(anpa ala) li kepeken ala kepeken ilo sijelo li toki ala toki e ijo  pi(pilin ike) ]/
 
         #te[ a/
 
@@ -8366,8 +8362,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         ijo ante la mi sona ala ]/
 
-        #te[ona
-               li kama ala sewi li moku nasa e kon/
+        #te[ona li kama ala sewi li moku nasa e kon/
 
         mi en ona o tawa tomo mi ]/
 
@@ -8375,18 +8370,15 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        mi
-               en jan nasin li jo pona e jan anpa li tawa e ona tawa ilo pi(nasin tawa)/
+        mi en jan nasin li jo pona e jan anpa li tawa e ona tawa ilo pi(nasin tawa)/
 
       ]
 
       #storyUnit[
 
-        #te[mi o kepeken tenpo lili a
-               ]/
+        #te[mi o kepeken tenpo lili a ]/
 
-        #te[a mi kin li wile kama
-               ]/
+        #te[a mi kin li wile kama ]/
 
       ]
 
@@ -8398,8 +8390,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[mi o kepeken tenpo lili a
-               ]/
+        #te[mi o kepeken tenpo lili a ]/
 
       ]
 
@@ -8417,8 +8408,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[mi kama ken ala tawa
-               lon ni/
+        #te[mi kama ken ala tawa lon ni/
 
         mi o tawa jan pi(sijelo pakala)/
 
@@ -8466,15 +8456,13 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         ni la tomo ni li tomo sina ala li tomo mi / 
 
-        ona
-               li weka la mi ken pali e tomo suli pona lon ma ona ] / 
+        ona li weka la mi ken pali e tomo suli pona lon ma ona ] / 
 
       ]
 
       #storyUnit[
 
-        jan ante wan
-               li jo e len mani li pilin ala e pilin ike pi(jan ante)/
+        jan ante wan li jo e len mani li pilin ala e pilin ike pi(jan ante)/
 
       ]
 
@@ -8490,16 +8478,13 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         sina wile sona tan seme ]/
 
-        #te[ko
-               li lon nasin tawa la ilo nasin li ken ala tawa ]/
+        #te[ko li lon nasin tawa la ilo nasin li ken ala tawa ]/
 
         #te[ ni la o awen/
 
-        ko li kama anpa la ona li weka tan kon
-               ]/
+        ko li kama anpa la ona li weka tan kon ]/
 
-        #te[taso
-               jan pi(sijelo pakala) li lon ilo/
+        #te[taso jan pi(sijelo pakala) li lon ilo/
 
         ona li wile tawa tomo pi(nasin sijelo) ]/
 
@@ -8584,15 +8569,13 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         ona li pini e toki e tawa kin /
 
-        tenpo lili
-               la lawa ona li tawa anpa li kama lon ijo moku /
+        tenpo lili la lawa ona li tawa anpa li kama lon ijo moku /
 
       ]
 
       #storyUnit[
 
-        #te[a
-               o kama e jan pi(nasin sijelo)/
+        #te[a o kama e jan pi(nasin sijelo)/
 
         o mu tawa ona a ]/
 
@@ -8602,8 +8585,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         jan pi(tomo esun) li ni kepeken ilo mu /
 
-        ni
-               la ona li kama lon poka mi la mi tu li supa pona e jan anpa /
+        ni la ona li kama lon poka mi la mi tu li supa pona e jan anpa /
 
         sama tenpo ante la kalama li kama lon monsi mi / 
 
@@ -8611,8 +8593,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[esun o pana e mani
-               ]/
+        #te[esun o pana e mani ]/
 
       ]
 
@@ -8636,15 +8617,13 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         esun o pana a e mani ]/
 
-        #te[taso ona li toki pona
-               ]/
+        #te[taso ona li toki pona ]/
 
       ]
 
       #storyUnit[
 
-        
-               jan pi(tomo esun) li tawa supa ona li kama open e poki mani li kama e mani /
+         jan pi(tomo esun) li tawa supa ona li kama open e poki mani li kama e mani /
 
       ]
 
@@ -8670,8 +8649,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         sina toki e ijo pi(tomo ona) tan seme ] /
 
-        #te[jan
-               ona pi(lawa tomo) li wile e mani mute/
+        #te[jan ona pi(lawa tomo) li wile e mani mute/
 
         mani lili la jan ni li pakala e tomo ]/
 
@@ -8687,8 +8665,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[onali anpa tan ijo seme li moku e seme li anpa lon tenpo pi(suli seme) li mu ala mu lon anpa li tawa ala tawa nasa lon tenpo pi(anpa ala) li kepeken ala kepeken ilo sijelo li toki ala toki e ijo
-                pi(pilin ike) ]/
+        #te[onali anpa tan ijo seme li moku e seme li anpa lon tenpo pi(suli seme) li mu ala mu lon anpa li tawa ala tawa nasa lon tenpo pi(anpa ala) li kepeken ala kepeken ilo sijelo li toki ala toki e ijo  pi(pilin ike) ]/
 
         #te[mi sona ala e ale / 
 
@@ -8700,8 +8677,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         ona li pilin pona lon tenpo moku li toki e pilin ni / 
 
-        taso ni
-               la ona li kama pini e toki e tawa li anpa taso /
+        taso ni la ona li kama pini e toki e tawa li anpa taso /
 
         mi sona ala e ijo ante ]/
 
@@ -8715,13 +8691,11 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[ona
-               li kama ala sewi li moku nasa e kon/
+        #te[ona li kama ala sewi li moku nasa e kon/
 
         mi en ona o tawa tomo mi ]/
 
-        #te[sina kama ala
-               lon tomo sina la seme li kama ]/
+        #te[sina kama ala lon tomo sina la seme li kama ]/
 
         #te[ moli ]/
 
@@ -8729,8 +8703,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        mi tu wan
-               li tawa e jan anpa la jan pi(nasin sijelo) li kama ken open e tawa /
+        mi tu wan li tawa e jan anpa la jan pi(nasin sijelo) li kama ken open e tawa /
 
         ike la mi sona e kama pi(tenpo poka)/
 
@@ -8742,8 +8715,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         ko mute li kama lon nasin /
 
-        jan anpa
-               li ken ala tawa tomo pi(nasin sijelo) li kama moli /
+        jan anpa li ken ala tawa tomo pi(nasin sijelo) li kama moli /
 
         ike /
 
@@ -8765,13 +8737,11 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[a sina wile pali
-               la mani pona li ken/
+        #te[a sina wile pali la mani pona li ken/
 
         ona li mute suli ala/
 
-        taso mun
-               li sin la sina kama jo e mani pi(pilin pona)]/
+        taso mun li sin la sina kama jo e mani pi(pilin pona)]/
 
       ]
 
@@ -8787,8 +8757,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         taso mi sona ala e ona /
 
-        mi awen alasa
-               e ken la tenpo lili la ilo poka li kama toki /
+        mi awen alasa e ken la tenpo lili la ilo poka li kama toki /
 
       ]
 
@@ -8952,8 +8921,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[jan esun
-               o mu tawa jan pi(nasin sijelo)/
+        #te[jan esun o mu tawa jan pi(nasin sijelo)/
 
         pakala sijelo li kama ]/
 
@@ -9055,8 +9023,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[a ike
-               li lon ala lon  ]/
+        #te[a ike li lon ala lon  ]/
 
       ]
 
@@ -9118,8 +9085,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        jan ni
-               li jo e len lon sinpin e ilo ike lon luka /
+        jan ni li jo e len lon sinpin e ilo ike lon luka /
 
       ]
 
@@ -9141,8 +9107,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         ilo ni li moku e mani mi /
 
-        sama la jan sina pi(lawa tomo) li moku e mani sina
-               ] /
+        sama la jan sina pi(lawa tomo) li moku e mani sina ] /
 
         #te[o toki ala/
 
@@ -9150,8 +9115,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         sina sona ala a /
 
-        esun
-               li pana ala e mani tawa mi la pakala suli li kama ] / 
+        esun li pana ala e mani tawa mi la pakala suli li kama ] / 
 
       ]
 
@@ -9159,8 +9123,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         ona li tawa a e ilo ike ona /
 
-        jan esun
-               li tawa supa esun li kama e mani tan poki mani /
+        jan esun li tawa supa esun li kama e mani tan poki mani /
 
       ]
 
@@ -9188,8 +9151,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         #te[ ike a ]/
 
-        #te[mani
-               li kama weka tan mi tu ]/
+        #te[mani li kama weka tan mi tu ]/
 
         #te[o musi mani ni ala/
 
@@ -9205,14 +9167,11 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[ona
-               li anpa tan ijo seme li  ]/
+        #te[ona li anpa tan ijo seme li  ]/
 
-        #te[mi sona ala
-               e ijo open pi(anpa ona)/
+        #te[mi sona ala e ijo open pi(anpa ona)/
 
-        taso ona
-               li pilin pona lon moku ona lon tenpo wan li kama pini e tawa e ale lon tenpo ante / 
+        taso ona li pilin pona lon moku ona lon tenpo wan li kama pini e tawa e ale lon tenpo ante / 
 
         ni li lon tenpo poka/
 
@@ -9252,22 +9211,17 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         #te[tenpo nasa a ]/
 
-        #te[mi tu li jo e mani ala
-               ]/
+        #te[mi tu li jo e mani ala ]/
 
-        #te[a taso jan ante
-               li kama li esun la mani li kama/
+        #te[a taso jan ante li kama li esun la mani li kama/
 
         ona li kama ala la ni taso li ike ]/
 
-        #te[seme la ona li kama ala
-               ]/
+        #te[seme la ona li kama ala ]/
 
-        #te[tenpo
-               li ike la ona li wile ala kama/
+        #te[tenpo li ike la ona li wile ala kama/
 
-        pakala li lon nasin tawa la ona li ken ala kama
-               ]/
+        pakala li lon nasin tawa la ona li ken ala kama ]/
 
         #te[ a ]/
 
@@ -9281,8 +9235,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[kalama ni li seme
-               ]/
+        #te[kalama ni li seme ]/
 
         #te[ a/
 
@@ -9302,8 +9255,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[taso ilo ni
-               li jo e mani mute anu seme ]/
+        #te[taso ilo ni li jo e mani mute anu seme ]/
 
         #te[ jo/
 
@@ -9339,11 +9291,9 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[ilo tenpo sina
-               li pakala li kama toki ala ]/
+        #te[ilo tenpo sina li pakala li kama toki ala ]/
 
-        #te[a sina pakala ala
-               pakala e ona ]/
+        #te[a sina pakala ala pakala e ona ]/
 
       ]
 
@@ -9379,8 +9329,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[jan esun
-               o mu tawa jan pi(nasin sijelo)/
+        #te[jan esun o mu tawa jan pi(nasin sijelo)/
 
         pakala li kama ]/
 
@@ -9396,8 +9345,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        jan pi(tomo esun) li lukin
-                pi(nasin nasa) e mi /
+        jan pi(tomo esun) li lukin  pi(nasin nasa) e mi /
 
         taso ona li kama kepeken ilo toki /
 
@@ -9469,8 +9417,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         a laso en pimeja en laso /
 
-        monsi
-               la jan pi(wile mani) li lawa e jan esun tawa poki mani kepeken ilo ike ona /
+        monsi la jan pi(wile mani) li lawa e jan esun tawa poki mani kepeken ilo ike ona /
 
       ]
 
@@ -9496,8 +9443,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[sina wile
-               e jan ni lon tomo sina/
+        #te[sina wile e jan ni lon tomo sina/
 
         ona li tawa ala sewi li moku nasa e kon /
 
@@ -9509,16 +9455,13 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        
-               jan pi(nasin sijelo) en jan anpa en ilo pi(nasin tawa) li weka la mi wile sona tan jan
-                pi(tomo ni)/
+         jan pi(nasin sijelo) en jan anpa en ilo pi(nasin tawa) li weka la mi wile sona tan jan  pi(tomo ni)/
 
       ]
 
       #storyUnit[
 
-        #te[jan ilo
-               li kama lon tenpo seme ]/
+        #te[jan ilo li kama lon tenpo seme ]/
 
         #te[mi sona ala/
 
@@ -9528,8 +9471,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         jan ilo li pilin pona lon open tenpo ala /
 
-        mi lon open tenpo la ona li ken awen lape
-               ]/
+        mi lon open tenpo la ona li ken awen lape ]/
 
         #te[ a/
 
@@ -9555,8 +9497,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         mi tawa la mi alasa e tomo pi(jan ilo)/
 
-        mi
-               kepeken nasin luka pi(jan esun) la tawa mi li pona /
+        mi kepeken nasin luka pi(jan esun) la tawa mi li pona /
 
         mi kama lon tomo pi(wile mi)/
 
@@ -9566,8 +9507,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         taso sinpin ale la mi kama ala ken open e lupa / 
 
-        mi awen tawa
-               lon selo tomo la sinpin mute la mi kama ken lukin e insa tomo /
+        mi awen tawa lon selo tomo la sinpin mute la mi kama ken lukin e insa tomo /
 
         lon ni a/
 
@@ -9667,8 +9607,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        mi jo
-               e mani tu tu la mi pana e mani tu tu e laso /
+        mi jo e mani tu tu la mi pana e mani tu tu e laso /
 
       ]
 
@@ -9680,8 +9619,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        mi jo
-               e mani luka tu wan la mi pana e mani wan taso e loje /
+        mi jo e mani luka tu wan la mi pana e mani wan taso e loje /
 
         a sike kule li pana e jelo /
 
@@ -9849,8 +9787,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         taso mi kama sona pona /
 
-        
-               kuleli laso li pimeja li laso li jelo li walo li jelo li loje li laso li jelo li jelo li pimeja li loje li walo li pimeja / 
+         kuleli laso li pimeja li laso li jelo li walo li jelo li loje li laso li jelo li jelo li pimeja li loje li walo li pimeja / 
 
         mi kama kute sin e ijo pi(monsi mi)/
 
@@ -9910,8 +9847,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         mi wile toki tawa jan ilo ]/
 
-        #te[a ilo sina li pakala anu seme
-               ]/
+        #te[a ilo sina li pakala anu seme ]/
 
         #te[ a sama ni ]/
 
@@ -9919,8 +9855,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         mi ken mu tawa ona kepeken ilo mi ]/
 
-        #te[sona mi
-               la ona li lape a ]/
+        #te[sona mi la ona li lape a ]/
 
         #te[ a ken/
 
@@ -9930,13 +9865,11 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         taso tomo ona la mi ken ala lon insa ]/
 
-        #te[ni
-               la o awen tawa tenpo pi(lape ona ala )]/
+        #te[ni la o awen tawa tenpo pi(lape ona ala )]/
 
         #te[ a wile/
 
-        taso mi ken ala awen la nasin ante seme li ken
-               ]/
+        taso mi ken ala awen la nasin ante seme li ken ]/
 
         #te[ a/
 
@@ -9944,20 +9877,17 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         taso sina wile tawa insa tomo la nasin ante tu li lon / 
 
-        nasin nanpa wan la sina ken pakala e ijo tomo
-               ]/
+        nasin nanpa wan la sina ken pakala e ijo tomo ]/
 
         #te[mi wile ala ni ]/
 
         #te[ pona/
 
-        nasin nanpa tu
-               la jan pi(lawa tomo) li ken open e lupa lon tomo ale ] /
+        nasin nanpa tu la jan pi(lawa tomo) li ken open e lupa lon tomo ale ] /
 
         #te[a ni li nasa ]/
 
-        #te[ona li lawa e tomo
-               ]/
+        #te[ona li lawa e tomo ]/
 
       ]
 
@@ -10007,8 +9937,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[jan esun
-               o mu tawa jan pi(nasin sijelo)/
+        #te[jan esun o mu tawa jan pi(nasin sijelo)/
 
         pakala sijelo li kama lon tenpo poka /
 
@@ -10114,8 +10043,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         mi tawa open tomo la lupa li open lon tomo / 
 
-        
-               jan pi(len sinpin) li lukin e mi li kama e ilo ike li wile toki /
+         jan pi(len sinpin) li lukin e mi li kama e ilo ike li wile toki /
 
         taso mi kama open kin e toki /
 
@@ -10149,15 +10077,13 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         mi tu li lon ilo lili pi(nasin tawa)/
 
-        tenpo tawa
-               li pini la mi lon tomo lon poka pi(jan lawa)/
+        tenpo tawa li pini la mi lon tomo lon poka pi(jan lawa)/
 
       ]
 
       #storyUnit[
 
-        #te[sina pana ala
-               e mani tawa mi la mi weka e tomo ni/
+        #te[sina pana ala e mani tawa mi la mi weka e tomo ni/
 
         mi ken pali e tomo suli lon ma ona /
 
@@ -10205,11 +10131,9 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         lon sinpin mi la ilo pi(jan nasin) li kama / 
 
-        lon monsi mi
-               la ilo nasin pi(suli tomo) li tawa li wile tawa esun /
+        lon monsi mi la ilo nasin pi(suli tomo) li tawa li wile tawa esun /
 
-        mi kama
-               lon tomo pi(jan lape) la jan lawa li kama e kiwen /
+        mi kama lon tomo pi(jan lape) la jan lawa li kama e kiwen /
 
         ona li open e lupa lon sinpin tomo kepeken kiwen ni / 
 
@@ -10225,11 +10149,9 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         seme la sina lon tomo mi ]/
 
-        #te[ilo tenpo sina
-               li pakala la mi lon  ]/
+        #te[ilo tenpo sina li pakala la mi lon  ]/
 
-        #te[a mi lon tenpo seme
-               ]/
+        #te[a mi lon tenpo seme ]/
 
       ]
 
@@ -10289,11 +10211,9 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         ona li kepeken ilo toki la mi kama kepeken ilo mani / 
 
-        mi
-               pali pi(mani mute) la jan moku li kama ken ala moku li anpa /
+        mi pali pi(mani mute) la jan moku li kama ken ala moku li anpa /
 
-        mi tawa ona
-               la mi en jan tomo li supa pona e ona /
+        mi tawa ona la mi en jan tomo li supa pona e ona /
 
         mi tawa open tomo la lupa li open /
 
@@ -10347,8 +10267,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         a ona /
 
-        mi luka lili
-               e sinpin wan la lupa li open lon ona /
+        mi luka lili e sinpin wan la lupa li open lon ona /
 
         mi kama tawa insa /
 
@@ -10366,8 +10285,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         seme la sina lon tomo mi ]/
 
-        #te[ilo tenpo suli sina
-               li pakala a/
+        #te[ilo tenpo suli sina li pakala a/
 
         sama la tenpo a li pakala ]/
 
@@ -10417,8 +10335,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
       #storyUnit[
 
-        #te[a seme la ona li kama pakala
-               ]/
+        #te[a seme la ona li kama pakala ]/
 
         #te[sina jan ilo/
 
@@ -10428,8 +10345,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         tenpo li sama sike nasa/
 
-        taso ale
-               li kama sin la mi wan taso li sona e sin ]/
+        taso ale li kama sin la mi wan taso li sona e sin ]/
 
       ]
 
@@ -10437,8 +10353,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         jan ilo li lukin e mi /
 
-        #te[nasin seme
-               la sina kepeken ona/
+        #te[nasin seme la sina kepeken ona/
 
         o toki e ale ]/
 
@@ -10462,8 +10377,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         sina toki e seme tawa ilo ]/
 
-        #te[ilo suli
-               o pana e tenpo tawa ilo lili ]/
+        #te[ilo suli o pana e tenpo tawa ilo lili ]/
 
         #te[ a/
 
@@ -10479,8 +10393,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         #te[ a seme ]/
 
-        #te[tan ni
-               la ilo suli li pali ala/
+        #te[tan ni la ilo suli li pali ala/
 
         ona li pana e ale tawa ilo lili ]/
 
@@ -10494,8 +10407,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         ni la tenpo li lili ]/
 
-        #te[sina ken ala ken pona
-               e tenpo ]/
+        #te[sina ken ala ken pona e tenpo ]/
 
         #te[ ken/
 
@@ -10507,8 +10419,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         taso ona li suli /
 
-        ona
-               li pana e ale tawa sina la ona li jo ala e tenpo /
+        ona li pana e ale tawa sina la ona li jo ala e tenpo /
 
         o pana e tenpo tawa ona ]/
 
@@ -10544,8 +10455,7 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         mi lukin e ilo nasin pi(suli mute) lon monsi lupa / 
 
-        lon insa lupa
-               la soweli luka luka li kama li tawa jan pi(tomo esun)/
+        lon insa lupa la soweli luka luka li kama li tawa jan pi(tomo esun)/
 
         soweli wan li toki /
 
@@ -10575,13 +10485,11 @@ mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
         mi o weka e ken pi(ike ni)/
 
-        mi o pana e sona tenpo kin tawa ilo lili sina
-               ]/
+        mi o pana e sona tenpo kin tawa ilo lili sina ]/
 
         #te[ pona ]/
 
-        #te[ilo tenpo
-               o pana e sona tenpo tawa jan ni ]/
+        #te[ilo tenpo o pana e sona tenpo tawa jan ni ]/
 
         #te[ a seme ]/
 
@@ -11765,8 +11673,7 @@ sona mute li lon.
     #colbreak()
 
     #let nolin(kheading, ktext, kloc) = [
-      #pad(top: 2em, left: 9em, bottom: 4em)[
-                #v(1fr)
+      #pad(top: 2em, left: 9em, bottom: 4em)[  #v(1fr)
 
         #ssklasina[
           #kheading #kloc
@@ -11776,8 +11683,7 @@ sona mute li lon.
         #ssksp[
           #kheading
           #ktext
-        ]
-                #v(1fr)
+        ]  #v(1fr)
 
       ]
     ]
@@ -11955,8 +11861,7 @@ sona mute li lon.
         #ssklasina[
           #kheading #kloc
           #ktext
-        ]
-                #v(0.5fr)
+        ]  #v(0.5fr)
 
         #ssksp[
           #kheading
