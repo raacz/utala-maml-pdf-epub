@@ -427,9 +427,12 @@ o kute e kalama ale mi
 tan akesi Tala
 
 #line(length: 100%)
+#block[
+
 
 #grid(columns: (1fr, 1fr),block(text(size: 0.9em, font: "nasin-nanpa")[
-  #set par(spacing: 0.8em, leading: 0.8em)
+
+  #set par(spacing: 3em, leading: 0.5em)
 
 󱤁 󱤩 󱤧 󱥎 󱤍 \
 te 󱤴 󱤓 󱤂 󱤉 󱤭 󱤉 󱥃 \
@@ -460,6 +463,9 @@ zz 󱥞 󱤘 󱤃 to
 ]),
 block[
 
+    #set par(spacing: 3.5em, leading: 0.5em)
+
+
 akesi linja li pilin ike \
 “mi jo ala e luka e noka \
 akesi li jo \
@@ -487,7 +493,7 @@ sina jo \
 sina ken wile \
 sina ken alasa”
 
-])
+])]
 
 #block[
 == akesi
