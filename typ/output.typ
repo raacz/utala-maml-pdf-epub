@@ -2090,7 +2090,6 @@ pini
 
 
 #columns(2, gutter: 1em)[
-tenpo
 
 ```
 tenpopinisulila
@@ -7359,6 +7358,7 @@ kin. ona li pini pona li pini ali. o lon.]
 #box(image("images/file9.png"))
 #box(image("images/file9_d.png"))
 
+#compute("taso", "soko sijeni")
 
 = taso <ch030.xhtml>
 
