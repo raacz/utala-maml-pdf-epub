@@ -265,10 +265,8 @@ International]. To view a copy of this license, visit this link:
     - #nanpa(<ch033.xhtml.lipu-pi-sitelen-pona>, "sitelen pona")
     - #nanpa(<ch033.xhtml.lasinaLtokini>, "sitelen Lasina")
   - #nanpa(<ch034.xhtml>, "TLT (tonsi li tonsi)", jan: "waso Seko")
-  //- #nanpa(<ch036.xhtml>, "utala insa", jan: "jan Petokota")
-  //  - #nanpa(<ch037.xhtml.utala-insa>, "sitelen pona")
-  //  - #nanpa(<ch037.xhtml.sitelen-Lasina>, "sitelen Lasina")
-  //- #nanpa(<ch038.xhtml>, "utala linja", jan: "jan Lakuse")
+  - #nanpa(<ch036.xhtml>, "utala insa", jan: "jan Petokota")
+  - #nanpa(<ch038.xhtml>, "utala linja", jan: "jan Lakuse")
   - #nanpa(<ch040.xhtml>, "waso lili li lon insa pi tomo waso", jan: "jan Pasijan")
 ]
 
