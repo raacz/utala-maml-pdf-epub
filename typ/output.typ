@@ -5290,17 +5290,16 @@ mi weka
 )
 ] <ch015.xhtml.Lasina>
 
+#compute("meli tu pi lawa ante", "mu Esitense usawi")
+
 = meli tu pi lawa ante <ch016.xhtml>
 
-mu Esitense usawi <ch016.xhtml.id.meli-tu-pi-lawa-ante>
+#njan("mu Esitense usawi") <ch016.xhtml.id.meli-tu-pi-lawa-ante>
 
-jan lawa moli la meli lili ona tu li kama jan lawa tu sin pi ma sin tu
-li kepeken nasin lawa ante a. utala li ken ala ken lon ala?
-
-<ch017.xhtml>
 
 tenpo pi weka mute la mije wan li lawa e ma. ona en meli ona li sin e
-meli lili tu.
+meli lili tu. <ch017.xhtml>
+
 
 lawa mije li ike mute: wile jan li suli ala. mani ale li tawa ona. ken
 musi li lili a.
@@ -5415,23 +5414,38 @@ la jan ni li kama lawa. jan mute li ike pilin tawa meli Majuna. pilin
 ona li lon li suli. taso meli Majuna li kama pona la ona li moli la jan
 mute tan poka Majuna li tawa moli ona li peto.
 
-<ch018.xhtml>
+#compute("mi lukin e mi lon insa oko ona", "jan Uli")
 
-= mi lukin e mi lon insa oko ona
-<ch018.xhtml.id.mi-lukin-e-mi-lon-insa-oko-ona>
-jan Uli
+= mi lukin e mi lon insa oko ona <ch018.xhtml>
 
-tenpo la, jan pi insa lawa ante li jo ala e olin la, jan li lon e olin
-kepeken ijo pi olin... ala?.
+#njan("jan Uli") <ch018.xhtml.id.mi-lukin-e-mi-lon-insa-oko-ona>
 
-<ch019.xhtml>
 
-\~ tenpo la jan li olin e ijo sama jan olin / tenpo mute la jan ni li jo
-kin e insa lawa ante \~
 
-#line(length: 100%)
+
+
 
 #block[
+
+  #show line: it=> {
+  pad(y: 0.75em, align(center, text(size: 0.9em)[‧˚₊꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷‧₊˚⊹‧˚₊꒷꒦︶︶︶︶︶꒷꒦︶︶︶︶︶꒦꒷‧₊˚⊹]))
+}
+
+  #set text(size: 1.05em)
+
+
+\~ #text(style: "italic")[tenpo la jan li olin e ijo sama jan olin / tenpo mute la jan ni li jo
+kin e insa lawa ante] \~ <ch019.xhtml>
+
+
+#line()
+
+#show heading.where(level: 2): it => (
+  place(right, dy: -1em, text(size: 0.6em, weight: 300, box(stroke: (paint: black, thickness: 0.05em), inset: 0.5em, it)))
+)
+
+#block[
+
 == kipisi nanpa wan
 <ch019.xhtml.toc_1>
 o kon tawa insa, tan insa. \
@@ -5757,25 +5771,48 @@ seme li ken ike?
 #strong[pini]
 
 ] <ch019.xhtml.kipisi-nanpa-luka>
-<ch020.xhtml>
 
-= monsuta tu wan li lon tomo pi pona sewi
+]
+
+#compute("monsuta tu wan li lon tomo pi pona sewi", "akesi Tala")
+
+
+
+= monsuta tu wan li lon tomo pi pona sewi <ch020.xhtml>
+
+#njan[akesi Tala] 
 <ch020.xhtml.id.monsuta-tu-wan-li-lon-tomo-pi-pona-sewi>
-akesi Tala
 
-kulupu pona li alasa e monsuta pi moli jan la ona li kama lukin e kasi
-suli e tomo moli e lupa sike e meli pakala...
 
-#link(<ch021.xhtml.pona-sitelen>)[o lukin kepeken sitelen pona]
+#openLsitelenLasina(<ch021.xhtml.Lasina-sitelen>)
 
-#link(<ch021.xhtml.Lasina-sitelen>)[o lukin kepeken sitelen Lasina]
+#show line: it=>{
+  pad(top: -1.5em, it)
+}
 
-<ch021.xhtml>
 
-#block[
-#box(width: 179.62105263157895pt, image("images/file0.png"))
+
 
 #block[
+  #set line(stroke: 0.12em)
+
+
+
+  #set text(font: "nasin-nanpa")
+  #show heading.where(level: 2): it =>[
+    #pad(top: 1em,it) 
+    #line(length: 100%)
+  ]
+
+  #align(center,box(width: 110%, image("images/file0.png"))) <ch021.xhtml>
+
+
+#block[
+
+
+
+
+
 == monsuta li lon
 <ch021.xhtml.toc_1>
 jan alasa li toki e ni \
@@ -5796,11 +5833,15 @@ taso tenpo ni la kulupu pona li kute ala e soweli e ijo e ale \
 kalama li lon ala \
 te ni^ li nasa to
 
-#box(width: 288.7578947368421pt, image("images/file1.png"))
 ] <ch021.xhtml.monsuta-li-lon>
+
+#align(right, box(width: 23em, place(dy: -10em, dx: 3em, figure(align(center, box(image("images/file1.png")))))))
+  #colbreak()
+
+
+
 #block[
-]
-#block[
+
 == lupa sike
 <ch021.xhtml.toc_3>
 tenpo kama lili la kulupu pona li lukin e kasi suli walo \
@@ -5823,13 +5864,13 @@ suno mun li lon lupa sike \
 ni^ la lupa sike li open kepeken wawa nasa \
 kulupu pona li kama lon insa tomo
 
-#box(width: 186.44210526315788pt, image("images/file2.png"))
+#align(right, box(width: 28em, place(dy: -5em, dx: 6em, figure(align(center, box(image("images/file2.png")))))))
 
 ] <ch021.xhtml.lupa-sike>
 #block[
 ]
 #block[
-== meli pakala Luna
+== meli pakala [loje utala nasa anpa]
 <ch021.xhtml.toc_4>
 kulupu pona li lon tomo pi \(pona sewi) li ken ala lukin e ale tan ni \
 ale li pimeja \
@@ -5851,15 +5892,17 @@ zz jan soweli monsuta li kama li pakala e mi \
 zz jan \[ken\] li lon tomo ante to \
 kulupu pona en meli \[loje\] li tawa
 
-#box(width: 294.06315789473683pt, image("images/file3.png"))
+
+#align(right, box(width: 15em, place(dy: -4em, dx: -2em, figure(align(center, box(image("images/file3.png")))))))
 
 ] <ch021.xhtml.meli-pakalaloje-utala-nasa-anpa>
+
+#colbreak()
+
 #block[
-]
-#block[
-== poki sike telo
-<ch021.xhtml.toc_5>
-kulupu pona li kama tawa tomo pi \(poki sike telo) \
+== poki sike telo <ch021.xhtml.poki-sike-telo>
+kulupu pona li kama tawa tomo pi \(poki sike telo) \ <ch021.xhtml.toc_5>
+
 poki ni^\> li jo e telo sijelo loje pimeja e sitelen ni \
 te pakala li awen e ale to \
 kulupu pona li pilin e kon moli \
@@ -5868,12 +5911,20 @@ ike \
 tomo ni li nasa \
 kulupu pona li tawa
 
-#box(width: 446.4pt, image("images/file4.png"))
+#align(center, box(width: 30em, place(dy:4em, figure(align(center, box(image("images/file4.png")))))))
 
-] <ch021.xhtml.poki-sike-telo>
+
+
+
+] 
+#colbreak()
+
+
 #block[
-]
-#block[
+
+  #set text(size: 0.97em)
+
+
 == lupa en kasi kule
 <ch021.xhtml.toc_6>
 kulupu pona li kama lon insa pi \(tomo ante) \
@@ -5882,6 +5933,8 @@ mun li ken suno tan ni \
 ona li lon sewi lupa \
 lupa ni^\> li jo e anpa suli \
 jan li tawa anpa ni^ la ona li pakala
+
+#place(dy:-10em, dx: 12em, align(center, box(width: 20em, figure(align(center, box(image("images/file5.png")))))))
 
 kulupu pona li kute e kalama \
 jan li toki tan lupa \
@@ -5906,11 +5959,9 @@ kulupu pona li kama jo e linja \
 sin la kulupu pona li kute e kalama nasa tan tomo wan pi \(lupa sike) li
 tawa ona
 
-#box(width: 431.2421052631579pt, image("images/file5.png"))
-] <ch021.xhtml.lupa-en-kasi-kule>
-#block[
-]
-#block[
+]#block[
+
+
 == jan sin nasa
 <ch021.xhtml.toc_7>
 kulupu li kama tawa tomo pi \(lupa sike) li lukin e ni \
@@ -5931,12 +5982,17 @@ tomo pi jan \[ken anu nena\] la kulupu pona li kepeken palisa lon lupa
 suli \
 ni^\> la ona mute li ken tawa lupa tawa jan \[ken\]
 
-#box(width: 274.3578947368421pt, image("images/file6.png"))
+
+#place(dy: 1em, dx: 5em, align(right, box(width: 29em, figure(align(center, box(image("images/file6.png")))))))
+    #colbreak()
 
 ] <ch021.xhtml.jan-sin-nasa>
+    #colbreak()
+
 #block[
-]
-#block[
+
+  #set text(size: 0.89em)
+
 == toki tan jan tu wan
 <ch021.xhtml.toc_8>
 kulupu pona li lon tomo anpa \
@@ -6006,12 +6062,15 @@ ale li pona
 ] <ch021.xhtml.monsuta-li-pini>
 ] <ch021.xhtml.pona-sitelen>
 #block[
-] <ch021.xhtml.Lasina-sitelen>
-#box(width: 179.62105263157895pt, image("images/file0.png"))
 
-== monsuta li lon
-<ch021.xhtml.monsuta-li-lon-1>
-jan alasa li toki e ni \
+#show heading: it=> [
+  #colbreak()
+  #it
+]
+
+
+== monsuta li lon <ch021.xhtml.Lasina-sitelen>
+jan alasa li toki e ni \ <ch021.xhtml.monsuta-li-lon-1>
 “tomo pi pona sewi li lon insa pi ma kasi suli \
 tomo ni li pona e jan \
 taso jan soweli monsuta li utala e tomo pi pona sewi li moli e jan \
@@ -6028,7 +6087,7 @@ taso tenpo ni la kulupu pona li kute ala e soweli e ijo e ale \
 kalama li lon ala \
 “ni li nasa”
 
-#box(width: 288.7578947368421pt, image("images/file1.png"))
+#align(right, box(width: 26em, place(dy: -3em, dx: 3em, figure(align(center, box(image("images/file1.png")))))))
 
 #block[
 ]
@@ -6055,7 +6114,7 @@ suno mun li lon lupa sike \
 ni la lupa sike li open kepeken wawa nasa \
 kulupu pona li kama lon insa tomo
 
-#box(width: 186.44210526315788pt, image("images/file2.png"))
+#place(dy: 8em,dx: 2em, align(right, box(figure(align(center, box(width: 70em, image("images/file2.png")))))))
 
 ] <ch021.xhtml.lupa-sike>
 #block[
@@ -6083,7 +6142,7 @@ jan soweli monsuta li kama li pakala e mi \
 jan Kan li lon tomo ante” \
 kulupu pona en meli Luna li tawa
 
-#box(width: 294.06315789473683pt, image("images/file3.png"))
+#place(dx: 4em, box(width: 22em, image("images/file3.png")))
 
 ] <ch021.xhtml.meli-pakala-luna>
 #block[
@@ -6100,7 +6159,7 @@ jan wan pi kulupu pona li wile sona e telo ni li moku e ona li pilin ike
 tomo ni li nasa \
 kulupu pona li tawa
 
-#box(width: 446.4pt, image("images/file4.png"))
+#place(dy: 18em, box(width: 30em, image("images/file4.png")))
 
 ] <ch021.xhtml.poki-sike-telo>
 #block[
@@ -6114,6 +6173,9 @@ mun li ken suno tan ni \
 ona li lon sewi lupa \
 lupa ni li jo e anpa suli \
 jan li tawa anpa ni la ona li pakala
+
+#place(dy:-5em, dx: 14em, align(center, box(width: 17em, figure(align(center, box(image("images/file5.png")))))))
+
 
 kulupu pona li kute e kalama \
 jan li toki tan lupa \
@@ -6138,7 +6200,6 @@ kulupu pona li kama jo e linja \
 sin la kulupu pona li kute e kalama nasa tan tomo wan pi lupa sike li
 tawa ona
 
-#box(width: 431.2421052631579pt, image("images/file5.png"))
 
 ] <ch021.xhtml.lupa-en-kasi-kule>
 #block[
@@ -6163,7 +6224,7 @@ ona mute li tawa
 tomo pi jan Kan la kulupu pona li kepeken palisa lon lupa suli \
 ni la ona mute li ken tawa lupa tawa jan Kan
 
-#box(width: 274.3578947368421pt, image("images/file6.png"))
+#place(dx: -2em, dy: 4em, box(width: 274.3578947368421pt, image("images/file6.png", width: 34em)))
 
 ] <ch021.xhtml.jan-sin-nasa>
 #block[
@@ -6233,19 +6294,44 @@ kulupu mama li wile e ni li ni
 kulupu pona li kama jo e mani mute e pona mute tan jan ale \
 ale li pona
 
+
+
 ] <ch021.xhtml.monsuta-li-pini>
-<ch022.xhtml>
 
-= pakala mani
-<ch022.xhtml.id.pakala-mani>
-jan Tumu
 
-jan li jo ala / e mani mute la / kiwen mani li ken wawa. / taso alasa /
-pi mani sin ni la / ma li ken wile utala!
+]
 
-<ch023.xhtml>
+#pagebreak()
+#block[
 
-tenpo li tawa. \
+  #compute("pakala mani", "jan Tumu")
+
+= pakala mani <ch022.xhtml>
+
+#njan("jan Tumu") <ch022.xhtml.id.pakala-mani>
+
+
+#colbreak()
+
+#set text(size: 0.8em)
+
+
+#block[
+
+    #set par(spacing: 2em, leading: 0.5em)
+
+
+    #show line: it=> ("~~~")
+
+ #let blockofColumn(thing) = [
+  #columns(2,thing)
+
+ ]
+    
+
+#blockofColumn[
+
+tenpo li tawa. \ <ch023.xhtml>
 mi tawa lon nasin \
 la ale li sama lon ma. \
 mun anu suno \
@@ -6336,6 +6422,12 @@ lon uta lon ale. \
 mi pilin e pimeja taso.
 
 #line(length: 100%)
+
+
+]
+
+#blockofColumn[
+
 
 “sina lape \
 ala lape?” \
@@ -6429,6 +6521,11 @@ seme li pini e tenpo?”
 
 #line(length: 100%)
 
+
+]
+#blockofColumn[
+
+
 sama jan moli \
 la ona li pana \
 e mu tawa telo lon anpa. \
@@ -6473,7 +6570,7 @@ kiwen la suno \
 li kalama lukin \
 e toki lon pilin lon insa:
 
-#block[
+#text(style: "italic", tracking: 2pt)[
 “mi ma. \
 sina \
 lon insa. \
@@ -6524,6 +6621,12 @@ mi lukin e kasi e nasin.
 
 #line(length: 100%)
 
+
+]
+#blockofColumn[
+
+
+
 tenpo li tawa \
 la kulupu pona \
 en mi li ken esun e ma. \
@@ -6534,25 +6637,34 @@ lili li suli \
 lon kepeken pona \
 la mani li pona e tenpo.
 
-<ch024.xhtml>
+]]
 
-= pipi lili
-<ch024.xhtml.id.pipi-lili>
-jan Iwi
-
-pipi lili li kama weka tan kulupu pipi li pilin ike. ona li alasa e
-kulupu la pona li kama ala. ona li ken ala alasa lon ona taso, la ona o
-toki tawa ijo ante pi ma kasi...
-
-<ch025.xhtml>
-
-mi wile toki tawa sina. mi wile toki e pipi lili wan. o lukin:
-
-#block[
-#block[
-#box(width: 240.06857142857143pt, image("images/file7.png"))
 ]
+
+#compute("pipi lili", "jan Iwi")
+
+= pipi lili <ch024.xhtml>
+
+#njan("jan Iwi")
+<ch024.xhtml.id.pipi-lili>
+
+
 #block[
+
+  #set text(1.04em)
+
+#let suliinsa(t) = [
+  #pad(y: 0.5em, align(center,text(weight: 800, t)))
+] 
+
+
+
+#suliinsa[mi wile toki tawa sina. mi wile toki e pipi lili wan. o lukin:]<ch025.xhtml>
+
+
+#pad(top: 1.5em,grid(columns:(auto, 1fr),
+block(image("images/file7.png", width: 10em)),
+block[
 pipi lili li lon kulupu suli pipi.
 
 telo li kama li tawa wawa li weka e tomo pipi.
@@ -6561,8 +6673,10 @@ pipi ale pi kulupu ni li kama weka.
 
 tenpo ni la pipi lili li taso.
 
-]
-]
+],
+gutter: 2em
+))
+
 
 #line(length: 100%)
 
@@ -6579,7 +6693,8 @@ pipi li toki: ‘mi alasa e pipi pi mi ala a! kulupu mi li weka. mi alasa
 e ona.’ waso li toki: ‘ni la, mi ken ala pana e sona wile tawa sina. o
 alasa pona, pipi lili o!’ waso li tawa luka li weka lon sewi.
 
-waso suli li toki suwi tawa pipi lili. waso pona a!
+#suliinsa[waso suli li toki suwi tawa pipi lili. waso pona a!
+]
 
 pipi lili li lukin e waso lili mute. waso ni li lon poka pi kasi suwi
 mute. ona li moku e telo kasi suwi sama pipi.
@@ -6627,41 +6742,55 @@ kepeken linja uta wawa mi!’
 
 pipi li sona e ni: akesi laso li toki lon. ni la, ona li tawa weka.
 
-waso lili en soweli en akesi li toki ike tawa pipi lili. ona o seme lon
-tenpo ni?
-
+#suliinsa[waso lili en soweli en akesi li toki ike tawa pipi lili. \ ona o seme lon tenpo ni?
+]
 pipi lili li pilin ike suli li toki pilin: ‘kulupu mi li weka a! mi
 taso. mi ken ala ante e ni. mi o seme?’
 
-waso pimeja suli li kute e ona li kama sin li toki: ‘pipi lili o! seme
+
+  waso pimeja suli li kute e ona li kama sin li toki: ‘pipi lili o! seme
 li kama e pilin ike sina?’
+
+
+
+#grid( columns: (1fr, auto),
+block[
+
 
 pipi li toki: ‘tenpo suli a la mi alasa e kulupu pipi mi, taso mi sona
 ala e ni: ona li lon seme? tenpo ni la mi lukin e pipi wan la mi pilin
 pona. taso pipi ala a li lon!’
 
-#block[
-#block[
+
+
 waso li toki: ‘n… mi kin li lukin ala e pipi ante lon tenpo ni, taso mi
 sona e ni: tenpo kama poka la pipi wan li lon ma wan. mi ken pana e sona
 ni tawa sina: ona li lon ma seme?’
 
+
+
+
+],
+block[
+#image("images/file8.png", width: 10em)
+],
+)
 pipi li pilin pona wawa li toki: ‘o pana! mi wile sona!’
 
-]
-#block[
-#box(width: 240.06857142857143pt, image("images/file8.png"))
-]
-]
+
+
 waso li toki: ‘o kama lon insa pi uta mi! sina kama ala la mi ken ala
 pana e sina tawa ma pipi.’
+
 
 pilin pipi li wawa a la ona li toki insa ala. ona li tawa li kama lon
 insa pi uta waso.
 
-ken la, sina sona e ijo kama. pipi li lili li wawa ala. waso li suli li
-sona. o lukin:
+#colbreak()
 
+#suliinsa[ken la, sina sona e ijo kama. pipi li lili li wawa ala. waso li suli li
+sona. o lukin:
+]
 pipi li lon uta waso la, waso li moku e ona.
 
 ona li mu musi: ‘a a a!’
@@ -6671,21 +6800,17 @@ mu ona li wawa!
 ona li toki: ‘pipi lili o, mi toki lon! mi sona e ma pipi! pipi li sina!
 ma pipi li lon insa mi a!’
 
-waso ike a!
+#suliinsa[waso ike a!]]
 
-<ch026.xhtml>
+#compute("pipi pona", "kapesi Pake")
 
-= pipi pona
-<ch026.xhtml.id.pipi-pona>
-kapesi Pake
+= pipi pona <ch026.xhtml>
 
-ike mute li lon poka pi jan Pan la ona li wile pona e ike kulupu e ike
-lon kepeken nasin sin wawa. taso, jan pali li pali e lipu pi jan Pan, la
-lipu ni li ken ala ken pona tawa utala musi?
+#njan("kapesi Pake")<ch026.xhtml.id.pipi-pona>
 
-<ch027.xhtml>
+#block[
 
-toki, jan Apeja o! tenpo pini la sina sitelen e ni : 「o lon e lipu musi
+toki, jan Apeja o! tenpo pini la sina sitelen e ni : 「o lon e lipu musi <ch027.xhtml>
 sin! o alasa kulupu e musi sin tan jan ale! lipu musi pi pona wawa la mi
 pana e ona tawa lipu · ni li utala mi musi」 · pona! tawa utala sina pi
 toki musi la mi pini sitelen e lipu musi mi · mi pini e ona la o musi
@@ -6697,11 +6822,19 @@ tawa sina ·
 
 \~ jan pali
 
-#line(length: 100%)
+#set line(stroke: (thickness: 1pt, dash: "dotted"), length: 100%)
 
-#block[
+  
+#line()
+
+#let lipuLinsalipu(t) = [
+  #block(inset: 1em)[
+  #set text(font: "P052")
+    #t
+  ]
 ]
-#block[
+#lipuLinsalipu[
+  #colbreak(weak: true)
 == pipi pona
 <ch027.xhtml.toc_2>
 ma li wile olin e ni : sina pakala e sina sama · mi mute li lon kon pi
@@ -6887,9 +7020,9 @@ li uta taso · 「mi ante e ijo wan, mama o! a! a! o oko e nasin moku sin!
 ona li pipi jan!」 pini tenpo li tawa ijo ale · 「ona li pipi jan!」
 
 #line(length: 100%)
+]  <ch027.xhtml.pipi-pona>
 
 #block[
-] <ch027.xhtml.apeja>
 jan pali o! toki! mi wile e ni: tenpo suno sina li suwi. mi lukin e lipu
 sina. tenpo pimeja wan la, oko mi li alasa e nimi ona ali. tenpo pimeja
 sin la, lawa mi li sona insa e kon ona. sina o sona e ni: jan mute li
@@ -6966,13 +7099,13 @@ pali o!
 
 \~ jan Apeja
 
-#line(length: 100%)
 
-] <ch027.xhtml.pipi-pona>
-#block[
-]
-#block[
-== pipi pona \(sin)
+] <ch027.xhtml.apeja>
+
+
+#lipuLinsalipu[
+
+  == pipi pona \(sin)
 <ch027.xhtml.toc_4>
 ma li wile olin e #strike[ni : sina pakala e] sina. #strike[sama ·] mi
 mute li #strike[lon kon pi];sama #strike[ala · mi mute li lon] kon
@@ -7210,87 +7343,27 @@ mute! o awen e ni tan pilin insa wile. o sama pona pi jan ali. o sama
 jan ali. o ante tawa nasin jaki. o awen suwi taso. o suwi tawa jan lawa
 kin. ona li pini pona li pini ali. o lon.]
 
-] <ch027.xhtml.pipi-pona-sin>
-<ch028.xhtml>
+] <ch027.xhtml.pipi-pona-sin>]
 
-= sitelen kiwen
-<ch028.xhtml.id.sitelen-kiwen>
-jan Popo
+#compute("sitelen kiwen", "jan Popo")
 
+= sitelen kiwen <ch028.xhtml>
 
-
-<ch029.xhtml>
+#njan[jan Popo] <ch028.xhtml.id.sitelen-kiwen>
 
 
-#box(image("images/file9_a.png"))
+#box(image("images/file9_a.png")) <ch029.xhtml>
 #box(image("images/file9.png"))
 #box(image("images/file9_d.png"))
 
 
-#block[
-]
-\[sitelen ni li tawa sitelen pona. sitelen Lasina li pakala ali e musi
-ona. mi toki e ni lon poki sama ni: jan pi sitelen pona li ken pilin
-musi tan seme. taso sona pi tan musi li pana ala e pilin musi\]
+= taso <ch030.xhtml>
 
-jan li lon sewi pi nena suli. ona li ken lukin e ali ma. sewi pi nena ni
-li pana e pilin ni: ona li lon poka a pi jan sewi. palisa kiwen en ilo
-kiwen li lon luka jan. ona li tawa sinpin kiwen suli lon sewi a nena.
-ona li pana e palisa tawa sinpin li utala e palisa kepeken ilo kiwen, li
-pakala lili e sinpin. kepeken tenpo suli la ona li sitelen e nimi lon
-kiwen: “sewi pi wawa ali o, mi pi wawa ala li tawa sewi pi nena ni
-kepeken tenpo suli a li wile e pana tan sina”
+#njan("soko sijeni")  <ch030.xhtml.id.taso>
 
-\[sitelen pona la jan li ken sitelen e sitelen wan lon sewi pi sitelen
-ante. jan li sitelen e sitelen “mute” lon sewi pi sitelen “luka” la ona
-li sama mute tawa sitelen “pana” tawa lukin, la jan ala li ni. mi
-sitelen Lasina e wile pi jan sitelen. taso o sona e ni: nimi “pana” en
-nimi “luka mute” li sama tawa lukin lon kepeken mi pi sitelen pona.\]
 
-sitelen ni li pini la kiwen li kama tawa sama ko. sitelen ali ona li
-weka. suno ali la ni kama. jan li pilin ike ala tan ni. ona li sona e
-ni: ona li wile e pana sewi la sewi o sona e suli pi wile ona. jan li
-tawa tomo. tomo ona li lili. ona li kepeken tenpo mute ona tawa pali
-sitelen la ona li ken ala pali mani mute li ken jo lili taso. taso ona
-li sona e ni: sewi li pana tawa ona la ni li kama ante. ona li kama moku
-e moku lili la suno li kama ante la ona li kama lape. suno mute a en
-sike mute a li kama li tawa la jan li awen sike e pali ni. nasin ni la
-ona li kama suli tenpo. tawa sewi nena li kama utala. ona li kama lon
-sewi nena la ona li pilin pi wawa ala a. ona li kama lape lili lon open
-pi sitelen ona. ona li sitelen e sama lon suno ali: “sewi pi wawa ali o,
-mi pi wawa ala li tawa sewi pi nena ni kepeken tenpo suli a li wile e
-pana tan sina” sama li kama. kiwen li kama ko. sitelen li weka. wawa ala
-li awen lon jan la ona li kama lape.
+taso. <ch031.xhtml>
 
-lape ona li pini la suno sin li lon. sijelo ona li awen wile lape. taso
-ona li sitelen: “sewi pi wawa ali o, mi pi wawa ala li tawa sewi pi nena
-ni kepeken tenpo suli a li wile e pana tan sina” kiwen li kama ko.
-sitelen li weka.
-
-taso. sitelen sin li kama: “jan anpa o, seme a la sina wile e luka mute”
-jan li lukin e ni kepeken tenpo suli. telo pi pilin pona li kama tan
-lukin ona. sijelo ona li wile lape a. taso ona li sitelen: “mi wile jo e
-moku pona e lipu musi e mani e mute. mi kama jo e pana tan sina la ni
-taso la mi pi suli tenpo li ken ni” kiwen li kama ko. sitelen li kama
-ante: “suno ali la sina tawa mi li sitelen e wile sina lon kiwen. o jo e
-luka mute. o jo e ijo mute kepeken wawa pi luka mute.”
-
-\[nimi “pi” li lon open pi sitelen “luka mute” la jan ali lukin li ken
-kama sona e ni: ona li nimi “pana” ala. ken suli a la tenpo pini la ona
-li sona ala e ni\]
-
-<ch030.xhtml>
-
-= taso
-<ch030.xhtml.id.taso>
-soko Sijeni
-
-tomo pi telo suli li pakala. lon ma sin pi jan ala la jan wan li kama
-sona lon ona taso li lukin moli ala.
-
-<ch031.xhtml>
-
-taso.
 
 mi taso. ala li lon poka mi. ala li ken pona e mi. kalama wawa li utala
 e kute. lukin li ike. mi lukin e sewi. pimeja. mi lukin e anpa. pimeja.
@@ -7691,2597 +7764,2842 @@ telo. mi lukin e tomo tawa. mi sewi e luka tu. mi toki:
 
 「o!」
 
-<ch032.xhtml>
+#compute("tenpo o pona", "jan Ke Tami")<ch032.xhtml>
+
 
 = tenpo o pona
 <ch032.xhtml.id.tenpo-o-pona>
-jan Ke Tami
-
-mi jo e ilo tenpo sin. a, ilo tenpo mi li pakala. ni la tenpo li pakala
-anu seme?!
-
-#emph[#link(<ch033.xhtml.lipu-pi-sitelen-pona>)[o lukin kepeken sitelen pona];]
-
-#emph[#link(<ch033.xhtml.lasinaLtokini>)[o lukin kepeken sitelen Lasina];]
-
-<ch033.xhtml>
+#njan("jan Ke Tami") <ch033.xhtml>
 
 
+
+#openLsitelenLasina(<ch033.xhtml.lasinaLtokini>)
 
 #block[ 
-#block[
-#block[
+
+#let storyUnit(t) = [
+  #set par(spacing: 0.5em)
+
+  #pad(y: 0.75em, t)
+]
+#let spilo(t) = [
+  #set text(font: "insa pi supa lape", size: 1.1em)
+
+  #pad(left: 1em, box(stroke: 0.1em, fill: black, inset: 0.2em, lower(text(white, t))))
+]
+#let te(t) = [
+   #pad(y: -0.2em, left: 2em)[(#h(-1em)te #t to]
+]
+
+#set text(font: "linja lipamanka", size: 0.9em)
+
+#columns(2, gutter: 3em)[
+ #storyUnit[
 mi wile sona e tenpo <ch033.xhtml.lipu-pi-sitelen-pona>
 
 ] <ch033.xhtml.toc_1>
-#block[
-mi lukin e ilo mi pi\(sona tenpo)
-]
-#block[
-a ilo mi pi\(sona tenpo ala)
-]
-#block[
-ilo li sin la mi wile pana e sona tenpo open tawa ona
-]
-#block[
-pona la mi lon open tenpo
-]
-#block[
-ijo tenpo li wile ala e mi
-]
-#block[
-taso ijo li ken kama wile e mi
-]
-#block[
-mi wile pana e sona tenpo tawa ilo mi
-]
-#block[
-ilo tenpo suli li ken pana pona
-]
-#block[
-ona li lon tomo esun kulupu
-]
-#block[
-mi kama lon ona
-]
-#block[
-ona li tomo pona li ken e jan mute lon insa e jan mute lon poka kin
-]
-#block[
-taso mi lon open tenpo taso la jan li mute ala
-]
-#block[
-mi open e lupa lon sinpin tomo
-]
-#block[
-mi tawa insa la lupa li kama sinpin lon monsi mi
-]
-#block[
-jan tu taso li lon li
-]
-#block[
-O ALASA E MANI
-]
-#block[
-KEN LI KEN
-]
-#block[
-SINA PANA E MANI WAN LA MI KEN PANA E MANI TU
-]
-#block[
-a ilo pi\(wile mani) li lon poka
-]
-#block[
-ona li ike tawa mi
-]
-#block[
-mani li kama weka a lon ona
-]
-#block[
-mi awen tawa insa
-]
-#block[
-mi tawa lon poka pi\(jan moku)
-]
-#block[
-ona li moku e ijo pona pi\(open tenpo)
-]
-#block[
-mi kama lon jan esun
-]
-#block[
-teesun o pona
-]
-#block[
-mi wile lon ilo tenpo
-]
-#block[
-ona o pana e sona tenpo to
-]
-#block[
-tea o tawa poki
-]
-#block[
-ilo li lon insa to
-]
-#block[
-mi kama lon poki
-]
-#block[
-mi open e poki
-]
-#block[
-ilo li lon insa
-]
-#block[
-MU MU MU
-]
-#block[
-MI ILO TENPO
-]
-#block[
-SINA WILE E SEME
-]
-#block[
-teilo suli o
-]
-#block[
-ni li ilo lili
-]
-#block[
-ona li sama sina
-]
-#block[
-taso ona li lili
-]
-#block[
-ona li sin la ona li sona ala e tenpo
-]
-#block[
-o pana e tenpo tawa ona to
-]
-#block[
-PANA
-]
-#block[
-mi lukin e ilo mi
-]
-#block[
-ona li sona e tenpo
-]
-#block[
-pona
-]
-#block[
-tesina ilo pona to
-]
-#block[
-ona li toki ala
-]
-#block[
-te ilo o toki to
-]
-#block[
-ona li awen toki ala
-]
-#block[
-ni li nasin ala nasin ona
-]
-#block[
-mi sona ala
-]
-#block[
-mi awen lili
-]
-#block[
-taso ala li ante
-] <ch033.xhtml.niLtokini>
-#block[
-mi open e tawa
-] <ch033.xhtml.1.12>
-#block[
-teawen la esun o pona to
-] <ch033.xhtml.1.13>
-#block[
-tetenpo o pona to
-] <ch033.xhtml.1.14>
-#block[
-mi tawa lon poka pi\(jan moku)
-] <ch033.xhtml.1.15>
-#block[
-a
-] <ch033.xhtml.1.16>
-#block[
-jan pi\(moku ala)
-] <ch033.xhtml.1.17>
-#block[
-ona li kama pana ala e moku tawa uta
-] <ch033.xhtml.1.18>
-#block[
-lon la ona li tawa ala li tawa e ala
-] <ch033.xhtml.1.19>
-#block[
-a
-] <ch033.xhtml.1.20>
-#block[
-lawa ona li tawa anpa a li kama lon ijo moku
-] <ch033.xhtml.1.21>
-#block[
-oko ona li open ala
-] <ch033.xhtml.1.22>
-#block[
-te a
-] <ch033.xhtml.1.23>
-#block[
-mu
-] <ch033.xhtml.1.24>
-#block[
-jan esun o mu tawa jan pi\(nasin sijelo)
-] <ch033.xhtml.1.25>
-#block[
-ona o kama to
-] <ch033.xhtml.1.26>
-#block[
-te ike a
-] <ch033.xhtml.1.27>
-#block[
-mi ni to
-] <ch033.xhtml.1.28>
-#block[
-mi en jan tomo li supa pona e jan anpa
-] <ch033.xhtml.1.29>
-#block[
-ni la jan pi\(len sinpin) li tawa insa
-] <ch033.xhtml.1.30>
-#block[
-teesun o pana e mani to
-] <ch033.xhtml.1.31>
-#block[
-ona li jo e len lon sinpin e ilo ike lon luka
-] <ch033.xhtml.1.32>
-#block[
-tesina pana ala e mani la mi pakala e sina to
-] <ch033.xhtml.1.33>
-#block[
-te mi lon open tenpo taso
-] <ch033.xhtml.1.34>
-#block[
-esun li mute ala la mani li mute ala to
-] <ch033.xhtml.1.35>
-#block[
-teo toki ala o pana taso
-] <ch033.xhtml.1.36>
-#block[
-sina pana ala la mi moli e sina to
-] <ch033.xhtml.1.37>
-#block[
-jan esun li tawa poki mani li kama e mani tan poki
-] <ch033.xhtml.1.38>
-#block[
-tesina ike ni tan seme to
-] <ch033.xhtml.1.39>
-#block[
-jan len li toki ala li tawa weka
-] <ch033.xhtml.1.40>
-#block[
-teni la mi sona ala kama e pona to
-] <ch033.xhtml.1.41>
-#block[
-ike li awen kama suli lon tenpo anu seme
-] <ch033.xhtml.1.42>
-#block[
-jan ante li tawa insa
-] <ch033.xhtml.1.43>
-#block[
-pona la ona li jan pi\(nasin sijelo)
-] <ch033.xhtml.1.44>
-#block[
-teonali anpa tan ijo seme li moku e seme li anpa lon tenpo pi\(suli
-seme) li mu ala mu lon anpa li tawa ala tawa nasa lon tenpo pi\(anpa
-ala) li kepeken ala kepeken ilo sijelo li toki ala toki e ijo pi\(pilin
-ike)to
-] <ch033.xhtml.1.45>
-#block[
-te a
-] <ch033.xhtml.1.46>
-#block[
-mi sona alato
-] <ch033.xhtml.1.47>
-#block[
-teona li kama ala sewi li moku nasa e kon
-] <ch033.xhtml.1.48>
-#block[
-mi en ona o tawa tomo mi to
-] <ch033.xhtml.1.49>
-#block[
-mi en jan nasin li jo pona e jan anpa li tawa e ona tawa ilo pi\(nasin
-tawa)
-] <ch033.xhtml.1.50>
-#block[
-temi o kepeken tenpo lili a to
-] <ch033.xhtml.1.51>
-#block[
-ona li tawa weka lon ilo ona kepeken wawa
-] <ch033.xhtml.1.52>
-#block[
-jan esun pi\(mani ala) li kama lon poka mi
-] <ch033.xhtml.1.53>
-#block[
-tetenpo nasa a to
-] <ch033.xhtml.1.54>
-#block[
-te a
-] <ch033.xhtml.1.55>
-#block[
-sina jo ala e mani
-] <ch033.xhtml.1.56>
-#block[
-ni li ike to
-] <ch033.xhtml.1.57>
-#block[
-tejan ante li kama li esun la mani li kama
-] <ch033.xhtml.1.58>
-#block[
-ona li kama ala la ni taso li ike to
-] <ch033.xhtml.1.59>
-#block[
-tea suno pona en seli pona li lon
-] <ch033.xhtml.1.60>
-#block[
-ona li kama to
-] <ch033.xhtml.1.61>
-#block[
-te pona to
-] <ch033.xhtml.1.62>
-#block[
-mi open sin e tawa
-] <ch033.xhtml.1.63>
-#block[
-ijo li awen wile ala e mi la mi wile tawa seme
-] <ch033.xhtml.1.64>
-#block[
-a ma kasi li ken suwi
-] <ch033.xhtml.1.65>
-#block[
-mi awen tawa la kasi li kama mute
-] <ch033.xhtml.1.66>
-#block[
-kasi li mute pona la mi kama kute e kalama suli a
-] <ch033.xhtml.1.67>
-#block[
-kalama li tan weka
-] <ch033.xhtml.1.68>
-#block[
-ona li seme
-] <ch033.xhtml.1.69>
-#block[
-ijo li pakala ala pakala
-] <ch033.xhtml.1.70>
-#block[
-taso kalama li weka la ijo li pakala la ijo pakala li suli a
-] <ch033.xhtml.1.71>
-#block[
-mi ken ala sona
-] <ch033.xhtml.1.72>
-#block[
-mi lon ma kasi pona taso
-] <ch033.xhtml.1.73>
-#block[
-ijo nasa mute li lon tenpo
-] <ch033.xhtml.1.74>
-#block[
-mi ken ala ante e ona
-] <ch033.xhtml.1.75>
-#block[
-mi lukin e kasi suli wawa
-] <ch033.xhtml.1.76>
-#block[
-anpa kasi la ma li laso pona li ko pona
-] <ch033.xhtml.1.77>
-#block[
-mi pana e mi lon noka kasi li lukin e sewi
-] <ch033.xhtml.1.78>
-#block[
-mi len e oko
-] <ch033.xhtml.1.79>
-#block[
-mi kama lape
-] <ch033.xhtml.1.80>
-#block[
-PANA
-] <ch033.xhtml.2.0>
-#block[
-mi lukin e ilo mi
-] <ch033.xhtml.2.1>
-#block[
-ona li sona e tenpo
-] <ch033.xhtml.2.2>
-#block[
-taso ni li sin ala
-] <ch033.xhtml.2.3>
-#block[
-seme
-] <ch033.xhtml.2.4>
-#block[
-seme li lon
-] <ch033.xhtml.2.5>
-#block[
-mi lon poka pi\(ilo tenpo suli)
-] <ch033.xhtml.2.6>
-#block[
-tan seme
-] <ch033.xhtml.2.7>
-#block[
-tenpo poka la mi lon ma kasi
-] <ch033.xhtml.2.8>
-#block[
-mi awen ala awen lape
-] <ch033.xhtml.2.9>
-#block[
-mi awen wile sona e nasa ni
-] <ch033.xhtml.2.10>
-#block[
-taso kalama li kama lon monsi mi
-] <ch033.xhtml.2.11>
-#block[
-mi kama lukin
-] <ch033.xhtml.2.12>
-#block[
-lon supa moku la jan li moku ala li kama anpa
-] <ch033.xhtml.2.13>
-#block[
-supa poka li jo e ijo moku ona
-] <ch033.xhtml.2.14>
-#block[
-te pakala a
-] <ch033.xhtml.2.15>
-#block[
-jan esun o mu tawa jan pi\(nasin sijelo)
-] <ch033.xhtml.2.16>
-#block[
-ona o kama to
-] <ch033.xhtml.2.17>
-#block[
-te ike a
-] <ch033.xhtml.2.18>
-#block[
-mi ni to
-] <ch033.xhtml.2.19>
-#block[
-ni li sama tenpo ante
-] <ch033.xhtml.2.20>
-#block[
-nasa seme li lon a
-] <ch033.xhtml.2.21>
-#block[
-jan tomo li kama lon poka mi la mi en ona li supa pona e jan anpa
-] <ch033.xhtml.2.22>
-#block[
-mi kama kute e toki lon monsi mi
-] <ch033.xhtml.2.23>
-#block[
-teesun o pana e mani to
-] <ch033.xhtml.2.24>
-#block[
-a jan ni
-] <ch033.xhtml.2.25>
-#block[
-tesina pana ala e mani la mi pakala e sina to
-] <ch033.xhtml.2.26>
-#block[
-te mi lon open tenpo taso
-] <ch033.xhtml.2.27>
-#block[
-esun li mute ala la mani li mute ala to
-] <ch033.xhtml.2.28>
-#block[
-teo toki ala o pana taso
-] <ch033.xhtml.2.29>
-#block[
-sina pana ala la mi moli e sina to
-] <ch033.xhtml.2.30>
-#block[
-jan esun li tawa poki mani li kama e mani tan poki
-] <ch033.xhtml.2.31>
-#block[
-tesina ike ni tan seme to
-] <ch033.xhtml.2.32>
-#block[
-jan len li toki ala li tawa weka
-] <ch033.xhtml.2.33>
-#block[
-te ni li sama tenpo ante a to
-] <ch033.xhtml.2.34>
-#block[
-jan tomo li lukin e mi
-] <ch033.xhtml.2.35>
-#block[
-te seme
-] <ch033.xhtml.2.36>
-#block[
-ni li sin a tawa mi
-] <ch033.xhtml.2.37>
-#block[
-tenpo ala la jan li kama weka ni e mani mi to
-] <ch033.xhtml.2.38>
-#block[
-nasa suli
-] <ch033.xhtml.2.39>
-#block[
-pilin la mi awen a lon lape
-] <ch033.xhtml.2.40>
-#block[
-mi luka pi\(utala lili) e selo mi
-] <ch033.xhtml.2.41>
-#block[
-lape ala li kama pini
-] <ch033.xhtml.2.42>
-#block[
-ale li awen lon
-] <ch033.xhtml.2.43>
-#block[
-mi sona ala
-] <ch033.xhtml.2.44>
-#block[
-jan ante li tawa insa li jan pi\(nasin sijelo) li kama lukin e jan anpa
-] <ch033.xhtml.2.45>
-#block[
-teonali anpa tan ijo seme li moku e seme li anpa lon tenpo pi\(suli
-seme) li mu ala mu lon anpa li tawa ala tawa nasa lon tenpo pi\(anpa
-ala) li kepeken ala kepeken ilo sijelo li toki ala toki e ijo pi\(pilin
-ike) to
-] <ch033.xhtml.2.46>
-#block[
-te a
-] <ch033.xhtml.2.47>
-#block[
-mi sona pona ala
-] <ch033.xhtml.2.48>
-#block[
-ijo moku ona li lon supa
-] <ch033.xhtml.2.49>
-#block[
-ona li kama anpa lon tenpo poka
-] <ch033.xhtml.2.50>
-#block[
-jan li mu tawa sina la ona li kama anpa
-] <ch033.xhtml.2.51>
-#block[
-mu en tawa li lon ala
-] <ch033.xhtml.2.52>
-#block[
-ijo ante la mi sona ala to
-] <ch033.xhtml.2.53>
-#block[
-teona li kama ala sewi li moku nasa e kon
-] <ch033.xhtml.2.54>
-#block[
-mi en ona o tawa tomo mi to
-] <ch033.xhtml.2.55>
-#block[
-mi en jan nasin li jo pona e jan anpa li tawa e ona tawa ilo pi\(nasin
-tawa)
-] <ch033.xhtml.2.56>
-#block[
-temi o kepeken tenpo lili a to
-] <ch033.xhtml.2.57>
-#block[
-tea mi kin li wile kama to
-] <ch033.xhtml.2.58>
-#block[
-ona en mi li kama lon ilo li kama tawa
-] <ch033.xhtml.2.59>
-#block[
-temi o kepeken tenpo lili a to
-] <ch033.xhtml.2.60>
-#block[
-ona li wawa e tawa ilo
-] <ch033.xhtml.2.61>
-#block[
-mi awen tawa la kalama suli li kama
-] <ch033.xhtml.2.62>
-#block[
-kalama li tan ala weka li tan poka
-] <ch033.xhtml.2.63>
-#block[
-a lon nasin la sinpin la ko mute li lon kon
-] <ch033.xhtml.2.64>
-#block[
-temi kama ken ala tawa lon ni
-] <ch033.xhtml.2.65>
-#block[
-mi o tawa jan pi\(sijelo pakala)
-] <ch033.xhtml.2.66>
-#block[
-sina o lukin e ijo nasin to
-] <ch033.xhtml.2.67>
-#block[
-ona li tawa monsi tawa jan pi\(sijelo pakala)
-] <ch033.xhtml.2.68>
-#block[
-mi tawa sinpin tawa ko kon
-] <ch033.xhtml.2.69>
-#block[
-mi weka tan ilo la mi lukin e open pi\(ko kon)
-] <ch033.xhtml.2.70>
-#block[
-jan tu li lon poka pi\(kiwen pakala mute)
-] <ch033.xhtml.2.71>
-#block[
-te a
-] <ch033.xhtml.2.72>
-#block[
-pakala suli
-] <ch033.xhtml.2.73>
-#block[
-tan seme la sina pakala e tomo mi
-] <ch033.xhtml.2.74>
-#block[
-mi jo e mani tawa sina to
-] <ch033.xhtml.2.75>
-#block[
-a
-] <ch033.xhtml.2.76>
-#block[
-mi sona e kalama pi\(jan ni)
-] <ch033.xhtml.2.77>
-#block[
-jan ni li weka e mani tan tomo esun a
-] <ch033.xhtml.2.78>
-#block[
-temani li lili ike
-] <ch033.xhtml.2.79>
-#block[
-ni la tomo ni li tomo sina ala li tomo mi
-] <ch033.xhtml.2.80>
-#block[
-ona li weka la mi ken pali e tomo suli pona lon ma ona to
-] <ch033.xhtml.2.81>
-#block[
-jan ante wan li jo e len mani li pilin ala e pilin ike pi\(jan ante)
-] <ch033.xhtml.2.82>
-#block[
-te toki
-] <ch033.xhtml.2.83>
-#block[
-kute la sina pakala e tomo
-] <ch033.xhtml.2.84>
-#block[
-ko mute li lon kon tan ni anu seme to
-] <ch033.xhtml.2.85>
-#block[
-te a ken
-] <ch033.xhtml.2.86>
-#block[
-sina wile sona tan seme to
-] <ch033.xhtml.2.87>
-#block[
-teko li lon nasin tawa la ilo nasin li ken ala tawa to
-] <ch033.xhtml.2.88>
-#block[
-te ni la o awen
-] <ch033.xhtml.2.89>
-#block[
-ko li kama anpa la ona li weka tan kon to
-] <ch033.xhtml.2.90>
-#block[
-tetaso jan pi\(sijelo pakala) li lon ilo
-] <ch033.xhtml.2.91>
-#block[
-ona li wile tawa tomo pi\(nasin sijelo \")
-] <ch033.xhtml.2.92>
-#block[
-tea mi ken ala ante e ni
-] <ch033.xhtml.2.93>
-#block[
-ko li ko
-] <ch033.xhtml.2.94>
-#block[
-kon li kon to
-] <ch033.xhtml.2.95>
-#block[
-mi sona ala e pona
-] <ch033.xhtml.2.96>
-#block[
-jan ni li ike a
-] <ch033.xhtml.2.97>
-#block[
-taso mi ken ante e ala
-] <ch033.xhtml.2.98>
-#block[
-PANA
-] <ch033.xhtml.3.0>
-#block[
-a
-] <ch033.xhtml.3.1>
-#block[
-sin sin
-] <ch033.xhtml.3.2>
-#block[
-mi lon poka pi\(ilo tenpo suli) tan seme a
-] <ch033.xhtml.3.3>
-#block[
-te ilo o to
-] <ch033.xhtml.3.4>
-#block[
-ilo li toki ala
-] <ch033.xhtml.3.5>
-#block[
-a lon
-] <ch033.xhtml.3.6>
-#block[
-ni li sama tenpo ante
-] <ch033.xhtml.3.7>
-#block[
-pakala
-] <ch033.xhtml.3.8>
-#block[
-mi tawa monsi
-] <ch033.xhtml.3.9>
-#block[
-mi kama lon poka pi\(jan moku)
-] <ch033.xhtml.3.10>
-#block[
-lukin la moku li pona tawa ona
-] <ch033.xhtml.3.11>
-#block[
-lukin la ike ala li lon
-] <ch033.xhtml.3.12>
-#block[
-taso ale li sama tenpo ante la mi sona e ike kama
-] <ch033.xhtml.3.13>
-#block[
-te toki
-] <ch033.xhtml.3.14>
-#block[
-sina pilin seme to
-] <ch033.xhtml.3.15>
-#block[
-tea moku li pona
-] <ch033.xhtml.3.16>
-#block[
-mi pilin
-] <ch033.xhtml.3.17>
-#block[
-mi
-] <ch033.xhtml.3.18>
-#block[
-a
-] <ch033.xhtml.3.19>
-#block[
-mi to
-] <ch033.xhtml.3.20>
-#block[
-ona li pini e toki e tawa kin
-] <ch033.xhtml.3.21>
-#block[
-tenpo lili la lawa ona li tawa anpa li kama lon ijo moku
-] <ch033.xhtml.3.22>
-#block[
-tea o kama e jan pi\(nasin sijelo)
-] <ch033.xhtml.3.23>
-#block[
-o mu tawa ona a to
-] <ch033.xhtml.3.24>
-#block[
-jan pi\(tomo esun) li ni kepeken ilo mu
-] <ch033.xhtml.3.25>
-#block[
-ni la ona li kama lon poka mi la mi tu li supa pona e jan anpa
-] <ch033.xhtml.3.26>
-#block[
-sama tenpo ante la kalama li kama lon monsi mi
-] <ch033.xhtml.3.27>
-#block[
-teesun o pana e mani to
-] <ch033.xhtml.3.28>
-#block[
-mi lukin e jan pi\(ilo ike)
-] <ch033.xhtml.3.29>
-#block[
-te o kute
-] <ch033.xhtml.3.30>
-#block[
-sina ken ala jo e mute pi\(wile sina)
-] <ch033.xhtml.3.31>
-#block[
-jan pi\(lawa tomo) li wile e mani mute \"
-] <ch033.xhtml.3.32>
-#block[
-teo toki ala
-] <ch033.xhtml.3.33>
-#block[
-mi ken moli e sina kepeken ilo
-] <ch033.xhtml.3.34>
-#block[
-esun o pana a e mani to
-] <ch033.xhtml.3.35>
-#block[
-tetaso ona li toki pona to
-] <ch033.xhtml.3.36>
-#block[
-jan pi\(tomo esun) li tawa supa ona li kama open e poki mani li kama e
-mani
-] <ch033.xhtml.3.37>
-#block[
-te mi lon open tenpo taso
-] <ch033.xhtml.3.38>
-#block[
-esun li lili la mani li lili
-] <ch033.xhtml.3.39>
-#block[
-ni li mani ale to
-] <ch033.xhtml.3.40>
-#block[
-jan ilo li jo e mani la ona li tawa weka
-] <ch033.xhtml.3.41>
-#block[
-te sina o
-] <ch033.xhtml.3.42>
-#block[
-sina toki e ijo pi\(tomo ona) tan seme \"
-] <ch033.xhtml.3.43>
-#block[
-tejan ona pi\(lawa tomo) li wile e mani mute
-] <ch033.xhtml.3.44>
-#block[
-mani lili la jan ni li pakala e tomo to
-] <ch033.xhtml.3.45>
-#block[
-te a seme to
-] <ch033.xhtml.3.46>
-#block[
-taso jan ante li kama li toki
-] <ch033.xhtml.3.47>
-#block[
-teonali anpa tan ijo seme li moku e seme li anpa lon tenpo pi\(suli
-seme) li mu ala mu lon anpa li tawa ala tawa nasa lon tenpo pi\(anpa
-ala) li kepeken ala kepeken ilo sijelo li toki ala toki e ijo pi\(pilin
-ike) to
-] <ch033.xhtml.3.48>
-#block[
-temi sona ala e ale
-] <ch033.xhtml.3.49>
-#block[
-ona li kama anpa lon tenpo poka taso
-] <ch033.xhtml.3.50>
-#block[
-ona li lon tenpo moku
-] <ch033.xhtml.3.51>
-#block[
-ijo moku ona li lon supa poka
-] <ch033.xhtml.3.52>
-#block[
-ona li pilin pona lon tenpo moku li toki e pilin ni
-] <ch033.xhtml.3.53>
-#block[
-taso ni la ona li kama pini e toki e tawa li anpa taso
-] <ch033.xhtml.3.54>
-#block[
-mi sona ala e ijo ante to
-] <ch033.xhtml.3.55>
-#block[
-jan li lukin pona e sijelo pi\(jan ante)
-] <ch033.xhtml.3.56>
-#block[
-teona li kama ala sewi li moku nasa e kon
-] <ch033.xhtml.3.57>
-#block[
-mi en ona o tawa tomo mi to
-] <ch033.xhtml.3.58>
-#block[
-tesina kama ala lon tomo sina la seme li kama to
-] <ch033.xhtml.3.59>
-#block[
-te moli to
-] <ch033.xhtml.3.60>
-#block[
-mi tu wan li tawa e jan anpa la jan pi\(nasin sijelo) li kama ken open e
-tawa
-] <ch033.xhtml.3.61>
-#block[
-ike la mi sona e kama pi\(tenpo poka)
-] <ch033.xhtml.3.62>
-#block[
-mi ken ala ante e kama kin
-] <ch033.xhtml.3.63>
-#block[
-jan pi\(ilo moli) li jo e mani lili taso
-] <ch033.xhtml.3.64>
-#block[
-tomo li kama pakala
-] <ch033.xhtml.3.65>
-#block[
-ko mute li kama lon nasin
-] <ch033.xhtml.3.66>
-#block[
-jan anpa li ken ala tawa tomo pi\(nasin sijelo) li kama moli
-] <ch033.xhtml.3.67>
-#block[
-ike
-] <ch033.xhtml.3.68>
-#block[
-tejan tomo o
-] <ch033.xhtml.3.69>
-#block[
-seme la mi ken jo e mani mute to
-] <ch033.xhtml.3.70>
-#block[
-ona li lukin pi\(nasin nasa) e mi
-] <ch033.xhtml.3.71>
-#block[
-tea sina wile pali la mani pona li ken
-] <ch033.xhtml.3.72>
-#block[
-ona li mute suli ala
-] <ch033.xhtml.3.73>
-#block[
-taso mun li sin la sina kama jo e mani pi\(pilin pona)to
-] <ch033.xhtml.3.74>
-#block[
-ni li ken pona
-] <ch033.xhtml.3.75>
-#block[
-taso tenpo mi li lili
-] <ch033.xhtml.3.76>
-#block[
-mi ken ala tawa tenpo pi\(mun sin)
-] <ch033.xhtml.3.77>
-#block[
-nasin mani ante o lon
-] <ch033.xhtml.3.78>
-#block[
-taso mi sona ala e ona
-] <ch033.xhtml.3.79>
-#block[
-mi awen alasa e ken la tenpo lili la ilo poka li kama toki
-] <ch033.xhtml.3.80>
-#block[
-O ALASA E MANI
-] <ch033.xhtml.3.81>
-#block[
-KEN LI KEN
-] <ch033.xhtml.3.82>
-#block[
-SINA PANA E MANI WAN LA MI KEN PANA E MANI TU
-] <ch033.xhtml.3.83>
-#block[
-a
-] <ch033.xhtml.3.84>
-#block[
-ilo ni li nasin mani ike
-] <ch033.xhtml.3.85>
-#block[
-mani li kama weka
-] <ch033.xhtml.3.86>
-#block[
-taso ale li kama sin la ala li awen weka
-] <ch033.xhtml.3.87>
-#block[
-mani mi li awen ala weka
-] <ch033.xhtml.3.88>
-#block[
-mi tawa ilo
-] <ch033.xhtml.3.89>
-#block[
-O ALASA E KULE PI KEN MANI
-] <ch033.xhtml.3.90>
-#block[
-SINA PANA PONA E KULE LA MI SULI E MANI SINA
-] <ch033.xhtml.3.91>
-#block[
-OPEN LA O PANA E MANI SINA
-] <ch033.xhtml.3.92>
-#block[
-mi jo e mani wan taso
-] <ch033.xhtml.3.93>
-#block[
-mi pana tawa ilo
-] <ch033.xhtml.3.94>
-#block[
-MANI MANI MANI
-] <ch033.xhtml.3.95>
-#block[
-O TOKI E KULE WILE
-] <ch033.xhtml.3.96>
-#block[
-mi pana e loje
-] <ch033.xhtml.3.97>
-#block[
-ilo li tawa wawa nasa e sike kule
-] <ch033.xhtml.3.98>
-#block[
-laso li kama
-] <ch033.xhtml.3.99>
-#block[
-MANI MANI MANI IKE
-] <ch033.xhtml.3.100>
-#block[
-MANI SINA LI AWEN LON MI
-] <ch033.xhtml.3.101>
-#block[
-pakala
-] <ch033.xhtml.3.102>
-#block[
-O MUSI SIN O MUSI SIN
-] <ch033.xhtml.3.103>
-#block[
-O PANA E MANI SINA
-] <ch033.xhtml.3.104>
-#block[
-a taso mi ken ala
-] <ch033.xhtml.3.105>
-#block[
-weka la kalama suli li kama
-] <ch033.xhtml.3.106>
-#block[
-a tomo li kama pakala
-] <ch033.xhtml.3.107>
-#block[
-tea kalama ni li seme
-] <ch033.xhtml.3.108>
-#block[
-ijo suli li pakala anu seme to
-] <ch033.xhtml.3.109>
-#block[
-teni li sama ijo pi\(toki mi)
-] <ch033.xhtml.3.110>
-#block[
-jan pi\(lawa tomo) li pakala e tomo \"
-] <ch033.xhtml.3.111>
-#block[
-te a nasa to
-] <ch033.xhtml.3.112>
-#block[
-temi wile kepeken ilo mani ni
-] <ch033.xhtml.3.113>
-#block[
-taso mi jo e mani ala to
-] <ch033.xhtml.3.114>
-#block[
-temi kin li jo e mani ala
-] <ch033.xhtml.3.115>
-#block[
-sina sona
-] <ch033.xhtml.3.116>
-#block[
-jan ike li kama li weka e mani mi ale to
-] <ch033.xhtml.3.117>
-#block[
-te weka a
-] <ch033.xhtml.3.118>
-#block[
-sama ilo nito
-] <ch033.xhtml.3.119>
-#block[
-teo musi mani ni ala
-] <ch033.xhtml.3.120>
-#block[
-tenpo mute la ona li weka e mani
-] <ch033.xhtml.3.121>
-#block[
-tenpo pi\(mute ala) la ona li pana e mani
-] <ch033.xhtml.3.122>
-#block[
-nasin ni la mani sina li kama weka taso to
-] <ch033.xhtml.3.123>
-#block[
-tesina sona pona to
-] <ch033.xhtml.3.124>
-#block[
-taso nasin ante li lon ala
-] <ch033.xhtml.3.125>
-#block[
-mi awen alasa e ken lon ilo mani
-] <ch033.xhtml.3.126>
-#block[
-taso ona li awen wile e mani mi taso li
-] <ch033.xhtml.3.127>
-#block[
-PANA
-] <ch033.xhtml.4.0>
-#block[
-a sin tenpo
-] <ch033.xhtml.4.1>
-#block[
-mi lukin ala e ilo tenpo suli
-] <ch033.xhtml.4.2>
-#block[
-mi tawa ilo mani
-] <ch033.xhtml.4.3>
-#block[
-tejan esun o mu tawa jan pi\(nasin sijelo)
-] <ch033.xhtml.4.4>
-#block[
-pakala sijelo li kama to
-] <ch033.xhtml.4.5>
-#block[
-mi kama lon ilo mani
-] <ch033.xhtml.4.6>
-#block[
-te seme to
-] <ch033.xhtml.4.7>
-#block[
-jan li lukin pi\(nasin nasa) e mi
-] <ch033.xhtml.4.8>
-#block[
-taso ona li kepeken ilo toki li mu tawa jan nasin
-] <ch033.xhtml.4.9>
-#block[
-O ALASA E KULE PI KEN MANI
-] <ch033.xhtml.4.10>
-#block[
-SINA PANA PONA E
-] <ch033.xhtml.4.11>
-#block[
-mi pana e mani
-] <ch033.xhtml.4.12>
-#block[
-MANI MANI MANI
-] <ch033.xhtml.4.13>
-#block[
-O TOKI E
-] <ch033.xhtml.4.14>
-#block[
-mi pana e laso
-] <ch033.xhtml.4.15>
-#block[
-ilo li tawa a e sike kule
-] <ch033.xhtml.4.16>
-#block[
-laso li kama
-] <ch033.xhtml.4.17>
-#block[
-MANI MANI MANI PONA
-] <ch033.xhtml.4.18>
-#block[
-MI MUTE E MANI SINA
-] <ch033.xhtml.4.19>
-#block[
-uta ilo li open li pana e mani tu tawa mi
-] <ch033.xhtml.4.20>
-#block[
-O MUSI SIN O MUSI SIN
-] <ch033.xhtml.4.21>
-#block[
-monsi la jan li kama moku ala li anpa e lawa tawa supa moku
-] <ch033.xhtml.4.22>
-#block[
-O PANA E MANI SINA
-] <ch033.xhtml.4.23>
-#block[
-jan pi\(tomo esun) li tawa ona
-] <ch033.xhtml.4.24>
-#block[
-tea ike li lon ala lon to
-] <ch033.xhtml.4.25>
-#block[
-ona li luka e jan anpa la jan ni li tawa ala
-] <ch033.xhtml.4.26>
-#block[
-te o sona
-] <ch033.xhtml.4.27>
-#block[
-jan pi\(nasin sijelo) li kama a to
-] <ch033.xhtml.4.28>
-#block[
-mi pana e mani tu tawa ilo
-] <ch033.xhtml.4.29>
-#block[
-MANI MANI MANI
-] <ch033.xhtml.4.30>
-#block[
-jan tomo li supa pona e jan anpa
-] <ch033.xhtml.4.31>
-#block[
-mi pana e loje
-] <ch033.xhtml.4.32>
-#block[
-ilo li tawa e sike la pimeja li kama
-] <ch033.xhtml.4.33>
-#block[
-MANI MANI MANI IKE
-] <ch033.xhtml.4.34>
-#block[
-MANI SINA LI AWEN LON MI
-] <ch033.xhtml.4.35>
-#block[
-jan ante li kama lon tomo esun
-] <ch033.xhtml.4.36>
-#block[
-O MUSI SIN O MUSI SIN
-] <ch033.xhtml.4.37>
-#block[
-jan ni li jo e len lon sinpin e ilo ike lon luka
-] <ch033.xhtml.4.38>
-#block[
-O PANA E MANI SINA
-] <ch033.xhtml.4.39>
-#block[
-teesun o pana e
-] <ch033.xhtml.4.40>
-#block[
-seme
-] <ch033.xhtml.4.41>
-#block[
-esun o pana e mani a to
-] <ch033.xhtml.4.42>
-#block[
-te o kute
-] <ch033.xhtml.4.43>
-#block[
-ilo ni li moku e mani mi
-] <ch033.xhtml.4.44>
-#block[
-sama la jan sina pi\(lawa tomo) li moku e mani sina to
-] <ch033.xhtml.4.45>
-#block[
-teo toki ala
-] <ch033.xhtml.4.46>
-#block[
-sina sona ala
-] <ch033.xhtml.4.47>
-#block[
-sina sona ala a
-] <ch033.xhtml.4.48>
-#block[
-esun li pana ala e mani tawa mi la pakala suli li kama to
-] <ch033.xhtml.4.49>
-#block[
-ona li tawa a e ilo ike ona
-] <ch033.xhtml.4.50>
-#block[
-jan esun li tawa supa esun li kama e mani tan poki mani
-] <ch033.xhtml.4.51>
-#block[
-teo sona o sona
-] <ch033.xhtml.4.52>
-#block[
-mi lon open tenpo taso
-] <ch033.xhtml.4.53>
-#block[
-esun mute ala li lon la mani li mute ala
-] <ch033.xhtml.4.54>
-#block[
-ni li mani ale to
-] <ch033.xhtml.4.55>
-#block[
-jan pi\(ilo ike) li jo e mani la ona li tawa weka
-] <ch033.xhtml.4.56>
-#block[
-te ike to
-] <ch033.xhtml.4.57>
-#block[
-te ike a to
-] <ch033.xhtml.4.58>
-#block[
-temani li kama weka tan mi tu to
-] <ch033.xhtml.4.59>
-#block[
-teo musi mani ni ala
-] <ch033.xhtml.4.60>
-#block[
-mani sina li kama weka taso to
-] <ch033.xhtml.4.61>
-#block[
-jan ante li kama li lukin e jan anpa li tawa ona
-] <ch033.xhtml.4.62>
-#block[
-teona li anpa tan ijo seme li to
-] <ch033.xhtml.4.63>
-#block[
-temi sona ala e ijo open pi\(anpa ona)
-] <ch033.xhtml.4.64>
-#block[
-taso ona li pilin pona lon moku ona lon tenpo wan li kama pini e tawa e
-ale lon tenpo ante
-] <ch033.xhtml.4.65>
-#block[
-ni li lon tenpo poka
-] <ch033.xhtml.4.66>
-#block[
-moku ona li lon supa moku
-] <ch033.xhtml.4.67>
-#block[
-sina wile e jan ni lon tomo sina to
-] <ch033.xhtml.4.68>
-#block[
-jan li lukin pona e sijelo pi\(jan anpa)
-] <ch033.xhtml.4.69>
-#block[
-te wile
-] <ch033.xhtml.4.70>
-#block[
-ona li kama ala sewi li moku nasa e kon
-] <ch033.xhtml.4.71>
-#block[
-o kama o tawa e ona to
-] <ch033.xhtml.4.72>
-#block[
-ona en mi li kama e jan anpa lon ilo pi\(nasin tawa)
-] <ch033.xhtml.4.73>
-#block[
-jan nasin li tawa weka kepeken ilo
-] <ch033.xhtml.4.74>
-#block[
-jan esun pi\(mani ala) li kama lon poka mi
-] <ch033.xhtml.4.75>
-#block[
-tetenpo nasa a to
-] <ch033.xhtml.4.76>
-#block[
-temi tu li jo e mani ala to
-] <ch033.xhtml.4.77>
-#block[
-tea taso jan ante li kama li esun la mani li kama
-] <ch033.xhtml.4.78>
-#block[
-ona li kama ala la ni taso li ike to
-] <ch033.xhtml.4.79>
-#block[
-teseme la ona li kama ala to
-] <ch033.xhtml.4.80>
-#block[
-tetenpo li ike la ona li wile ala kama
-] <ch033.xhtml.4.81>
-#block[
-pakala li lon nasin tawa la ona li ken ala kama to
-] <ch033.xhtml.4.82>
-#block[
-te a to
-] <ch033.xhtml.4.83>
-#block[
-weka la kalama li kama
-] <ch033.xhtml.4.84>
-#block[
-tekalama ni li seme to
-] <ch033.xhtml.4.85>
-#block[
-te a
-] <ch033.xhtml.4.86>
-#block[
-pakala tomo
-] <ch033.xhtml.4.87>
-#block[
-ni li ike e ken pi\(nasin tawa \")
-] <ch033.xhtml.4.88>
-#block[
-te ike esunto
-] <ch033.xhtml.4.89>
-#block[
-sin la mi lukin e ilo musi mani
-] <ch033.xhtml.4.90>
-#block[
-tetaso ilo ni li jo e mani mute anu seme to
-] <ch033.xhtml.4.91>
-#block[
-te jo
-] <ch033.xhtml.4.92>
-#block[
-taso o kepeken ala ona
-] <ch033.xhtml.4.93>
-#block[
-sina sona e ike mani ona to
-] <ch033.xhtml.4.94>
-#block[
-te sona
-] <ch033.xhtml.4.95>
-#block[
-taso sina ken ala ken open a e ilo to
-] <ch033.xhtml.4.96>
-#block[
-tea a a wile
-] <ch033.xhtml.4.97>
-#block[
-taso mi ken ala
-] <ch033.xhtml.4.98>
-#block[
-jan ilo taso li ken
-] <ch033.xhtml.4.99>
-#block[
-mi jan ilo ala
-] <ch033.xhtml.4.100>
-#block[
-jan ilo li kama lon pakala taso
-] <ch033.xhtml.4.101>
-#block[
-ilo ni li pakala ala to
-] <ch033.xhtml.4.102>
-#block[
-te a to
-] <ch033.xhtml.4.103>
-#block[
-mi lukin e poki suli
-] <ch033.xhtml.4.104>
-#block[
-teilo tenpo sina li pakala li kama toki ala to
-] <ch033.xhtml.4.105>
-#block[
-tea sina pakala ala pakala e ona to
-] <ch033.xhtml.4.106>
-#block[
-jan li tawa poki suli pi\(ilo tenpo suli)
-] <ch033.xhtml.4.107>
-#block[
-teala a li lon ona
-] <ch033.xhtml.4.108>
-#block[
-ona li pakala suli a
-] <ch033.xhtml.4.109>
-#block[
-seme la to
-] <ch033.xhtml.4.110>
-#block[
-PANA
-] <ch033.xhtml.5.0>
-#block[
-mi tan poka poki ala tawa poka poki
-] <ch033.xhtml.5.1>
-#block[
-sin sike
-] <ch033.xhtml.5.2>
-#block[
-tejan esun o mu tawa jan pi\(nasin sijelo)
-] <ch033.xhtml.5.3>
-#block[
-pakala li kama to
-] <ch033.xhtml.5.4>
-#block[
-te seme to
-] <ch033.xhtml.5.5>
-#block[
-te o ni
-] <ch033.xhtml.5.6>
-#block[
-kin la ilo tenpo li pakala a
-] <ch033.xhtml.5.7>
-#block[
-o mu tawa jan ilo kin to
-] <ch033.xhtml.5.8>
-#block[
-jan pi\(tomo esun) li lukin pi\(nasin nasa) e mi
-] <ch033.xhtml.5.9>
-#block[
-taso ona li kama kepeken ilo toki
-] <ch033.xhtml.5.10>
-#block[
-mi pana e mani tawa ilo mani
-] <ch033.xhtml.5.11>
-#block[
-MANI MANI MANI
-] <ch033.xhtml.5.12>
-#block[
-mi pana e laso
-] <ch033.xhtml.5.13>
-#block[
-MANI MANI MANI PONA
-] <ch033.xhtml.5.14>
-#block[
-mi kama jo e mani tu la mi pana e mani tu
-] <ch033.xhtml.5.15>
-#block[
-MANI MANI MANI
-] <ch033.xhtml.5.16>
-#block[
-mi pana e pimeja
-] <ch033.xhtml.5.17>
-#block[
-MANI MANI MANI PONA
-] <ch033.xhtml.5.18>
-#block[
-lon monsi la jan moku li kama jan anpa
-] <ch033.xhtml.5.19>
-#block[
-mi pana e walo
-] <ch033.xhtml.5.20>
-#block[
-sike kule la laso li kama
-] <ch033.xhtml.5.21>
-#block[
-MANI MANI MANI IKE
-] <ch033.xhtml.5.22>
-#block[
-MANI SINA LI AWEN LON MI
-] <ch033.xhtml.5.23>
-#block[
-a laso en pimeja en laso
-] <ch033.xhtml.5.24>
-#block[
-monsi la jan pi\(wile mani) li lawa e jan esun tawa poki mani kepeken
-ilo ike ona
-] <ch033.xhtml.5.25>
-#block[
-te mi lon open tenpo taso
-] <ch033.xhtml.5.26>
-#block[
-esun li mute ala la mani li mute ala to
-] <ch033.xhtml.5.27>
-#block[
-teo toki ala o pana taso
-] <ch033.xhtml.5.28>
-#block[
-sina pana ala la mi moli e sina to
-] <ch033.xhtml.5.29>
-#block[
-jan li jo e mani la ona li weka
-] <ch033.xhtml.5.30>
-#block[
-jan pi\(nasin sijelo) li kama la mi toki
-] <ch033.xhtml.5.31>
-#block[
-tesina wile e jan ni lon tomo sina
-] <ch033.xhtml.5.32>
-#block[
-ona li tawa ala sewi li moku nasa e kon
-] <ch033.xhtml.5.33>
-#block[
-o kama
-] <ch033.xhtml.5.34>
-#block[
-mi tu o tawa e ona to
-] <ch033.xhtml.5.35>
-#block[
-jan pi\(nasin sijelo) en jan anpa en ilo pi\(nasin tawa) li weka la mi
-wile sona tan jan pi\(tomo ni)
-] <ch033.xhtml.5.36>
-#block[
-tejan ilo li kama lon tenpo seme to
-] <ch033.xhtml.5.37>
-#block[
-temi sona ala
-] <ch033.xhtml.5.38>
-#block[
-ona li kama ala toki tawa mi lon ilo
-] <ch033.xhtml.5.39>
-#block[
-taso ona li jan ilo
-] <ch033.xhtml.5.40>
-#block[
-jan ilo li pilin pona lon open tenpo ala
-] <ch033.xhtml.5.41>
-#block[
-mi lon open tenpo la ona li ken awen lape to
-] <ch033.xhtml.5.42>
-#block[
-te a
-] <ch033.xhtml.5.43>
-#block[
-ni la mi wile toki tawa ona
-] <ch033.xhtml.5.44>
-#block[
-nasin seme la mi ken tawa tomo ona to
-] <ch033.xhtml.5.45>
-#block[
-luka pi\(jan esun) li pana e sona nasin tawa mi
-] <ch033.xhtml.5.46>
-#block[
-te pona to
-] <ch033.xhtml.5.47>
-#block[
-mi tawa la mi alasa e tomo pi\(jan ilo)
-] <ch033.xhtml.5.48>
-#block[
-mi kepeken nasin luka pi\(jan esun) la tawa mi li pona
-] <ch033.xhtml.5.49>
-#block[
-mi kama lon tomo pi\(wile mi)
-] <ch033.xhtml.5.50>
-#block[
-weka la kalama pi\(pakala tomo) li kama
-] <ch033.xhtml.5.51>
-#block[
-mi wile tawa insa tomo
-] <ch033.xhtml.5.52>
-#block[
-taso sinpin ale la mi kama ala ken open e lupa
-] <ch033.xhtml.5.53>
-#block[
-mi awen tawa lon selo tomo la sinpin mute la mi kama ken lukin e insa
-tomo
-] <ch033.xhtml.5.54>
-#block[
-lon ni a
-] <ch033.xhtml.5.55>
-#block[
-jan li lape lon insa tomo
-] <ch033.xhtml.5.56>
-#block[
-jan ni li jan ilo
-] <ch033.xhtml.5.57>
-#block[
-mi luka kalama e sinpin
-] <ch033.xhtml.5.58>
-#block[
-te jan o
-] <ch033.xhtml.5.59>
-#block[
-jan o
-] <ch033.xhtml.5.60>
-#block[
-o pini e lape to
-] <ch033.xhtml.5.61>
-#block[
-taso kalama ala li pini e lape
-] <ch033.xhtml.5.62>
-#block[
-ike a
-] <ch033.xhtml.5.63>
-#block[
-kalama li tawa ala tawa insa
-] <ch033.xhtml.5.64>
-#block[
-ike la tenpo li kama li la
-] <ch033.xhtml.5.65>
-#block[
-PANA
-] <ch033.xhtml.6.0>
-#block[
-a lon
-] <ch033.xhtml.6.1>
-#block[
-teo mu tawa jan pi\(nasin sijelo)
-] <ch033.xhtml.6.2>
-#block[
-pakala li kama la ona o kama to
-] <ch033.xhtml.6.3>
-#block[
-te taso to
-] <ch033.xhtml.6.4>
-#block[
-mi kute ala
-] <ch033.xhtml.6.5>
-#block[
-mi tawa ilo mani
-] <ch033.xhtml.6.6>
-#block[
-tenpo ante la mi kepeken nasin pi\(pona ala)
-] <ch033.xhtml.6.7>
-#block[
-mi pana e mani wan
-] <ch033.xhtml.6.8>
-#block[
-MANI MANI MANI
-] <ch033.xhtml.6.9>
-#block[
-mi pana e laso
-] <ch033.xhtml.6.10>
-#block[
-MANI MANI MANI PONA
-] <ch033.xhtml.6.11>
-#block[
-mi jo e mani tu la mi pana e mani tu e pimeja
-] <ch033.xhtml.6.12>
-#block[
-MANI MANI MANI PONA
-] <ch033.xhtml.6.13>
-#block[
-mi jo e mani tu tu la mi pana e mani tu tu e laso
-] <ch033.xhtml.6.14>
-#block[
-MANI MANI MANI PONA
-] <ch033.xhtml.6.15>
-#block[
-mi jo e mani luka tu wan la mi pana e mani wan taso e loje
-] <ch033.xhtml.6.16>
-#block[
-a sike kule li pana e jelo
-] <ch033.xhtml.6.17>
-#block[
-MANI MANI MANI IKE
-] <ch033.xhtml.6.18>
-#block[
-monsi mi la kalama pi\(tawa anpa) li kama
-] <ch033.xhtml.6.19>
-#block[
-mi pana e mani wan e loje
-] <ch033.xhtml.6.20>
-#block[
-sike kule li pana e walo
-] <ch033.xhtml.6.21>
-#block[
-MANI MANI MANI IKE
-] <ch033.xhtml.6.22>
-#block[
-sama la mi pana e mani wan e loje
-] <ch033.xhtml.6.23>
-#block[
-sike li pana e jelo
-] <ch033.xhtml.6.24>
-#block[
-MANI MANI MANI IKE
-] <ch033.xhtml.6.25>
-#block[
-sama kin la mi pana
-] <ch033.xhtml.6.26>
-#block[
-loje li kama
-] <ch033.xhtml.6.27>
-#block[
-MANI MANI MANI PONA
-] <ch033.xhtml.6.28>
-#block[
-a pona
-] <ch033.xhtml.6.29>
-#block[
-kepeken mani wan la mi pana e walo
-] <ch033.xhtml.6.30>
-#block[
-laso li kama
-] <ch033.xhtml.6.31>
-#block[
-MANI MANI MANI IKE
-] <ch033.xhtml.6.32>
-#block[
-mani wan la mi pana e walo
-] <ch033.xhtml.6.33>
-#block[
-jelo li kama
-] <ch033.xhtml.6.34>
-#block[
-MANI MANI MANI IKE
-] <ch033.xhtml.6.35>
-#block[
-mi pana sama
-] <ch033.xhtml.6.36>
-#block[
-jelo li kama
-] <ch033.xhtml.6.37>
-#block[
-MANI MANI MANI IKE
-] <ch033.xhtml.6.38>
-#block[
-pana sama
-] <ch033.xhtml.6.39>
-#block[
-pimeja li kama
-] <ch033.xhtml.6.40>
-#block[
-MANI MANI MANI IKE
-] <ch033.xhtml.6.41>
-#block[
-pana sama
-] <ch033.xhtml.6.42>
-#block[
-taso ilo li pana e loje
-] <ch033.xhtml.6.43>
-#block[
-MANI MANI MANI IKE
-] <ch033.xhtml.6.44>
-#block[
-ni la pana mi li sama
-] <ch033.xhtml.6.45>
-#block[
-walo li lon ilo
-] <ch033.xhtml.6.46>
-#block[
-MANI MANI MANI PONA
-] <ch033.xhtml.6.47>
-#block[
-a mi pana e jelo
-] <ch033.xhtml.6.48>
-#block[
-pimeja li kama lon sike kule pi\(ilo mani)
-] <ch033.xhtml.6.49>
-#block[
-MANI MANI MANI IKE
-] <ch033.xhtml.6.50>
-#block[
-pini mani
-] <ch033.xhtml.6.51>
-#block[
-mani mi li ala la mi kama ken ala pana
-] <ch033.xhtml.6.52>
-#block[
-taso mi kama sona pona
-] <ch033.xhtml.6.53>
-#block[
-kuleli laso li pimeja li laso li jelo li walo li jelo li loje li laso li
-jelo li jelo li pimeja li loje li walo li pimeja
-] <ch033.xhtml.6.54>
-#block[
-mi kama kute sin e ijo pi\(monsi mi)
-] <ch033.xhtml.6.55>
-#block[
-teo toki ala o pana taso
-] <ch033.xhtml.6.56>
-#block[
-sina pana ala la mi moli e sina to
-] <ch033.xhtml.6.57>
-#block[
-poka mi la jan en mani li tawa weka
-] <ch033.xhtml.6.58>
-#block[
-mi sona e lili pi\(mani ni)
-] <ch033.xhtml.6.59>
-#block[
-taso mi ken ala pana lon sike tenpo ni
-] <ch033.xhtml.6.60>
-#block[
-mi awen lili la ilo li kama lon poka tomo
-] <ch033.xhtml.6.61>
-#block[
-mi toki tawa jan pi\(ilo ni)
-] <ch033.xhtml.6.62>
-#block[
-tejan pi\(nasin sijelo) o
-] <ch033.xhtml.6.63>
-#block[
-insa la jan li kama anpa
-] <ch033.xhtml.6.64>
-#block[
-lukin la ni li tan ijo ala
-] <ch033.xhtml.6.65>
-#block[
-ona li kama ala sewi li moku nasa e kon
-] <ch033.xhtml.6.66>
-#block[
-ona o tawa tomo sina to
-] <ch033.xhtml.6.67>
-#block[
-te sona ponato
-] <ch033.xhtml.6.68>
-#block[
-mi en ona li tawa insa
-] <ch033.xhtml.6.69>
-#block[
-mi en ona en jan anpa li tawa ilo
-] <ch033.xhtml.6.70>
-#block[
-mi wan li tawa insa tomo
-] <ch033.xhtml.6.71>
-#block[
-tejan esun o
-] <ch033.xhtml.6.72>
-#block[
-mi wile toki tawa jan ilo to
-] <ch033.xhtml.6.73>
-#block[
-tea ilo sina li pakala anu seme to
-] <ch033.xhtml.6.74>
-#block[
-te a sama ni to
-] <ch033.xhtml.6.75>
-#block[
-te o awen
-] <ch033.xhtml.6.76>
-#block[
-mi ken mu tawa ona kepeken ilo mi to
-] <ch033.xhtml.6.77>
-#block[
-tesona mi la ona li lape a to
-] <ch033.xhtml.6.78>
-#block[
-te a ken
-] <ch033.xhtml.6.79>
-#block[
-ni li nasin tenpo ona to
-] <ch033.xhtml.6.80>
-#block[
-temi wile tawa ona
-] <ch033.xhtml.6.81>
-#block[
-taso tomo ona la mi ken ala lon insa to
-] <ch033.xhtml.6.82>
-#block[
-teni la o awen tawa tenpo pi\(lape ona ala \")
-] <ch033.xhtml.6.83>
-#block[
-te a wile
-] <ch033.xhtml.6.84>
-#block[
-taso mi ken ala awen la nasin ante seme li ken to
-] <ch033.xhtml.6.85>
-#block[
-te a
-] <ch033.xhtml.6.86>
-#block[
-sina toki nasa
-] <ch033.xhtml.6.87>
-#block[
-taso sina wile tawa insa tomo la nasin ante tu li lon
-] <ch033.xhtml.6.88>
-#block[
-nasin nanpa wan la sina ken pakala e ijo tomo to
-] <ch033.xhtml.6.89>
-#block[
-temi wile ala ni to
-] <ch033.xhtml.6.90>
-#block[
-te pona
-] <ch033.xhtml.6.91>
-#block[
-nasin nanpa tu la jan pi\(lawa tomo) li ken open e lupa lon tomo ale \"
-] <ch033.xhtml.6.92>
-#block[
-tea ni li nasa to
-] <ch033.xhtml.6.93>
-#block[
-teona li lawa e tomo to
-] <ch033.xhtml.6.94>
-#block[
-a taso jan lawa li lon weka la mi ken ala ken tawa ona
-] <ch033.xhtml.6.95>
-#block[
-tenpo li ken lili
-] <ch033.xhtml.6.96>
-#block[
-mi open e tawa
-] <ch033.xhtml.6.97>
-#block[
-mi tawa
-] <ch033.xhtml.6.98>
-#block[
-mi tawa
-] <ch033.xhtml.6.99>
-#block[
-mi awen tawa
-] <ch033.xhtml.6.100>
-#block[
-wawa mi li kama lili
-] <ch033.xhtml.6.101>
-#block[
-mi pini e tawa
-] <ch033.xhtml.6.102>
-#block[
-jan lawa li awen weka
-] <ch033.xhtml.6.103>
-#block[
-mi open sin e tawa
-] <ch033.xhtml.6.104>
-#block[
-mi tawa
-] <ch033.xhtml.6.105>
-#block[
-mi tawa
-] <ch033.xhtml.6.106>
-#block[
-mi
-] <ch033.xhtml.6.107>
-#block[
-PANA
-] <ch033.xhtml.7.0>
-#block[
-sin sin sin
-] <ch033.xhtml.7.1>
-#block[
-a mi sona
-] <ch033.xhtml.7.2>
-#block[
-tejan esun o mu tawa jan pi\(nasin sijelo)
-] <ch033.xhtml.7.3>
-#block[
-pakala sijelo li kama lon tenpo poka
-] <ch033.xhtml.7.4>
-#block[
-mi sona e nasa pi\(toki mi)
-] <ch033.xhtml.7.5>
-#block[
-taso pona la o ni to
-] <ch033.xhtml.7.6>
-#block[
-ona li ni
-] <ch033.xhtml.7.7>
-#block[
-mi tawa ilo mani
-] <ch033.xhtml.7.8>
-#block[
-mi pana e mani
-] <ch033.xhtml.7.9>
-#block[
-MANI MANI MANI
-] <ch033.xhtml.7.10>
-#block[
-O TOKI E KULE WILE
-] <ch033.xhtml.7.11>
-#block[
-laso
-] <ch033.xhtml.7.12>
-#block[
-mani tu
-] <ch033.xhtml.7.13>
-#block[
-pimeja
-] <ch033.xhtml.7.14>
-#block[
-mani tu tu
-] <ch033.xhtml.7.15>
-#block[
-laso
-] <ch033.xhtml.7.16>
-#block[
-mani luka tu wan
-] <ch033.xhtml.7.17>
-#block[
-jelo
-] <ch033.xhtml.7.18>
-#block[
-mani luka luka luka wan
-] <ch033.xhtml.7.19>
-#block[
-walo
-] <ch033.xhtml.7.20>
-#block[
-mani mute luka luka tu
-] <ch033.xhtml.7.21>
-#block[
-jelo
-] <ch033.xhtml.7.22>
-#block[
-mani mute mute mute tu tu
-] <ch033.xhtml.7.23>
-#block[
-loje
-] <ch033.xhtml.7.24>
-#block[
-mani ale mute luka tu wan
-] <ch033.xhtml.7.25>
-#block[
-laso
-] <ch033.xhtml.7.26>
-#block[
-mani ale ale mute mute luka luka luka wan
-] <ch033.xhtml.7.27>
-#block[
-jelo
-] <ch033.xhtml.7.28>
-#block[
-mani luka ale luka luka tu
-] <ch033.xhtml.7.29>
-#block[
-jelo
-] <ch033.xhtml.7.30>
-#block[
-mani luka luka ale mute tu tu
-] <ch033.xhtml.7.31>
-#block[
-pimeja
-] <ch033.xhtml.7.32>
-#block[
-mani mute ale mute mute mute mute luka luka luka wan
-] <ch033.xhtml.7.33>
-#block[
-loje
-] <ch033.xhtml.7.34>
-#block[
-mani mute mute mute mute wan ale mute mute mute mute luka luka tu
-] <ch033.xhtml.7.35>
-#block[
-walo
-] <ch033.xhtml.7.36>
-#block[
-mani wan ale mute mute mute tu wan ale mute mute mute mute tu tu
-] <ch033.xhtml.7.37>
-#block[
-pimeja
-] <ch033.xhtml.7.38>
-#block[
-mani tu wan ale mute luka tu ale mute mute mute luka tu wan
-] <ch033.xhtml.7.39>
-#block[
-O MUSI SIN O MUSI SIN
-] <ch033.xhtml.7.40>
-#block[
-taso mi wile ala
-] <ch033.xhtml.7.41>
-#block[
-mi jo e mani pi\(mute pona)
-] <ch033.xhtml.7.42>
-#block[
-jan moku li kama moku ala li kama anpa
-] <ch033.xhtml.7.43>
-#block[
-mi en jan esun li tawa ona li supa pona e ona
-] <ch033.xhtml.7.44>
-#block[
-mi tawa open tomo la lupa li open lon tomo
-] <ch033.xhtml.7.45>
-#block[
-jan pi\(len sinpin) li lukin e mi li kama e ilo ike li wile toki
-] <ch033.xhtml.7.46>
-#block[
-taso mi kama open kin e toki
-] <ch033.xhtml.7.47>
-#block[
-temi jo e mani pi\(mute suli)
-] <ch033.xhtml.7.48>
-#block[
-mi wile esun
-] <ch033.xhtml.7.49>
-#block[
-mi pana e mani la sina kama e mi tawa jan pi\(lawa tomo \")
-] <ch033.xhtml.7.50>
-#block[
-te a
-] <ch033.xhtml.7.51>
-#block[
-seme
-] <ch033.xhtml.7.52>
-#block[
-sina to
-] <ch033.xhtml.7.53>
-#block[
-teo kepeken ala tenpo
-] <ch033.xhtml.7.54>
-#block[
-o kepeken tenpo ala to
-] <ch033.xhtml.7.55>
-#block[
-teo kama o kama
-] <ch033.xhtml.7.56>
-#block[
-ilo mi li lon poka to
-] <ch033.xhtml.7.57>
-#block[
-mi tu li lon ilo lili pi\(nasin tawa)
-] <ch033.xhtml.7.58>
-#block[
-tenpo tawa li pini la mi lon tomo lon poka pi\(jan lawa)
-] <ch033.xhtml.7.59>
-#block[
-tesina pana ala e mani tawa mi la mi weka e tomo ni
-] <ch033.xhtml.7.60>
-#block[
-mi ken pali e tomo suli lon ma ona
-] <ch033.xhtml.7.61>
-#block[
-tomo suli li kama e mani suli to
-] <ch033.xhtml.7.62>
-#block[
-te o awen
-] <ch033.xhtml.7.63>
-#block[
-mi jo e mani wile
-] <ch033.xhtml.7.64>
-#block[
-sina pi\(mani mute) o pana to
-] <ch033.xhtml.7.65>
-#block[
-mi pana e mani tawa jan pi\(lawa tomo)
-] <ch033.xhtml.7.66>
-#block[
-te a
-] <ch033.xhtml.7.67>
-#block[
-mani ni li ken mute pona to
-] <ch033.xhtml.7.68>
-#block[
-tesina wile ala e mute ni
-] <ch033.xhtml.7.69>
-#block[
-taso sina ken jo e mani ni
-] <ch033.xhtml.7.70>
-#block[
-mi wile e ijo wan taso
-] <ch033.xhtml.7.71>
-#block[
-o open e tomo pi\(jan ilo a)
-] <ch033.xhtml.7.72>
-#block[
-mi en sina o tawa a to
-] <ch033.xhtml.7.73>
-#block[
-te a mani
-] <ch033.xhtml.7.74>
-#block[
-a tawa to
-] <ch033.xhtml.7.75>
-#block[
-tawa li wile e tenpo lili
-] <ch033.xhtml.7.76>
-#block[
-lon sinpin mi la ilo pi\(jan nasin) li kama
-] <ch033.xhtml.7.77>
-#block[
-lon monsi mi la ilo nasin pi\(suli tomo) li tawa li wile tawa esun
-] <ch033.xhtml.7.78>
-#block[
-mi kama lon tomo pi\(jan lape) la jan lawa li kama e kiwen
-] <ch033.xhtml.7.79>
-#block[
-ona li open e lupa lon sinpin tomo kepeken kiwen ni
-] <ch033.xhtml.7.80>
-#block[
-mi tawa insa la mi tawa jan ilo lape
-] <ch033.xhtml.7.81>
-#block[
-teo pini e lape to
-] <ch033.xhtml.7.82>
-#block[
-teseme seme seme
-] <ch033.xhtml.7.83>
-#block[
-seme la sina lon tomo mi to
-] <ch033.xhtml.7.84>
-#block[
-teilo tenpo sina li pakala la mi lon to
-] <ch033.xhtml.7.85>
-#block[
-tea mi lon tenpo seme to
-] <ch033.xhtml.7.86>
-#block[
-mi lukin e ilo lili mi
-] <ch033.xhtml.7.87>
-#block[
-pakala
-] <ch033.xhtml.7.88>
-#block[
-tenpo li kama pini lon poka
-] <ch033.xhtml.7.89>
-#block[
-mi lukin e poka ale
-] <ch033.xhtml.7.90>
-#block[
-seme li ken e pona
-] <ch033.xhtml.7.91>
-#block[
-a
-] <ch033.xhtml.7.92>
-#block[
-sinpin tomo wan la mi ken lukin e ma pi\(poka tomo)
-] <ch033.xhtml.7.93>
-#block[
-taso ona li sinpin taso ala
-] <ch033.xhtml.7.94>
-#block[
-kon li tawa la lupa li open lon sinpin
-] <ch033.xhtml.7.95>
-#block[
-mi ken
-] <ch033.xhtml.7.96>
-#block[
-PANA
-] <ch033.xhtml.8.0>
-#block[
-kepeken ona
-] <ch033.xhtml.8.1>
-#block[
-mi sona e nasin
-] <ch033.xhtml.8.2>
-#block[
-tejan pi\(tomo esun) o
-] <ch033.xhtml.8.3>
-#block[
-mi sona e ijo nasa
-] <ch033.xhtml.8.4>
-#block[
-pakala sijelo li lon tenpo poka
-] <ch033.xhtml.8.5>
-#block[
-o mu tawa jan pi\(nasin sijelo)
-] <ch033.xhtml.8.6>
-#block[
-ona o kama kepeken tenpo lili to
-] <ch033.xhtml.8.7>
-#block[
-ona li kepeken ilo toki la mi kama kepeken ilo mani
-] <ch033.xhtml.8.8>
-#block[
-mi pali pi\(mani mute) la jan moku li kama ken ala moku li anpa
-] <ch033.xhtml.8.9>
-#block[
-mi tawa ona la mi en jan tomo li supa pona e ona
-] <ch033.xhtml.8.10>
-#block[
-mi tawa open tomo la lupa li open
-] <ch033.xhtml.8.11>
-#block[
-mi pana e mani ale tawa lupa
-] <ch033.xhtml.8.12>
-#block[
-te o jo e mani ni ale
-] <ch033.xhtml.8.13>
-#block[
-taso o pana ala e ale tawa jan pi\(lawa tomo)
-] <ch033.xhtml.8.14>
-#block[
-ona li wile ala e mani pi\(mute ni)
-] <ch033.xhtml.8.15>
-#block[
-mani awen la o pona e jan poka sina to
-] <ch033.xhtml.8.16>
-#block[
-te a seme
-] <ch033.xhtml.8.17>
-#block[
-mi
-] <ch033.xhtml.8.18>
-#block[
-mi
-] <ch033.xhtml.8.19>
-#block[
-mi ni to
-] <ch033.xhtml.8.20>
-#block[
-jan pi\(jo mani) li tawa la mi kin li kama tawa
-] <ch033.xhtml.8.21>
-#block[
-temi ken lukin e jan nasin
-] <ch033.xhtml.8.22>
-#block[
-jan anpa li wile lon tomo pi\(nasin sijelo)
-] <ch033.xhtml.8.23>
-#block[
-esun sina o pona to
-] <ch033.xhtml.8.24>
-#block[
-mi wile kepeken tenpo lili
-] <ch033.xhtml.8.25>
-#block[
-mi kama lon tomo pi\(jan lape)
-] <ch033.xhtml.8.26>
-#block[
-mi alasa e sinpin lukin pona wan
-] <ch033.xhtml.8.27>
-#block[
-a ona
-] <ch033.xhtml.8.28>
-#block[
-mi luka lili e sinpin wan la lupa li open lon ona
-] <ch033.xhtml.8.29>
-#block[
-mi kama tawa insa
-] <ch033.xhtml.8.30>
-#block[
-tejan ilo o pini e lape
-] <ch033.xhtml.8.31>
-#block[
-tenpo li ike
-] <ch033.xhtml.8.32>
-#block[
-tenpo li pakala to
-] <ch033.xhtml.8.33>
-#block[
-teseme seme seme
-] <ch033.xhtml.8.34>
-#block[
-seme la sina lon tomo mi to
-] <ch033.xhtml.8.35>
-#block[
-teilo tenpo suli sina li pakala a
-] <ch033.xhtml.8.36>
-#block[
-sama la tenpo a li pakala to
-] <ch033.xhtml.8.37>
-#block[
-te a
-] <ch033.xhtml.8.38>
-#block[
-nasa
-] <ch033.xhtml.8.39>
-#block[
-seme
-] <ch033.xhtml.8.40>
-#block[
-nasa
-] <ch033.xhtml.8.41>
-#block[
-mi o lukin e ilo tenpo to
-] <ch033.xhtml.8.42>
-#block[
-te pona
-] <ch033.xhtml.8.43>
-#block[
-o kama
-] <ch033.xhtml.8.44>
-#block[
-tenpo li lili to
-] <ch033.xhtml.8.45>
-#block[
-mi tu li tawa a
-] <ch033.xhtml.8.46>
-#block[
-tenpo poka la mi lon tomo esun
-] <ch033.xhtml.8.47>
-#block[
-tesina kama sin a
-] <ch033.xhtml.8.48>
-#block[
-a jan ilo kin to
-] <ch033.xhtml.8.49>
-#block[
-mi kama lon poki pi\(ilo tenpo)
-] <ch033.xhtml.8.50>
-#block[
-ona li awen open
-] <ch033.xhtml.8.51>
-#block[
-ilo tenpo li pali ala
-] <ch033.xhtml.8.52>
-#block[
-tea seme la ona li kama pakala to
-] <ch033.xhtml.8.53>
-#block[
-tesina jan ilo
-] <ch033.xhtml.8.54>
-#block[
-mi kepeken ona la ona li kama pali ala
-] <ch033.xhtml.8.55>
-#block[
-kin la ale li kama sin lon tenpo pi\(suli ala)
-] <ch033.xhtml.8.56>
-#block[
-tenpo li sama sike nasa
-] <ch033.xhtml.8.57>
-#block[
-taso ale li kama sin la mi wan taso li sona e sin to
-] <ch033.xhtml.8.58>
-#block[
-jan ilo li lukin e mi
-] <ch033.xhtml.8.59>
-#block[
-tenasin seme la sina kepeken ona
-] <ch033.xhtml.8.60>
-#block[
-o toki e ale to
-] <ch033.xhtml.8.61>
-#block[
-temi wile pana e sona tenpo tawa ilo tenpo lili mi
-] <ch033.xhtml.8.62>
-#block[
-mi tawa poki ni
-] <ch033.xhtml.8.63>
-#block[
-mi open e poki
-] <ch033.xhtml.8.64>
-#block[
-ilo li toki tawa mi li wile sona e wile mi
-] <ch033.xhtml.8.65>
-#block[
-mi toki e wile
-] <ch033.xhtml.8.66>
-#block[
-ilo suli li pana tawa ilo lili mi
-] <ch033.xhtml.8.67>
-#block[
-ni li ale
-] <ch033.xhtml.8.68>
-#block[
-pini pali la ale li kama sin a to
-] <ch033.xhtml.8.69>
-#block[
-te a
-] <ch033.xhtml.8.70>
-#block[
-sina toki e seme tawa ilo to
-] <ch033.xhtml.8.71>
-#block[
-teilo suli o pana e tenpo tawa ilo lili to
-] <ch033.xhtml.8.72>
-#block[
-te a
-] <ch033.xhtml.8.73>
-#block[
-a a a
-] <ch033.xhtml.8.74>
-#block[
-a a a a a a a to
-] <ch033.xhtml.8.75>
-#block[
-te seme to
-] <ch033.xhtml.8.76>
-#block[
-tesina pana ala e sona tenpo tawa ilo sina
-] <ch033.xhtml.8.77>
-#block[
-sina pana e tenpo a tawa ilo sina to
-] <ch033.xhtml.8.78>
-#block[
-te a seme to
-] <ch033.xhtml.8.79>
-#block[
-tetan ni la ilo suli li pali ala
-] <ch033.xhtml.8.80>
-#block[
-ona li pana e ale tawa ilo lili to
-] <ch033.xhtml.8.81>
-#block[
-te taso
-] <ch033.xhtml.8.82>
-#block[
-tan seme la tenpo li sike to
-] <ch033.xhtml.8.83>
-#block[
-teilo sina li lili taso
-] <ch033.xhtml.8.84>
-#block[
-ona li ken ala jo e ale pi\(ilo suli)
-] <ch033.xhtml.8.85>
-#block[
-ni la tenpo li lili to
-] <ch033.xhtml.8.86>
-#block[
-tesina ken ala ken pona e tenpo to
-] <ch033.xhtml.8.87>
-#block[
-te ken
-] <ch033.xhtml.8.88>
-#block[
-ilo lili o
-] <ch033.xhtml.8.89>
-#block[
-ni li ilo suli
-] <ch033.xhtml.8.90>
-#block[
-ona li sama sina
-] <ch033.xhtml.8.91>
-#block[
-taso ona li suli
-] <ch033.xhtml.8.92>
-#block[
-ona li pana e ale tawa sina la ona li jo ala e tenpo
-] <ch033.xhtml.8.93>
-#block[
-o pana e tenpo tawa ona to
-] <ch033.xhtml.8.94>
-#block[
-JO
-] <ch033.xhtml.9.0>
-#block[
-MU MU MU
-] <ch033.xhtml.9.1>
-#block[
-MI ILO TENPO
-] <ch033.xhtml.9.2>
-#block[
-tejan ilo o
-] <ch033.xhtml.9.3>
-#block[
-tenpo li sike ala sike sin
-] <ch033.xhtml.9.4>
-#block[
-seme la mi ken sona to
-] <ch033.xhtml.9.5>
-#block[
-lon ni la lupa li open lon sinpin tomo
-] <ch033.xhtml.9.6>
-#block[
-mi lukin e ilo nasin pi\(suli mute) lon monsi lupa
-] <ch033.xhtml.9.7>
-#block[
-lon insa lupa la soweli luka luka li kama li tawa jan pi\(tomo esun)
-] <ch033.xhtml.9.8>
-#block[
-soweli wan li toki
-] <ch033.xhtml.9.9>
-#block[
-tejan pi\(tomo ni) o
-] <ch033.xhtml.9.10>
-#block[
-mi wile e telo to
-] <ch033.xhtml.9.11>
-#block[
-jan esun li pali la pilin mi li ante pona
-] <ch033.xhtml.9.12>
-#block[
-tea ni li sama ala tenpo ante
-] <ch033.xhtml.9.13>
-#block[
-sike li pini to
-] <ch033.xhtml.9.14>
-#block[
-te pona
-] <ch033.xhtml.9.15>
-#block[
-mi o weka e ken pi\(ike ni)
-] <ch033.xhtml.9.16>
-#block[
-mi o pana e sona tenpo kin tawa ilo lili sina to
-] <ch033.xhtml.9.17>
-#block[
-te pona to
-] <ch033.xhtml.9.18>
-#block[
-teilo tenpo o pana e sona tenpo tawa jan ni to
-] <ch033.xhtml.9.19>
-#block[
-te a seme to
-] <ch033.xhtml.9.20>
-#block[
-PANA
-] <ch033.xhtml.10.0>
+ #storyUnit[
+
+        mi lukin e ilo mi pi(sona tenpo)/
+
+        a ilo mi pi(sona tenpo ala)/
+
+        ilo li sin la mi wile pana e sona tenpo open tawa ona /
+
+        pona la mi lon open tenpo /
+
+        ijo tenpo li wile ala e mi /
+
+        taso ijo li ken kama wile e mi /
+
+        mi wile pana e sona tenpo tawa ilo mi /
+
+      ]
+
+      #storyUnit[
+
+        ilo tenpo suli li ken pana pona /
+
+        ona li lon tomo esun kulupu /
+
+        mi kama lon ona /
+
+        ona
+               li tomo pona li ken e jan mute lon insa e jan mute lon poka kin/
+
+        taso mi lon open tenpo taso la jan li mute ala /
+
+        mi open e lupa lon sinpin tomo /
+
+        mi tawa insa la lupa li kama sinpin lon monsi mi /
+
+        jan tu taso li lon li/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[O ALASA E MANI]
+
+         #spilo[KEN LI KEN]
+
+         #spilo[SINA PANA E MANI WAN LA MI KEN PANA E MANI TU]
+
+      ]
+
+      #storyUnit[
+
+        a ilo pi(wile mani) li lon poka /
+
+        ona li ike tawa mi /
+
+        mani li kama weka a lon ona /
+
+        mi awen tawa insa /
+
+        mi tawa lon poka pi(jan moku)/
+
+        ona li moku e ijo pona pi(open tenpo)/
+
+        mi kama lon jan esun /
+
+      ]
+
+      #storyUnit[
+
+        #te[esun o pona /
+
+        mi wile lon ilo tenpo /
+
+        ona o pana e sona tenpo ]/
+
+        #te[a o tawa poki /
+
+        ilo li lon insa ]/
+
+      ]
+
+      #storyUnit[
+
+        mi kama lon poki /
+
+        mi open e poki /
+
+        ilo li lon insa /
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MU MU MU]
+
+         #spilo[MI ILO TENPO]
+
+         #spilo[SINA WILE E SEME]
+
+      ]
+
+      #storyUnit[
+
+        #te[ilo suli o /
+
+        ni li ilo lili /
+
+        ona li sama sina /
+
+        taso ona li lili /
+
+        ona li sin la ona li sona ala e tenpo /
+
+        o pana e tenpo tawa ona ]/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[PANA]
+
+      ]
+
+      #storyUnit[
+
+        mi lukin e ilo mi /
+
+        ona li sona e tenpo /
+
+        pona /
+
+      ]
+
+      #storyUnit[
+
+        #te[sina ilo pona ]/
+
+      ]
+
+      #storyUnit[
+
+        ona li toki ala/
+
+      ]
+
+      #storyUnit[
+
+        #te[ ilo o toki ]/
+
+      ]
+
+      #storyUnit[
+
+        ona li awen toki ala/
+
+        ni li nasin ala nasin ona/
+
+        mi sona ala/
+
+        mi awen lili/
+
+        taso ala li ante /
+
+        mi open e tawa/
+
+      ]
+
+      #storyUnit[
+
+        #te[awen la esun o pona
+               ]/
+
+        #te[tenpo o pona ]/
+
+      ]
+
+      #storyUnit[
+
+        mi tawa lon poka pi(jan moku)/
+
+        a /
+
+        jan pi(moku ala)/
+
+        ona li kama pana ala e moku tawa uta /
+
+        lon la ona li tawa ala li tawa e ala / 
+
+        a /
+
+        lawa ona li tawa anpa a li kama lon ijo moku / 
+
+        oko ona li open ala /
+
+      ]
+
+      #storyUnit[
+
+        #te[ a/
+
+        mu /
+
+        jan esun o mu tawa jan pi(nasin sijelo)/
+
+        ona o kama ]/
+
+        #te[ ike a/
+
+        mi ni ]/
+
+      ]
+
+      #storyUnit[
+
+        mi en jan tomo li supa pona e jan anpa /
+
+        ni la jan pi(len sinpin) li tawa insa /
+
+      ]
+
+      #storyUnit[
+
+        #te[esun o pana e mani
+               ]/
+
+      ]
+
+      #storyUnit[
+
+        ona
+               li jo e len lon sinpin e ilo ike lon luka /
+
+      ]
+
+      #storyUnit[
+
+        #te[sina pana ala
+               e mani la mi pakala e sina ]/
+
+        #te[ mi lon open tenpo taso / 
+
+        esun li mute ala la mani li mute ala ]/
+
+        #te[o toki ala o pana taso / 
+
+        sina pana ala la mi moli e sina ]/
+
+      ]
+
+      #storyUnit[
+
+        jan esun
+               li tawa poki mani li kama e mani tan poki /
+
+      ]
+
+      #storyUnit[
+
+        #te[sina ike ni tan seme
+               ]/
+
+      ]
+
+      #storyUnit[
+
+        jan len li toki ala li tawa weka /
+
+      ]
+
+      #storyUnit[
+
+        #te[ni
+               la mi sona ala kama e pona ]/
+
+      ]
+
+      #storyUnit[
+
+        ike li awen kama suli lon tenpo anu seme /
+
+        jan ante li tawa insa /
+
+        pona la ona li jan pi(nasin sijelo)/
+
+      ]
+
+      #storyUnit[
+
+        #te[onali anpa tan ijo seme li moku e seme li anpa lon tenpo pi(suli seme) li mu ala mu lon anpa li tawa ala tawa nasa lon tenpo pi(anpa ala) li kepeken ala kepeken ilo sijelo li toki ala toki e ijo
+                pi(pilin ike)]/
+
+        #te[ a/
+
+        mi sona ala]/
+
+        #te[ona
+               li kama ala sewi li moku nasa e kon/
+
+        mi en ona o tawa tomo mi ]/
+
+      ]
+
+      #storyUnit[
+
+        mi
+               en jan nasin li jo pona e jan anpa li tawa e ona tawa ilo pi(nasin tawa)/
+
+      ]
+
+      #storyUnit[
+
+        #te[mi o kepeken tenpo lili a
+               ]/
+
+      ]
+
+      #storyUnit[
+
+        ona li tawa weka lon ilo ona kepeken wawa / 
+
+        jan esun pi(mani ala) li kama lon poka mi / 
+
+      ]
+
+      #storyUnit[
+
+        #te[tenpo nasa a ]/
+
+        #te[ a/
+
+        sina jo ala e mani /
+
+        ni li ike ]/
+
+        #te[jan ante
+               li kama li esun la mani li kama/
+
+        ona li kama ala la ni taso li ike ]/
+
+        #te[a suno pona
+               en seli pona li lon/
+
+        ona li kama ]/
+
+        #te[ pona ]/
+
+      ]
+
+      #storyUnit[
+
+        mi open sin e tawa /
+
+        ijo li awen wile ala e mi la mi wile tawa seme / 
+
+        a ma kasi li ken suwi /
+
+        mi awen tawa la kasi li kama mute /
+
+        kasi li mute pona la mi kama kute e kalama suli a / 
+
+        kalama li tan weka/
+
+        ona li seme/
+
+        ijo li pakala ala pakala/
+
+        taso kalama
+               li weka la ijo li pakala la ijo pakala li suli a /
+
+        mi ken ala sona /
+
+        mi lon ma kasi pona taso/
+
+        ijo nasa mute li lon tenpo /
+
+        mi ken ala ante e ona /
+
+        mi lukin e kasi suli wawa /
+
+        anpa kasi la ma li laso pona li ko pona /
+
+        mi pana e mi lon noka kasi li lukin e sewi / 
+
+        mi len e oko/
+
+        mi kama lape/
+
+      ]
+
+      #storyUnit[
+
+        #spilo[PANA]
+
+      ]
+
+      #storyUnit[
+
+        mi lukin e ilo mi /
+
+        ona li sona e tenpo /
+
+        taso ni li sin ala /
+
+        seme /
+
+        seme li lon/
+
+        mi lon poka pi(ilo tenpo suli)/
+
+        tan seme/
+
+        tenpo poka la mi lon ma kasi /
+
+        mi awen ala awen lape /
+
+        mi awen wile sona e nasa ni /
+
+        taso kalama li kama lon monsi mi /
+
+        mi kama lukin /
+
+        lon supa moku la jan li moku ala li kama anpa / 
+
+        supa poka li jo e ijo moku ona /
+
+      ]
+
+      #storyUnit[
+
+        #te[ pakala a/
+
+        jan esun o mu tawa jan pi(nasin sijelo)/
+
+        ona o kama ]/
+
+        #te[ ike a/
+
+        mi ni ]/
+
+      ]
+
+      #storyUnit[
+
+        ni li sama tenpo ante/
+
+        nasa seme li lon a /
+
+        jan tomo
+               li kama lon poka mi la mi en ona li supa pona e jan anpa /
+
+        mi kama kute e toki lon monsi mi /
+
+      ]
+
+      #storyUnit[
+
+        #te[esun o pana e mani
+               ]/
+
+      ]
+
+      #storyUnit[
+
+        a jan ni/
+
+      ]
+
+      #storyUnit[
+
+        #te[sina pana ala
+               e mani la mi pakala e sina ]/
+
+        #te[ mi lon open tenpo taso / 
+
+        esun li mute ala la mani li mute ala ]/
+
+        #te[o toki ala o pana taso / 
+
+        sina pana ala la mi moli e sina ]/
+
+      ]
+
+      #storyUnit[
+
+        jan esun
+               li tawa poki mani li kama e mani tan poki /
+
+      ]
+
+      #storyUnit[
+
+        #te[sina ike ni tan seme
+               ]/
+
+      ]
+
+      #storyUnit[
+
+        jan len li toki ala li tawa weka /
+
+      ]
+
+      #storyUnit[
+
+        #te[ ni li sama tenpo ante a
+               ]/
+
+      ]
+
+      #storyUnit[
+
+        jan tomo li lukin e mi /
+
+      ]
+
+      #storyUnit[
+
+        #te[ seme/
+
+        ni li sin a tawa mi/
+
+        tenpo ala la jan li kama weka ni e mani mi
+               ]/
+
+      ]
+
+      #storyUnit[
+
+        nasa suli/
+
+        pilin la mi awen a lon lape /
+
+        mi luka pi(utala lili) e selo mi /
+
+        lape ala li kama pini /
+
+        ale li awen lon /
+
+        mi sona ala/
+
+        jan ante
+               li tawa insa li jan pi(nasin sijelo) li kama lukin e jan anpa /
+
+      ]
+
+      #storyUnit[
+
+        #te[onali anpa tan ijo seme li moku e seme li anpa lon tenpo pi(suli seme) li mu ala mu lon anpa li tawa ala tawa nasa lon tenpo pi(anpa ala) li kepeken ala kepeken ilo sijelo li toki ala toki e ijo
+                pi(pilin ike) ]/
+
+        #te[ a/
+
+        mi sona pona ala /
+
+        ijo moku ona li lon supa /
+
+        ona li kama anpa lon tenpo poka /
+
+        jan li mu tawa sina la ona li kama anpa /
+
+        mu en tawa li lon ala /
+
+        ijo ante la mi sona ala ]/
+
+        #te[ona
+               li kama ala sewi li moku nasa e kon/
+
+        mi en ona o tawa tomo mi ]/
+
+      ]
+
+      #storyUnit[
+
+        mi
+               en jan nasin li jo pona e jan anpa li tawa e ona tawa ilo pi(nasin tawa)/
+
+      ]
+
+      #storyUnit[
+
+        #te[mi o kepeken tenpo lili a
+               ]/
+
+        #te[a mi kin li wile kama
+               ]/
+
+      ]
+
+      #storyUnit[
+
+        ona en mi li kama lon ilo li kama tawa / 
+
+      ]
+
+      #storyUnit[
+
+        #te[mi o kepeken tenpo lili a
+               ]/
+
+      ]
+
+      #storyUnit[
+
+        ona li wawa e tawa ilo /
+
+        mi awen tawa la kalama suli li kama /
+
+        kalama li tan ala weka li tan poka /
+
+        a lon nasin la sinpin la ko mute li lon kon / 
+
+      ]
+
+      #storyUnit[
+
+        #te[mi kama ken ala tawa
+               lon ni/
+
+        mi o tawa jan pi(sijelo pakala)/
+
+        sina o lukin e ijo nasin ]/
+
+      ]
+
+      #storyUnit[
+
+        ona li tawa monsi tawa jan pi(sijelo pakala)/
+
+        mi tawa sinpin tawa ko kon /
+
+        mi weka tan ilo la mi lukin e open pi(ko kon) / 
+
+        jan tu li lon poka pi(kiwen pakala mute)/
+
+      ]
+
+      #storyUnit[
+
+        #te[ a/
+
+        pakala suli/
+
+        tan seme la sina pakala e tomo mi /
+
+        mi jo e mani tawa sina ]/
+
+      ]
+
+      #storyUnit[
+
+        a /
+
+        mi sona e kalama pi(jan ni)/
+
+        jan ni li weka e mani tan tomo esun a /
+
+      ]
+
+      #storyUnit[
+
+        #te[mani li lili ike / 
+
+        ni la tomo ni li tomo sina ala li tomo mi / 
+
+        ona
+               li weka la mi ken pali e tomo suli pona lon ma ona ] / 
+
+      ]
+
+      #storyUnit[
+
+        jan ante wan
+               li jo e len mani li pilin ala e pilin ike pi(jan ante)/
+
+      ]
+
+      #storyUnit[
+
+        #te[ toki/
+
+        kute la sina pakala e tomo /
+
+        ko mute li lon kon tan ni anu seme ]/
+
+        #te[ a ken/
+
+        sina wile sona tan seme ]/
+
+        #te[ko
+               li lon nasin tawa la ilo nasin li ken ala tawa ]/
+
+        #te[ ni la o awen/
+
+        ko li kama anpa la ona li weka tan kon
+               ]/
+
+        #te[taso
+               jan pi(sijelo pakala) li lon ilo/
+
+        ona li wile tawa tomo pi(nasin sijelo) ]/
+
+        #te[a mi ken ala ante e ni / 
+
+        ko li ko/
+
+        kon li kon ]/
+
+      ]
+
+      #storyUnit[
+
+        mi sona ala e pona /
+
+        jan ni li ike a/
+
+        taso mi ken ante e ala /
+
+      ]
+
+      #storyUnit[
+
+
+         #spilo[PANA]
+
+      ]
+
+      #storyUnit[
+
+        a /
+
+        sin sin/
+
+        mi lon poka pi(ilo tenpo suli) tan seme a / 
+
+      ]
+
+      #storyUnit[
+
+        #te[ ilo o  ]/
+
+        ilo li toki ala/
+
+        a lon /
+
+        ni li sama tenpo ante/
+
+        pakala /
+
+        mi tawa monsi /
+
+        mi kama lon poka pi(jan moku)/
+
+        lukin la moku li pona tawa ona /
+
+        lukin la ike ala li lon /
+
+        taso ale li sama tenpo ante la mi sona e ike kama / 
+
+      ]
+
+      #storyUnit[
+
+        #te[ toki/
+
+        sina pilin seme ]/
+
+        #te[a moku li pona/
+
+        mi pilin/
+
+        mi /
+
+        a /
+
+        mi ]/
+
+      ]
+
+      #storyUnit[
+
+        ona li pini e toki e tawa kin /
+
+        tenpo lili
+               la lawa ona li tawa anpa li kama lon ijo moku /
+
+      ]
+
+      #storyUnit[
+
+        #te[a
+               o kama e jan pi(nasin sijelo)/
+
+        o mu tawa ona a ]/
+
+      ]
+
+      #storyUnit[
+
+        jan pi(tomo esun) li ni kepeken ilo mu /
+
+        ni
+               la ona li kama lon poka mi la mi tu li supa pona e jan anpa /
+
+        sama tenpo ante la kalama li kama lon monsi mi / 
+
+      ]
+
+      #storyUnit[
+
+        #te[esun o pana e mani
+               ]/
+
+      ]
+
+      #storyUnit[
+
+        mi lukin e jan pi(ilo ike)/
+
+      ]
+
+      #storyUnit[
+
+        #te[ o kute/
+
+        sina ken ala jo e mute pi(wile sina)/
+
+        jan pi(lawa tomo) li wile e mani mute ] /
+
+        #te[o toki ala/
+
+        mi ken moli e sina kepeken ilo /
+
+        esun o pana a e mani ]/
+
+        #te[taso ona li toki pona
+               ]/
+
+      ]
+
+      #storyUnit[
+
+        
+               jan pi(tomo esun) li tawa supa ona li kama open e poki mani li kama e mani /
+
+      ]
+
+      #storyUnit[
+
+        #te[ mi lon open tenpo taso / 
+
+        esun li lili la mani li lili /
+
+        ni li mani ale ] / 
+
+      ]
+
+      #storyUnit[
+
+        jan ilo li jo e mani la ona li tawa weka / 
+
+      ]
+
+      #storyUnit[
+
+        #te[ sina o /
+
+        sina toki e ijo pi(tomo ona) tan seme ] /
+
+        #te[jan
+               ona pi(lawa tomo) li wile e mani mute/
+
+        mani lili la jan ni li pakala e tomo ]/
+
+        #te[ a seme ]/
+
+      ]
+
+      #storyUnit[
+
+        taso jan ante li kama li toki /
+
+      ]
+
+      #storyUnit[
+
+        #te[onali anpa tan ijo seme li moku e seme li anpa lon tenpo pi(suli seme) li mu ala mu lon anpa li tawa ala tawa nasa lon tenpo pi(anpa ala) li kepeken ala kepeken ilo sijelo li toki ala toki e ijo
+                pi(pilin ike) ]/
+
+        #te[mi sona ala e ale / 
+
+        ona li kama anpa lon tenpo poka taso /
+
+        ona li lon tenpo moku/
+
+        ijo moku ona li lon supa poka /
+
+        ona li pilin pona lon tenpo moku li toki e pilin ni / 
+
+        taso ni
+               la ona li kama pini e toki e tawa li anpa taso /
+
+        mi sona ala e ijo ante ]/
+
+      ]
+
+      #storyUnit[
+
+        jan li lukin pona e sijelo pi(jan ante)/
+
+      ]
+
+      #storyUnit[
+
+        #te[ona
+               li kama ala sewi li moku nasa e kon/
+
+        mi en ona o tawa tomo mi ]/
+
+        #te[sina kama ala
+               lon tomo sina la seme li kama ]/
+
+        #te[ moli ]/
+
+      ]
+
+      #storyUnit[
+
+        mi tu wan
+               li tawa e jan anpa la jan pi(nasin sijelo) li kama ken open e tawa /
+
+        ike la mi sona e kama pi(tenpo poka)/
+
+        mi ken ala ante e kama kin /
+
+        jan pi(ilo moli) li jo e mani lili taso /
+
+        tomo li kama pakala/
+
+        ko mute li kama lon nasin /
+
+        jan anpa
+               li ken ala tawa tomo pi(nasin sijelo) li kama moli /
+
+        ike /
+
+      ]
+
+      #storyUnit[
+
+        #te[jan tomo o /
+
+        seme la mi ken jo e mani mute ]/
+
+      ]
+
+      #storyUnit[
+
+        ona li lukin pi(nasin nasa) e mi /
+
+      ]
+
+      #storyUnit[
+
+        #te[a sina wile pali
+               la mani pona li ken/
+
+        ona li mute suli ala/
+
+        taso mun
+               li sin la sina kama jo e mani pi(pilin pona)]/
+
+      ]
+
+      #storyUnit[
+
+        ni li ken pona/
+
+        taso tenpo mi li lili /
+
+        mi ken ala tawa tenpo pi(mun sin)/
+
+        nasin mani ante o lon /
+
+        taso mi sona ala e ona /
+
+        mi awen alasa
+               e ken la tenpo lili la ilo poka li kama toki /
+
+      ]
+
+      #storyUnit[
+
+         #spilo[O ALASA E MANI]
+
+         #spilo[KEN LI KEN]
+
+         #spilo[SINA PANA E MANI WAN LA MI KEN PANA E MANI TU]
+
+      ]
+
+      #storyUnit[
+
+        a /
+
+        ilo ni li nasin mani ike/
+
+        mani li kama weka/
+
+        taso ale li kama sin la ala li awen weka / 
+
+        mani mi li awen ala weka /
+
+        mi tawa ilo/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[O ALASA E KULE PI KEN MANI]
+
+         #spilo[SINA PANA PONA E KULE LA MI SULI E MANI SINA]
+
+         #spilo[OPEN LA O PANA E MANI SINA]
+
+      ]
+
+      #storyUnit[
+
+        mi jo e mani wan taso/
+
+        mi pana tawa ilo /
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI]
+
+         #spilo[O TOKI E KULE WILE]
+
+      ]
+
+      #storyUnit[
+
+        mi pana e loje/
+
+        ilo li tawa wawa nasa e sike kule /
+
+        laso li kama/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI IKE]
+
+         #spilo[MANI SINA LI AWEN LON MI]
+
+      ]
+
+      #storyUnit[
+
+        pakala /
+
+      ]
+
+      #storyUnit[
+
+         #spilo[O MUSI SIN O MUSI SIN]
+
+         #spilo[O PANA E MANI SINA]
+
+      ]
+
+      #storyUnit[
+
+        a taso mi ken ala /
+
+        weka la kalama suli li kama /
+
+        a tomo li kama pakala/
+
+      ]
+
+      #storyUnit[
+
+        #te[a kalama ni li seme / 
+
+        ijo suli li pakala anu seme ]/
+
+        #te[ni li sama ijo pi(toki mi) / 
+
+        jan pi(lawa tomo) li pakala e tomo ] /
+
+        #te[ a nasa ]/
+
+        #te[mi wile kepeken ilo mani ni / 
+
+        taso mi jo e mani ala ]/
+
+        #te[mi kin li jo e mani ala / 
+
+        sina sona/
+
+        jan ike li kama li weka e mani mi ale ]/
+
+        #te[ weka a/
+
+        sama ilo ni]/
+
+        #te[o musi mani ni ala / 
+
+        tenpo mute la ona li weka e mani /
+
+        tenpo pi(mute ala) la ona li pana e mani / 
+
+        nasin ni la mani sina li kama weka taso ]/
+
+        #te[sina sona pona ]/
+
+      ]
+
+      #storyUnit[
+
+        taso nasin ante li lon ala /
+
+        mi awen alasa e ken lon ilo mani /
+
+        taso ona li awen wile e mani mi taso li  / 
+
+      ]
+
+      #storyUnit[
+
+         #spilo[PANA]
+
+      ]
+
+      #storyUnit[
+
+        a sin tenpo/
+
+        mi lukin ala e ilo tenpo suli /
+
+        mi tawa ilo mani /
+
+      ]
+
+      #storyUnit[
+
+        #te[jan esun
+               o mu tawa jan pi(nasin sijelo)/
+
+        pakala sijelo li kama ]/
+
+      ]
+
+      #storyUnit[
+
+        mi kama lon ilo mani /
+
+      ]
+
+      #storyUnit[
+
+        #te[ seme ]/
+
+      ]
+
+      #storyUnit[
+
+        jan li lukin pi(nasin nasa) e mi /
+
+        taso ona li kepeken ilo toki li mu tawa jan nasin / 
+
+      ]
+
+      #storyUnit[
+
+         #spilo[O ALASA E KULE PI KEN MANI]
+
+         #spilo[SINA PANA PONA E]
+
+      ]
+
+      #storyUnit[
+
+        mi pana e mani/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI]
+
+         #spilo[O TOKI E]
+
+      ]
+
+      #storyUnit[
+
+        mi pana e laso/
+
+      ]
+
+      #storyUnit[
+
+        ilo li tawa a e sike kule /
+
+        laso li kama/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI PONA]
+
+         #spilo[MI MUTE E MANI SINA]
+
+      ]
+
+      #storyUnit[
+
+        uta ilo li open li pana e mani tu tawa mi / 
+
+      ]
+
+      #storyUnit[
+
+         #spilo[O MUSI SIN O MUSI SIN]
+
+      ]
+
+      #storyUnit[
+
+        monsi la jan li kama moku ala li anpa e lawa tawa supa moku / 
+
+      ]
+
+      #storyUnit[
+
+         #spilo[O PANA E MANI SINA]
+
+      ]
+
+      #storyUnit[
+
+        jan pi(tomo esun) li tawa ona /
+
+      ]
+
+      #storyUnit[
+
+        #te[a ike
+               li lon ala lon  ]/
+
+      ]
+
+      #storyUnit[
+
+        ona li luka e jan anpa la jan ni li tawa ala / 
+
+      ]
+
+      #storyUnit[
+
+        #te[ o sona/
+
+        jan pi(nasin sijelo) li kama a ] /
+
+      ]
+
+      #storyUnit[
+
+        mi pana e mani tu tawa ilo/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI]
+
+      ]
+
+      #storyUnit[
+
+        jan tomo li supa pona e jan anpa /
+
+        mi pana e loje/
+
+        ilo li tawa e sike la pimeja li kama / 
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI IKE]
+
+         #spilo[MANI SINA LI AWEN LON MI]
+
+      ]
+
+      #storyUnit[
+
+        jan ante li kama lon tomo esun /
+
+      ]
+
+      #storyUnit[
+
+         #spilo[O MUSI SIN O MUSI SIN]
+
+      ]
+
+      #storyUnit[
+
+        jan ni
+               li jo e len lon sinpin e ilo ike lon luka /
+
+      ]
+
+      #storyUnit[
+
+         #spilo[O PANA E MANI SINA]
+
+      ]
+
+      #storyUnit[
+
+        #te[esun o pana e  / 
+
+        seme /
+
+        esun o pana e mani a ]/
+
+        #te[ o kute/
+
+        ilo ni li moku e mani mi /
+
+        sama la jan sina pi(lawa tomo) li moku e mani sina
+               ] /
+
+        #te[o toki ala/
+
+        sina sona ala /
+
+        sina sona ala a /
+
+        esun
+               li pana ala e mani tawa mi la pakala suli li kama ] / 
+
+      ]
+
+      #storyUnit[
+
+        ona li tawa a e ilo ike ona /
+
+        jan esun
+               li tawa supa esun li kama e mani tan poki mani /
+
+      ]
+
+      #storyUnit[
+
+        #te[o sona o sona/
+
+        mi lon open tenpo taso/
+
+        esun mute ala li lon la mani li mute ala / 
+
+        ni li mani ale ] / 
+
+      ]
+
+      #storyUnit[
+
+        jan pi(ilo ike) li jo e mani la ona li tawa weka / 
+
+      ]
+
+      #storyUnit[
+
+        #te[ ike ]/
+
+        #te[ ike a ]/
+
+        #te[mani
+               li kama weka tan mi tu ]/
+
+        #te[o musi mani ni ala/
+
+        mani sina li kama weka taso ]/
+
+      ]
+
+      #storyUnit[
+
+        jan ante li kama li lukin e jan anpa li tawa ona / 
+
+      ]
+
+      #storyUnit[
+
+        #te[ona
+               li anpa tan ijo seme li  ]/
+
+        #te[mi sona ala
+               e ijo open pi(anpa ona)/
+
+        taso ona
+               li pilin pona lon moku ona lon tenpo wan li kama pini e tawa e ale lon tenpo ante / 
+
+        ni li lon tenpo poka/
+
+        moku ona li lon supa moku /
+
+        sina wile e jan ni lon tomo sina ]/
+
+      ]
+
+      #storyUnit[
+
+        jan li lukin pona e sijelo pi(jan anpa)/
+
+      ]
+
+      #storyUnit[
+
+        #te[ wile/
+
+        ona li kama ala sewi li moku nasa e kon /
+
+        o kama o tawa e ona ]/
+
+      ]
+
+      #storyUnit[
+
+        ona en mi li kama e jan anpa lon ilo pi(nasin tawa) / 
+
+        jan nasin li tawa weka kepeken ilo /
+
+        jan esun pi(mani ala) li kama lon poka mi / 
+
+      ]
+
+      #storyUnit[
+
+        #te[tenpo nasa a ]/
+
+        #te[mi tu li jo e mani ala
+               ]/
+
+        #te[a taso jan ante
+               li kama li esun la mani li kama/
+
+        ona li kama ala la ni taso li ike ]/
+
+        #te[seme la ona li kama ala
+               ]/
+
+        #te[tenpo
+               li ike la ona li wile ala kama/
+
+        pakala li lon nasin tawa la ona li ken ala kama
+               ]/
+
+        #te[ a ]/
+
+      ]
+
+      #storyUnit[
+
+        weka la kalama li kama /
+
+      ]
+
+      #storyUnit[
+
+        #te[kalama ni li seme
+               ]/
+
+        #te[ a/
+
+        pakala tomo/
+
+        ni li ike e ken pi(nasin tawa )]/
+
+        #te[ ike esun]/
+
+      ]
+
+      #storyUnit[
+
+        sin la mi lukin e ilo musi mani /
+
+      ]
+
+      #storyUnit[
+
+        #te[taso ilo ni
+               li jo e mani mute anu seme ]/
+
+        #te[ jo/
+
+        taso o kepeken ala ona /
+
+        sina sona e ike mani ona ]/
+
+        #te[ sona/
+
+        taso sina ken ala ken open a e ilo ]/
+
+        #te[a a a wile/
+
+        taso mi ken ala /
+
+        jan ilo taso li ken /
+
+        mi jan ilo ala /
+
+        jan ilo li kama lon pakala taso /
+
+        ilo ni li pakala ala ]/
+
+        #te[ a ]/
+
+      ]
+
+      #storyUnit[
+
+        mi lukin e poki suli /
+
+      ]
+
+      #storyUnit[
+
+        #te[ilo tenpo sina
+               li pakala li kama toki ala ]/
+
+        #te[a sina pakala ala
+               pakala e ona ]/
+
+      ]
+
+      #storyUnit[
+
+        jan li tawa poki suli pi(ilo tenpo suli)/
+
+      ]
+
+      #storyUnit[
+
+        #te[ala a li lon ona / 
+
+        ona li pakala suli a/
+
+        seme la  ]/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[PANA]
+
+      ]
+
+      #storyUnit[
+
+        mi tan poka poki ala tawa poka poki/
+
+        sin sike/
+
+      ]
+
+      #storyUnit[
+
+        #te[jan esun
+               o mu tawa jan pi(nasin sijelo)/
+
+        pakala li kama ]/
+
+        #te[ seme ]/
+
+        #te[ o ni/
+
+        kin la ilo tenpo li pakala a /
+
+        o mu tawa jan ilo kin ] / 
+
+      ]
+
+      #storyUnit[
+
+        jan pi(tomo esun) li lukin
+                pi(nasin nasa) e mi /
+
+        taso ona li kama kepeken ilo toki /
+
+        mi pana e mani tawa ilo mani/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI]
+
+      ]
+
+      #storyUnit[
+
+        mi pana e laso/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI PONA]
+
+      ]
+
+      #storyUnit[
+
+        mi kama jo e mani tu la mi pana e mani tu / 
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI]
+
+      ]
+
+      #storyUnit[
+
+        mi pana e pimeja/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI PONA]
+
+      ]
+
+      #storyUnit[
+
+        lon monsi la jan moku li kama jan anpa /
+
+        mi pana e walo/
+
+        sike kule la laso li kama /
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI IKE]
+
+         #spilo[MANI SINA LI AWEN LON MI]
+
+      ]
+
+      #storyUnit[
+
+        a laso en pimeja en laso /
+
+        monsi
+               la jan pi(wile mani) li lawa e jan esun tawa poki mani kepeken ilo ike ona /
+
+      ]
+
+      #storyUnit[
+
+        #te[ mi lon open tenpo taso / 
+
+        esun li mute ala la mani li mute ala ]/
+
+        #te[o toki ala o pana taso / 
+
+        sina pana ala la mi moli e sina ]/
+
+      ]
+
+      #storyUnit[
+
+        jan li jo e mani la ona li weka /
+
+        jan pi(nasin sijelo) li kama la mi toki /
+
+      ]
+
+      #storyUnit[
+
+        #te[sina wile
+               e jan ni lon tomo sina/
+
+        ona li tawa ala sewi li moku nasa e kon /
+
+        o kama /
+
+        mi tu o tawa e ona ]/
+
+      ]
+
+      #storyUnit[
+
+        
+               jan pi(nasin sijelo) en jan anpa en ilo pi(nasin tawa) li weka la mi wile sona tan jan
+                pi(tomo ni)/
+
+      ]
+
+      #storyUnit[
+
+        #te[jan ilo
+               li kama lon tenpo seme ]/
+
+        #te[mi sona ala/
+
+        ona li kama ala toki tawa mi lon ilo /
+
+        taso ona li jan ilo /
+
+        jan ilo li pilin pona lon open tenpo ala /
+
+        mi lon open tenpo la ona li ken awen lape
+               ]/
+
+        #te[ a/
+
+        ni la mi wile toki tawa ona/
+
+        nasin seme la mi ken tawa tomo ona ]/
+
+      ]
+
+      #storyUnit[
+
+        luka pi(jan esun) li pana e sona nasin tawa mi / 
+
+      ]
+
+      #storyUnit[
+
+        #te[ pona ]/
+
+      ]
+
+      #storyUnit[
+
+        mi tawa la mi alasa e tomo pi(jan ilo)/
+
+        mi
+               kepeken nasin luka pi(jan esun) la tawa mi li pona /
+
+        mi kama lon tomo pi(wile mi)/
+
+        weka la kalama pi(pakala tomo) li kama /
+
+        mi wile tawa insa tomo /
+
+        taso sinpin ale la mi kama ala ken open e lupa / 
+
+        mi awen tawa
+               lon selo tomo la sinpin mute la mi kama ken lukin e insa tomo /
+
+        lon ni a/
+
+        jan li lape lon insa tomo /
+
+        jan ni li jan ilo/
+
+        mi luka kalama e sinpin /
+
+      ]
+
+      #storyUnit[
+
+        #te[ jan o /
+
+        jan o /
+
+        o pini e lape ] / 
+
+      ]
+
+      #storyUnit[
+
+        taso kalama ala li pini e lape /
+
+        ike a /
+
+        kalama li tawa ala tawa insa/
+
+        ike la tenpo li kama li la /
+
+      ]
+
+      #storyUnit[
+
+         #spilo[PANA]
+
+      ]
+
+      #storyUnit[
+
+        a lon /
+
+      ]
+
+      #storyUnit[
+
+        #te[o mu tawa jan pi(nasin sijelo) / 
+
+        pakala li kama la ona o kama ]/
+
+        #te[ taso ]/
+
+      ]
+
+      #storyUnit[
+
+        mi kute ala/
+
+        mi tawa ilo mani /
+
+        tenpo ante la mi kepeken nasin pi(pona ala) / 
+
+        mi pana e mani wan/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI]
+
+      ]
+
+      #storyUnit[
+
+        mi pana e laso/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI PONA]
+
+      ]
+
+      #storyUnit[
+
+        mi jo e mani tu la mi pana e mani tu e pimeja / 
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI PONA]
+
+      ]
+
+      #storyUnit[
+
+        mi jo
+               e mani tu tu la mi pana e mani tu tu e laso /
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI PONA]
+
+      ]
+
+      #storyUnit[
+
+        mi jo
+               e mani luka tu wan la mi pana e mani wan taso e loje /
+
+        a sike kule li pana e jelo /
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI IKE]
+
+      ]
+
+      #storyUnit[
+
+        monsi mi la kalama pi(tawa anpa) li kama / 
+
+      ]
+
+      #storyUnit[
+
+        mi pana e mani wan e loje /
+
+        sike kule li pana e walo /
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI IKE]
+
+      ]
+
+      #storyUnit[
+
+        sama la mi pana e mani wan e loje /
+
+        sike li pana e jelo /
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI IKE]
+
+      ]
+
+      #storyUnit[
+
+        sama kin la mi pana /
+
+        loje li kama/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI PONA]
+
+      ]
+
+      #storyUnit[
+
+        a pona /
+
+        kepeken mani wan la mi pana e walo /
+
+        laso li kama/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI IKE]
+
+      ]
+
+      #storyUnit[
+
+        mani wan la mi pana e walo /
+
+        jelo li kama/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI IKE]
+
+      ]
+
+      #storyUnit[
+
+        mi pana sama /
+
+        jelo li kama/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI IKE]
+
+      ]
+
+      #storyUnit[
+
+        pana sama /
+
+        pimeja li kama/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI IKE]
+
+      ]
+
+      #storyUnit[
+
+        pana sama /
+
+        taso ilo li pana e loje /
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI IKE]
+
+      ]
+
+      #storyUnit[
+
+        ni la pana mi li sama /
+
+        walo li lon ilo/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI PONA]
+
+      ]
+
+      #storyUnit[
+
+        a mi pana e jelo /
+
+        pimeja li kama lon sike kule pi(ilo mani) / 
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI IKE]
+
+      ]
+
+      #storyUnit[
+
+        pini mani/
+
+        mani mi li ala la mi kama ken ala pana /
+
+        taso mi kama sona pona /
+
+        
+               kuleli laso li pimeja li laso li jelo li walo li jelo li loje li laso li jelo li jelo li pimeja li loje li walo li pimeja / 
+
+        mi kama kute sin e ijo pi(monsi mi)/
+
+      ]
+
+      #storyUnit[
+
+        #te[o toki ala o pana taso / 
+
+        sina pana ala la mi moli e sina ]/
+
+      ]
+
+      #storyUnit[
+
+        poka mi la jan en mani li tawa weka /
+
+        mi sona e lili pi(mani ni)/
+
+        taso mi ken ala pana lon sike tenpo ni /
+
+        mi awen lili la ilo li kama lon poka tomo / 
+
+        mi toki tawa jan pi(ilo ni)/
+
+      ]
+
+      #storyUnit[
+
+        #te[jan pi(nasin sijelo) o /
+
+        insa la jan li kama anpa /
+
+        lukin la ni li tan ijo ala /
+
+        ona li kama ala sewi li moku nasa e kon /
+
+        ona o tawa tomo sina ]/
+
+        #te[ sona pona]/
+
+      ]
+
+      #storyUnit[
+
+        mi en ona li tawa insa /
+
+        mi en ona en jan anpa li tawa ilo /
+
+        mi wan li tawa insa tomo/
+
+      ]
+
+      #storyUnit[
+
+        #te[jan esun o /
+
+        mi wile toki tawa jan ilo ]/
+
+        #te[a ilo sina li pakala anu seme
+               ]/
+
+        #te[ a sama ni ]/
+
+        #te[ o awen/
+
+        mi ken mu tawa ona kepeken ilo mi ]/
+
+        #te[sona mi
+               la ona li lape a ]/
+
+        #te[ a ken/
+
+        ni li nasin tenpo ona ]/
+
+        #te[mi wile tawa ona/
+
+        taso tomo ona la mi ken ala lon insa ]/
+
+        #te[ni
+               la o awen tawa tenpo pi(lape ona ala )]/
+
+        #te[ a wile/
+
+        taso mi ken ala awen la nasin ante seme li ken
+               ]/
+
+        #te[ a/
+
+        sina toki nasa /
+
+        taso sina wile tawa insa tomo la nasin ante tu li lon / 
+
+        nasin nanpa wan la sina ken pakala e ijo tomo
+               ]/
+
+        #te[mi wile ala ni ]/
+
+        #te[ pona/
+
+        nasin nanpa tu
+               la jan pi(lawa tomo) li ken open e lupa lon tomo ale ] /
+
+        #te[a ni li nasa ]/
+
+        #te[ona li lawa e tomo
+               ]/
+
+      ]
+
+      #storyUnit[
+
+        a taso jan lawa li lon weka la mi ken ala ken tawa ona / 
+
+        tenpo li ken lili/
+
+        mi open e tawa/
+
+        mi tawa/
+
+        mi tawa/
+
+        mi awen tawa/
+
+        wawa mi li kama lili /
+
+        mi pini e tawa/
+
+        jan lawa li awen weka /
+
+        mi open sin e tawa /
+
+        mi tawa/
+
+        mi tawa/
+
+        mi /
+
+      ]
+
+      #storyUnit[
+
+         #spilo[PANA]
+
+      ]
+
+      #storyUnit[
+
+        sin sin sin/
+
+        a mi sona/
+
+      ]
+
+      #storyUnit[
+
+        #te[jan esun
+               o mu tawa jan pi(nasin sijelo)/
+
+        pakala sijelo li kama lon tenpo poka /
+
+        mi sona e nasa pi(toki mi)/
+
+        taso pona la o ni ] / 
+
+      ]
+
+      #storyUnit[
+
+        ona li ni/
+
+        mi tawa ilo mani /
+
+        mi pana e mani/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MANI MANI MANI]
+
+         #spilo[O TOKI E KULE WILE]
+
+      ]
+
+      #storyUnit[
+
+        laso /
+
+        mani tu/
+
+        pimeja /
+
+        mani tu tu/
+
+        laso /
+
+        mani luka tu wan /
+
+        jelo /
+
+        mani luka luka luka wan /
+
+        walo /
+
+        mani mute luka luka tu /
+
+        jelo /
+
+        mani mute mute mute tu tu /
+
+        loje /
+
+        mani ale mute luka tu wan/
+
+        laso /
+
+        mani ale ale mute mute luka luka luka wan/
+
+        jelo /
+
+        mani luka ale luka luka tu /
+
+        jelo /
+
+        mani luka luka ale mute tu tu /
+
+        pimeja /
+
+        mani mute ale mute mute mute mute luka luka luka wan / 
+
+        loje /
+
+        mani mute mute mute mute wan ale mute mute mute mute luka luka tu / 
+
+        walo /
+
+        mani wan ale mute mute mute tu wan ale mute mute mute mute tu tu / 
+
+        pimeja /
+
+        mani tu wan ale mute luka tu ale mute mute mute luka tu wan / 
+
+      ]
+
+      #storyUnit[
+
+         #spilo[O MUSI SIN O MUSI SIN]
+
+      ]
+
+      #storyUnit[
+
+        taso mi wile ala /
+
+        mi jo e mani pi(mute pona)/
+
+        jan moku li kama moku ala li kama anpa /
+
+        mi en jan esun li tawa ona li supa pona e ona / 
+
+        mi tawa open tomo la lupa li open lon tomo / 
+
+        
+               jan pi(len sinpin) li lukin e mi li kama e ilo ike li wile toki /
+
+        taso mi kama open kin e toki /
+
+      ]
+
+      #storyUnit[
+
+        #te[mi jo e mani pi(mute suli) / 
+
+        mi wile esun/
+
+        mi pana e mani la sina kama e mi tawa jan pi(lawa tomo )] / 
+
+        #te[ a/
+
+        seme /
+
+        sina ]/
+
+        #te[o kepeken ala tenpo / 
+
+        o kepeken tenpo ala ]/
+
+        #te[o kama o kama/
+
+        ilo mi li lon poka ] / 
+
+      ]
+
+      #storyUnit[
+
+        mi tu li lon ilo lili pi(nasin tawa)/
+
+        tenpo tawa
+               li pini la mi lon tomo lon poka pi(jan lawa)/
+
+      ]
+
+      #storyUnit[
+
+        #te[sina pana ala
+               e mani tawa mi la mi weka e tomo ni/
+
+        mi ken pali e tomo suli lon ma ona /
+
+        tomo suli li kama e mani suli ]/
+
+        #te[ o awen/
+
+        mi jo e mani wile/
+
+        sina pi(mani mute) o pana ] /
+
+      ]
+
+      #storyUnit[
+
+        mi pana e mani tawa jan pi(lawa tomo)/
+
+      ]
+
+      #storyUnit[
+
+        #te[ a/
+
+        mani ni li ken mute pona ]/
+
+        #te[sina wile ala e mute ni / 
+
+        taso sina ken jo e mani ni /
+
+        mi wile e ijo wan taso/
+
+        o open e tomo pi(jan ilo a)/
+
+        mi en sina o tawa a ]/
+
+        #te[ a mani/
+
+        a tawa ]/
+
+      ]
+
+      #storyUnit[
+
+        tawa li wile e tenpo lili /
+
+        lon sinpin mi la ilo pi(jan nasin) li kama / 
+
+        lon monsi mi
+               la ilo nasin pi(suli tomo) li tawa li wile tawa esun /
+
+        mi kama
+               lon tomo pi(jan lape) la jan lawa li kama e kiwen /
+
+        ona li open e lupa lon sinpin tomo kepeken kiwen ni / 
+
+        mi tawa insa la mi tawa jan ilo lape /
+
+      ]
+
+      #storyUnit[
+
+        #te[o pini e lape ]/
+
+        #te[seme seme seme/
+
+        seme la sina lon tomo mi ]/
+
+        #te[ilo tenpo sina
+               li pakala la mi lon  ]/
+
+        #te[a mi lon tenpo seme
+               ]/
+
+      ]
+
+      #storyUnit[
+
+        mi lukin e ilo lili mi /
+
+        pakala /
+
+        tenpo li kama pini lon poka /
+
+        mi lukin e poka ale /
+
+        seme li ken e pona /
+
+        a /
+
+        sinpin tomo wan la mi ken lukin e ma pi(poka tomo) / 
+
+        taso ona li sinpin taso ala /
+
+        kon li tawa la lupa li open lon sinpin / 
+
+        mi ken /
+
+      ]
+
+      #storyUnit[
+
+         #spilo[PANA]
+
+      ]
+
+      #storyUnit[
+
+        kepeken ona/
+
+      ]
+
+      #storyUnit[
+
+        mi sona e nasin/
+
+        #te[jan pi(tomo esun) o /
+
+        mi sona e ijo nasa/
+
+        pakala sijelo li lon tenpo poka /
+
+        o mu tawa jan pi(nasin sijelo)/
+
+        ona o kama kepeken tenpo lili ]/
+
+      ]
+
+      #storyUnit[
+
+        ona li kepeken ilo toki la mi kama kepeken ilo mani / 
+
+        mi
+               pali pi(mani mute) la jan moku li kama ken ala moku li anpa /
+
+        mi tawa ona
+               la mi en jan tomo li supa pona e ona /
+
+        mi tawa open tomo la lupa li open /
+
+        mi pana e mani ale tawa lupa/
+
+      ]
+
+      #storyUnit[
+
+        #te[ o jo e mani ni ale / 
+
+        taso o pana ala e ale tawa jan pi(lawa tomo) / 
+
+        ona li wile ala e mani pi(mute ni)/
+
+        mani awen la o pona e jan poka sina ]/
+
+        #te[ a seme/
+
+        mi /
+
+        mi /
+
+        mi ni ]/
+
+      ]
+
+      #storyUnit[
+
+        jan pi(jo mani) li tawa la mi kin li kama tawa / 
+
+      ]
+
+      #storyUnit[
+
+        #te[mi ken lukin e jan nasin / 
+
+        jan anpa li wile lon tomo pi(nasin sijelo) / 
+
+        esun sina o pona ] / 
+
+      ]
+
+      #storyUnit[
+
+        mi wile kepeken tenpo lili /
+
+        mi kama lon tomo pi(jan lape)/
+
+        mi alasa e sinpin lukin pona wan /
+
+        a ona /
+
+        mi luka lili
+               e sinpin wan la lupa li open lon ona /
+
+        mi kama tawa insa /
+
+      ]
+
+      #storyUnit[
+
+        #te[jan ilo o pini e lape / 
+
+        tenpo li ike/
+
+        tenpo li pakala ] / 
+
+        #te[seme seme seme/
+
+        seme la sina lon tomo mi ]/
+
+        #te[ilo tenpo suli sina
+               li pakala a/
+
+        sama la tenpo a li pakala ]/
+
+        #te[ a/
+
+        nasa /
+
+        seme /
+
+        nasa /
+
+        mi o lukin e ilo tenpo ]/
+
+        #te[ pona/
+
+        o kama /
+
+        tenpo li lili ] / 
+
+      ]
+
+      #storyUnit[
+
+        mi tu li tawa a/
+
+        tenpo poka la mi lon tomo esun /
+
+      ]
+
+      #storyUnit[
+
+        #te[sina kama sin a/
+
+        a jan ilo kin ]/
+
+      ]
+
+      #storyUnit[
+
+        mi kama lon poki pi(ilo tenpo)/
+
+        ona li awen open/
+
+        ilo tenpo li pali ala /
+
+      ]
+
+      #storyUnit[
+
+        #te[a seme la ona li kama pakala
+               ]/
+
+        #te[sina jan ilo/
+
+        mi kepeken ona la ona li kama pali ala /
+
+        kin la ale li kama sin lon tenpo pi(suli ala) / 
+
+        tenpo li sama sike nasa/
+
+        taso ale
+               li kama sin la mi wan taso li sona e sin ]/
+
+      ]
+
+      #storyUnit[
+
+        jan ilo li lukin e mi /
+
+        #te[nasin seme
+               la sina kepeken ona/
+
+        o toki e ale ]/
+
+        #te[mi wile pana e sona tenpo tawa ilo tenpo lili mi / 
+
+        mi tawa poki ni /
+
+        mi open e poki/
+
+        ilo li toki tawa mi li wile sona e wile mi / 
+
+        mi toki e wile/
+
+        ilo suli li pana tawa ilo lili mi /
+
+        ni li ale/
+
+        pini pali la ale li kama sin a ]/
+
+        #te[ a/
+
+        sina toki e seme tawa ilo ]/
+
+        #te[ilo suli
+               o pana e tenpo tawa ilo lili ]/
+
+        #te[ a/
+
+        a a a /
+
+        a a a a a a a ]/
+
+        #te[ seme ]/
+
+        #te[sina pana ala e sona tenpo tawa ilo sina / 
+
+        sina pana e tenpo a tawa ilo sina ]/
+
+        #te[ a seme ]/
+
+        #te[tan ni
+               la ilo suli li pali ala/
+
+        ona li pana e ale tawa ilo lili ]/
+
+        #te[ taso/
+
+        tan seme la tenpo li sike ]/
+
+        #te[ilo sina li lili taso / 
+
+        ona li ken ala jo e ale pi(ilo suli)/
+
+        ni la tenpo li lili ]/
+
+        #te[sina ken ala ken pona
+               e tenpo ]/
+
+        #te[ ken/
+
+        ilo lili o /
+
+        ni li ilo suli/
+
+        ona li sama sina/
+
+        taso ona li suli /
+
+        ona
+               li pana e ale tawa sina la ona li jo ala e tenpo /
+
+        o pana e tenpo tawa ona ]/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[JO]
+
+      ]
+
+      #storyUnit[
+
+         #spilo[MU MU MU]
+
+         #spilo[MI ILO TENPO]
+
+      ]
+
+      #storyUnit[
+
+        #te[jan ilo o /
+
+        tenpo li sike ala sike sin/
+
+        seme la mi ken sona ] / 
+
+      ]
+
+      #storyUnit[
+
+        lon ni la lupa li open lon sinpin tomo /
+
+        mi lukin e ilo nasin pi(suli mute) lon monsi lupa / 
+
+        lon insa lupa
+               la soweli luka luka li kama li tawa jan pi(tomo esun)/
+
+        soweli wan li toki /
+
+      ]
+
+      #storyUnit[
+
+        #te[jan pi(tomo ni) o /
+
+        mi wile e telo ] / 
+
+      ]
+
+      #storyUnit[
+
+        jan esun li pali la pilin mi li ante pona / 
+
+      ]
+
+      #storyUnit[
+
+        #te[a ni li sama ala tenpo ante / 
+
+        sike li pini ]/
+
+        #te[ pona/
+
+        mi o weka e ken pi(ike ni)/
+
+        mi o pana e sona tenpo kin tawa ilo lili sina
+               ]/
+
+        #te[ pona ]/
+
+        #te[ilo tenpo
+               o pana e sona tenpo tawa jan ni ]/
+
+        #te[ a seme ]/
+
+      ]
+
+      #storyUnit[
+
+         #spilo[PANA]
+
+      ]
+
+
 ] <ch033.xhtml.iloLtokini>
 ] 
-#block[
+#columns(2, gutter: 2em)[
+#set text(size: 0.85em)
+
+#set par(leading: 0.4em, spacing: 2em, justify: false)
+#show regex("(?i)\n"): it=> (
+[\ ])
+  
+
 mi wile sona e tenpo. mi lukin e ilo mi pi sona tenpo. \
 a ilo mi pi sona tenpo ala. ilo li sin la mi wile pana e sona tenpo open
 tawa ona. \
@@ -11076,18 +11394,15 @@ PANA
 
 ] <ch033.xhtml.lasinaLtokini>
 
+#compute("TLT (tonsi li tonsi)", "waso Seko")
+
 = TLT \(tonsi li tonsi) <ch034.xhtml>
 
-waso Seko <ch034.xhtml.id.TLT-tonsi-li-tonsi>
+#njan("waso Seko") <ch034.xhtml.id.TLT-tonsi-li-tonsi>
 
 
-nimi \'tonsi\' li wawa. tonsi li ken nasin ante mute. o kama sona e
-kulupu lili pi jan tonsi mute e ni: kule pi tonsi ona li ante mute a.
-sina sama ala sama ona?
 
-<ch035.xhtml>
-
-#strong[jan Ka] li jan musi pi pana sitelen. ona li pana e sitelen tawa
+#strong[jan Ka] li jan musi pi pana sitelen. ona li pana e sitelen tawa <ch035.xhtml>
 ilo pi jan mute. sitelen la, ijo mute li ken kama. jan Ka li pana e sona
 pi pali moku. ona li pali e pan suwi kepeken kili pi ma kili ona. pan
 suwi ni li tawa jan pona ona: jan Lu en jan Ki. moku li pali e kulupu
@@ -11222,26 +11537,25 @@ sona mute li lon.
 
 #strong[sina tonsi seme?]
 
-<ch036.xhtml>
-
-= utala insa
-<ch036.xhtml.id.utala-insa>
-jan Petokota
-
-pona en ike. olin en pakala. wile awen en wile moli. pilin mute li utala
-tu lon mama pi jan pali. o kama sona e mama ni e utala ona kepeken nasin
-pi toki tu.
-
-#emph[#link(<ch037.xhtml.sitelenpona>)[o lukin kepeken sitelen pona];]
-
-#emph[#link(<ch037.xhtml.sitelen-Lasina>)[o lukin kepeken sitelen Lasina];]
-
-<ch037.xhtml>
-
 #block[
+  
+
+#compute("utala insa", "jan Petokota") <ch036.xhtml.id.utala-insa>
+
+#colbreak()
+#place(center, dy: -1em, image("images/file19.jpg", width: 120%))<ch036.xhtml>
+
+
+
+
+
+
+
+
 = utala insa
 <ch037.xhtml.utala-insa>
-tan jan \[pona e tenpo o kepeken olin tawa ale\]
+tan jan \[pona e tenpo o kepeken olin tawa ale\] <ch037.xhtml>
+
 
 #box(width: 1024.0pt, image("images/file10.png"))
 #block[
