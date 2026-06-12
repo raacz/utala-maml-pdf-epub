@@ -12412,3 +12412,55 @@ kala en soweli en waso lili ante li pona tawa waso lili. jan ante li
 kama la ale pi waso lili li kama pona mute. waso lili li pilin pona.
 
 #strong[pini]
+
+#pagebreak()
+
+#set page(header: none)
+
+#set text(font: "Noto Serif")
+#v(1fr)
+
+#let data = yaml("/versions.yaml").pdf.last()
+#set par(justify: false)
+#block[
+
+  #let nasin(mi) = [
+    #set text(size: 0.8em)
+    #pad(left: 2em, top: -1em, underline(link(mi)[#mi]))
+  ]
+
+  #let sonasuli(mi) = [
+    #text()
+  ]
+
+  #show link: it => underline(it)
+
+    lipu 'utala musi pi tenpo sike \#MAML' li sin lon tenpo mute.  \ tenpo ni la sina lukin e lipu ni nanpa v#data.version. \ mi pana e ni lon tenpo ni: #data.date. 
+  
+  o kama lukin e pana pi lipu ni nanpa #data.version lon ilo Kita: 
+  #nasin("https://github.com/raacz/utala-maml-pdf-epub/releases/tag/v"+str(data.version))
+
+  o kama jo e lipu ni pi sin nanpa wan. 
+  #nasin("https://github.com/raacz/utala-maml-pdf-epub/blob/main/typ/output.pdf")
+  
+  o sona e ni: lipu pi tenpo pini li ante seme:
+  #nasin("https://github.com/raacz/utala-maml-pdf-epub/blob/main/versions.yaml")
+
+#line(length: 100%)
+
+#set text(size: 0.85em)
+
+  This PDF is v#data.version compiled on #data.date. 
+  
+  Link to this version's release: 
+  #nasin("https://github.com/raacz/utala-maml-pdf-epub/releases/tag/v"+str(data.version))
+  
+
+  The newest version is downloadable at 
+  #nasin("https://github.com/raacz/utala-maml-pdf-epub/blob/main/typ/output.pdf")
+  
+  The full changelog:
+  #nasin("https://github.com/raacz/utala-maml-pdf-epub/blob/main/versions.yaml")
+]
+#v(0.25fr)
+
