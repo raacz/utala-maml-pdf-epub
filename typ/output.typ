@@ -14,13 +14,16 @@
 ]
 <ch001.xhtml>
 
+#v(9em)
 
 #nimi_kipisi_suli[
-  = utala musi pi tenpo sike \#MAML
+  = utala musi pi \ tenpo sike \#MAML
 
 ]<title_page.xhtml>
 
-#align(center)[#block(above: 8em)[#text(size: 1.5em)[tan kulupu pi toki pona]]]
+#align(center)[#block(above: 8em)[#text(size: 1.5em)[tan kulupu pi utala musi]]]
+
+#place(center, dy: 17em, link("https://utala.pona.la/maml/lipu-musi/")[https://utala.pona.la])
 
 
 
@@ -32,7 +35,7 @@
   #block(spacing: 6em)[#text(size: 1.2em, weight: 400)[
       = utala musi pi \ tenpo sike \#MAML
       <frontmatter.xhtml.toc_1>
-      #block(above: 2em)[tan #strong[kulupu pi toki pona]]]
+      #block(above: 2em)[tan #strong[kulupu pi utala musi]]]
 
   ]
   #set par(spacing: 2em, leading: 0.4em)
@@ -74,7 +77,7 @@
   #strong[pali pi lipu musi (kepeken nasin pi lipu CC-BY-SA 4.0)]: jan Ana
   en jan Lapate, en mu Esitense usawi, en jan Iwi, en jan Ke Tami, en jan
   Kepeliju, en jan Lakuse, en palisa jelo Natan, en soweli Niko, en kon
-  Okisen, en kapesi Pake, en kapesi Pake, en jan Pasijan, en jan Peli, en
+  Okisen, en kapesi Pake, en jan Pasijan, en jan Peli, en
   jan Petokota, en jan Popo, en waso Seko, en soko Sijeni, en akesi Tala,
   en jan Tumu, en jan Uli
 
@@ -234,7 +237,7 @@
       - #nanpainsa(<ch009.xhtml.musi-ma>, "musi ma")
       - #nanpainsa(<ch009.xhtml.toc_13>, "kiwen")
       - #nanpainsa(<ch009.xhtml.toc_14>, "kon li lon anpa ale")
-    - #nanpa(<ch010.xhtml>, "lipu pi kulupu Winx", jan: "soweli Niko")
+    - #nanpa(<ch010.xhtml>, "lipu pi kulupu Winsu Ku", jan: "soweli Niko")
     - #nanpa(<ch012.xhtml>, "toki 10,000,000,000,000, 000,000,000,000,000 pi nasin Soneto", jan: "kapesi Pake")
     - #nanpa(<ch014.xhtml>, "lon lape", jan: "palisa jelo Natan")
       - #nanpainsa(<ch015.xhtml.sitelen-pona>, "sitelen pona", first: true) 
@@ -284,6 +287,49 @@
     - #nanpa(<ch040.xhtml>, "waso lili li lon insa pi tomo waso", jan: "jan Pasijan")
 ]
 
+#let sike(nanpa, utala) = [
+  #let kulesike = rgb("#2ecc40")
+  #if (nanpa == "W"){
+    kulesike = rgb("#fcf8f0")
+
+  } else if (nanpa == "T"){
+     kulesike = rgb("#f3f6f8")
+  } else if (nanpa == "TW"){
+    kulesike = rgb("#fcf1ed")
+
+  } 
+  #circle(
+    fill: kulesike,
+    stroke: (thickness: 1pt, dash: "densely-dash-dotted"),
+    align(center)[
+      #set par(leading: 0.2em, spacing: 0.5em)
+
+      #text(size: 0.6em)[lipu nanpa]
+
+      #link(<open.xhtml>, text(size: 1.5em)[#nanpa]) 
+
+      #text(size: 0.6em)[lon utala pi \ #utala]
+    ]
+  )
+]
+
+
+#let sitelen_wawa(nanpa, utala) = [
+
+
+  #if (utala == "lipu lili"){
+    set text(size: 0.8em)
+    place(top+right, dy: -1em,
+    sike(nanpa, utala))
+   } else if (utala == "lipu suli"){
+    set text(size:1em)
+    place(top+right, dy: -2.5em,
+    box(fill: white, width: 9em, height: 10em)[
+    #sike(nanpa, utala)])
+
+   }
+]
+
 
 #block(inset: 4em)[
 
@@ -310,31 +356,42 @@
 
   #strong[]
 
-  #show link: it => {
-    text(weight: 600, style: "italic")[
-      #it
-    ]
-  }
+#let pona(nasin, lipu, nimi) = [
+  #set par(justify: false)
+
+  #pad(top: 0.6em, bottom: 1em, link(nasin)[
+    #align(horizon + center,text(weight: 600, size: 1.1em, style: "italic")[#lipu])
+    #v(-1em)
+    #align(horizon + center, text(size: 0.9em, style: "italic")[#nimi])
+  ])
+]
+#let pona-nanpa(nanpa) =[
+  #align(horizon + center)[\##nanpa]
+]
 
 
-  lipu lili la lipu tu wan ni li pona suli:
-
-  pona \#W: #link(<entries.xhtml.toc_19>)[o esun!] tan jan keteso \
-  pona \#T: #link(<entries.xhtml.toc_2>)[akesi linja li pilin ike]
-  tan akesi Tala \
-  pona \#TW: #link(<entries.xhtml.toc_24>)[pipi lili] tan ijo
-  pali
-
-  #strong[]
 
 
-  lipu suli la lipu tu wan ni li pona suli:
 
-  pona \#W: #link(<ch032.xhtml>)[tenpo o pona!] tan jan Ke Tami \
-  pona \#T: #link(<ch030.xhtml>)[taso] tan soko sijeni \
-  pona \#TW:
-  #link(<ch004.xhtml.id.jan-sama-tu-tu-en-soweli-monsuta>)[jan sama tu tu en soweli monsuta]
-  tan jan Kepeliju
+#table(
+  columns: 3,
+  stroke: 0.03em,
+  table.header(
+  [#pona-nanpa("")], [#align(center,"lipu lili")], [#align(center, "lipu suli")]),
+
+  [#pona-nanpa("W")], [#pona(<entries.xhtml.toc_19>, "o esun!", "jan keteso")
+], [#pona(<ch032.xhtml>, "tenpo o pona", "jan Ke Tami")],
+  [#pona-nanpa("T")], [#pona(<entries.xhtml.toc_2>, "akesi linja li pilin ike", "akesi Tala")
+],[#pona(<ch030.xhtml>, "taso","soko sijeni")
+],
+  [#pona-nanpa("TW")],[#pona(<entries.xhtml.toc_24>, "pipi lili", "ijo pali")
+],[#pona(<ch004.xhtml.id.jan-sama-tu-tu-en-soweli-monsuta>, "jan sama tu tu en soweli monsuta", "jan Kepeliju")
+]
+)
+
+
+
+
 ]
 
 
@@ -352,7 +409,10 @@
   number-align: top + center, // Places the number at the top right
 )
 
-#kipisiOpen[= lipu lili <lipu-lili.xhtml>]
+#kipisiOpen[
+  #set text(size: 0.6em)
+  = lipu \ lili <lipu-lili.xhtml>
+]
 
 #set page(
   number-align: bottom + center,
@@ -434,14 +494,16 @@
     it
   }
 
-      colbreak()
-
+#colbreak()
 
 
   == akesi linja li pilin ike <entries.xhtml.toc_2>
   tan akesi Tala
+  
 
   #line(length: 100%)
+  #sitelen_wawa("T", "lipu lili")
+
   #block[
 
 
@@ -1296,13 +1358,20 @@
 
   ]       #colbreak()
 
+  
+
   #block[
+
+
 
     == o esun!
     <entries.xhtml.toc_19>
     tan jan keteso
 
     #line(length: 100%)
+
+        #sitelen_wawa("W", "lipu lili")
+
 
     #set par(spacing: 1.5em, leading: 0.5em, justify: true)
 
@@ -1490,6 +1559,9 @@
     tan ijo pali
 
     #line(length: 100%)
+
+    #sitelen_wawa("TW", "lipu lili")
+
 
     #set par(spacing: 1.9em, leading: 0.8em)
 
@@ -2164,6 +2236,7 @@
 
 
 
+#sitelen_wawa("TW", "lipu suli")
 
 #openLsitelenLasina(<ch005.xhtml.sitelen-Lasina>)
 
@@ -3445,8 +3518,7 @@
 
 = lipu pi kulupu Winsu Ku <ch010.xhtml>
 
-#njan("soweli Niko")  <ch010.xhtml.id.lipu-pi-kulupu-Winx>
-
+#njan("soweli Niko") 
 
 
 <ch011.xhtml>
@@ -7470,6 +7542,9 @@ mute tan poka Majuna li tawa moli ona li peto.
 
 #compute("taso", "soko sijeni")
 
+#sitelen_wawa("T", "lipu suli")
+
+
 = taso <ch030.xhtml>
 
 #njan("soko sijeni")  <ch030.xhtml.id.taso>
@@ -7884,6 +7959,7 @@ telo. mi lukin e tomo tawa. mi sewi e luka tu. mi toki:
 #njan("jan Ke Tami") <ch033.xhtml>
 
 
+#sitelen_wawa("W", "lipu suli")
 
 #openLsitelenLasina(<ch033.xhtml.lasinaLtokini>)
 
@@ -12415,7 +12491,7 @@ kama la ale pi waso lili li kama pona mute. waso lili li pilin pona.
 
 #pagebreak()
 
-#set page(header: none)
+#set page(header: none, numbering: none)
 
 #set text(font: "Noto Serif")
 #v(1fr)
@@ -12435,9 +12511,9 @@ kama la ale pi waso lili li kama pona mute. waso lili li pilin pona.
 
   #show link: it => underline(it)
 
-    lipu #text(style: "italic")[utala musi pi tenpo sike \#MAML] li sin lon tenpo mute.  \ tenpo ni la sina lukin e lipu  \##data.version. \ lipu  \##data.version li kama lon tenpo ni: #data.date. 
+lipu #text(style: "italic", weight: 600)[utala musi pi tenpo sike \#MAML] li sin lon tenpo mute.  \ tenpo ni la sina lukin e lipu  \##data.version. \ lipu  \##data.version li kama lon tenpo ni: #data.date. 
   
-  nasin ni li tawa lipu ni \##data.version:
+#pad(1.5em, block[  nasin ni li tawa lipu ni \##data.version:
   #nasin("https://github.com/raacz/utala-maml-pdf-epub/blob/pdf-v"+data.version+"/typ/output.pdf")
 
   o kama lukin e pana pi lipu ni \##data.version lon ilo Kita: 
@@ -12448,12 +12524,15 @@ kama la ale pi waso lili li kama pona mute. waso lili li pilin pona.
   
   o sona e ni: lipu pi tenpo pini li ante seme:
   #nasin("https://github.com/raacz/utala-maml-pdf-epub/blob/main/versions.yaml")
-
+])
 #line(length: 100%)
 
 #set text(size: 0.85em)
+  This PDF of #text(style: "italic", weight: 600)[utala musi pi tenpo sike \#MAML] is version #data.version.\
+  v#data.version was compiled on #data.date. 
 
-  This PDF is v#data.version compiled on #data.date. 
+#pad(1.5em, block[
+
   
   Download this version of the PDF at:
   #nasin("https://github.com/raacz/utala-maml-pdf-epub/blob/pdf-v"+data.version+"/typ/output.pdf")
@@ -12468,6 +12547,7 @@ kama la ale pi waso lili li kama pona mute. waso lili li pilin pona.
   
   Read about differences between versions:
   #nasin("https://github.com/raacz/utala-maml-pdf-epub/blob/main/versions.yaml")
+])
 ]
 #v(0.25fr)
 
