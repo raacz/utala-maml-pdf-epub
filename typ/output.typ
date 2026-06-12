@@ -12435,12 +12435,15 @@ kama la ale pi waso lili li kama pona mute. waso lili li pilin pona.
 
   #show link: it => underline(it)
 
-    lipu 'utala musi pi tenpo sike \#MAML' li sin lon tenpo mute.  \ tenpo ni la sina lukin e lipu ni nanpa v#data.version. \ mi pana e ni lon tenpo ni: #data.date. 
+    lipu #text(style: "italic")[utala musi pi tenpo sike \#MAML] li sin lon tenpo mute.  \ tenpo ni la sina lukin e lipu  \##data.version. \ lipu  \##data.version li kama lon tenpo ni: #data.date. 
   
-  o kama lukin e pana pi lipu ni nanpa #data.version lon ilo Kita: 
-  #nasin("https://github.com/raacz/utala-maml-pdf-epub/releases/tag/v"+str(data.version))
+  nasin ni li tawa lipu ni \##data.version:
+  #nasin("https://github.com/raacz/utala-maml-pdf-epub/blob/pdf-v"+data.version+"/typ/output.pdf")
 
-  o kama jo e lipu ni pi sin nanpa wan. 
+  o kama lukin e pana pi lipu ni \##data.version lon ilo Kita: 
+  #nasin("https://github.com/raacz/utala-maml-pdf-epub/releases/tag/pdf-v"+str(data.version))
+
+  o kama jo e lipu ni pi sin nanpa wan: 
   #nasin("https://github.com/raacz/utala-maml-pdf-epub/blob/main/typ/output.pdf")
   
   o sona e ni: lipu pi tenpo pini li ante seme:
@@ -12452,14 +12455,18 @@ kama la ale pi waso lili li kama pona mute. waso lili li pilin pona.
 
   This PDF is v#data.version compiled on #data.date. 
   
-  Link to this version's release: 
-  #nasin("https://github.com/raacz/utala-maml-pdf-epub/releases/tag/v"+str(data.version))
+  Download this version of the PDF at:
+  #nasin("https://github.com/raacz/utala-maml-pdf-epub/blob/pdf-v"+data.version+"/typ/output.pdf")
+
+
+  Link to this version's source on GitHub: 
+  #nasin("https://github.com/raacz/utala-maml-pdf-epub/releases/tag/pdf-v"+str(data.version))
   
 
-  The newest version is downloadable at 
+  The newest version of this PDF is downloadable at: 
   #nasin("https://github.com/raacz/utala-maml-pdf-epub/blob/main/typ/output.pdf")
   
-  The full changelog:
+  Read about differences between versions:
   #nasin("https://github.com/raacz/utala-maml-pdf-epub/blob/main/versions.yaml")
 ]
 #v(0.25fr)
