@@ -17,6 +17,8 @@ pdf:
   tag: pdf-v1.0.0
   url: https://github.com/raacz/utala-maml-pdf-epub/releases/tag/pdf-v1.0.0
 epub:
-- version: 1.0
+- version: 1.0.0
   date: 2026-06-12
-  message: Initial
+  message: Initial Release
+  tag: epub-v1.0.0
+  url: https://github.com/raacz/utala-maml-pdf-epub/releases/tag/epub-v1.0.0
