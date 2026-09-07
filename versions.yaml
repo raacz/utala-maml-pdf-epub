@@ -27,3 +27,8 @@ epub:
   message: Initial Release
   tag: epub-v1.0.0
   url: https://github.com/raacz/utala-maml-pdf-epub/releases/tag/epub-v1.0.0
+- version: 1.0.1
+  date: 2026-09-07
+  message: Removed author names, as per private request
+  tag: epub-v1.0.1
+  url: https://github.com/raacz/utala-maml-pdf-epub/releases/tag/epub-v1.0.1
