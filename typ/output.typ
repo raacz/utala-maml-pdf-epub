@@ -48,7 +48,6 @@
   jan Alan, en
   jan Ali, en
   jan Alolan, en
-  jan Ana en jan Lapate, en
   kule epiku Atawan, en
   jan Elijan, en
   ijo pali, en
@@ -74,8 +73,7 @@
   ijo seme Sepi, en
   akesi Tala
 
-  #strong[pali pi lipu musi (kepeken nasin pi lipu CC-BY-SA 4.0)]: jan Ana
-  en jan Lapate, en mu Esitense usawi, en jan Iwi, en jan Ke Tami, en jan
+  #strong[pali pi lipu musi (kepeken nasin pi lipu CC-BY-SA 4.0)]: mu Esitense usawi, en jan Iwi, en jan Ke Tami, en jan
   Kepeliju, en jan Lakuse, en palisa jelo Natan, en soweli Niko, en kon
   Okisen, en kapesi Pake, en jan Pasijan, en jan Peli, en
   jan Petokota, en jan Popo, en waso Seko, en soko Sijeni, en akesi Tala,
@@ -221,7 +219,7 @@
     - #nanpa(<ch006.xhtml>, "kon en jan", jan: "kon Okisen")
       - #nanpainsa(<ch007.xhtml.sitelen-pona-a>, "sitelen pona")
       - #nanpainsa(<ch007.xhtml.Lasina>, "sitelen Lasina")
-    - #nanpa(<ch008.xhtml>, "kon tu li toki", jan: "jan Ana en jan Lapate")
+    - #nanpa(<ch008.xhtml>, "kon tu li toki", jan: "jan tu pi sona ala")
       - #nanpainsa(<ch009.xhtml.toc_1>, "ma sewi Aten", first: true)
       - #nanpainsa(<ch009.xhtml.toc_2>, "toki pi lipu tawa mute")
       - #nanpainsa(<ch009.xhtml.toc_3>, "toki pona")
@@ -3158,7 +3156,7 @@
 
 ]<ch007.xhtml.Lasina>
 
-#compute("kon tu li toki", "jan Ana en jan Lapate")
+#compute("kon tu li toki", "jan tu pi sona ala")
 #set page(
   margin: (top: 4em, right: 2.75em, bottom: 2.75em, left: 2.75em),
   header: place(dy: 2em, text(size: 0.8em, style: "italic")[ #context lipu.get() #h(1fr) #context jan.get()]),
@@ -3176,7 +3174,7 @@
 
   = kon tu li toki <ch008.xhtml>
 
-  #njan("jan Ana tan jan Lapate")
+  #njan("jan tu pi sona ala")
 
 
 
